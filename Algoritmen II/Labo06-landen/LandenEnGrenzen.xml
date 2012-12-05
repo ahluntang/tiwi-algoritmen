@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- not valid: DOCTYPE mondial SYSTEM "mondial-3.0.dtd"-->
+ <mondial >
+   <country id='f0_136'      name='Albania'>
+     <border  length='282' country='f0_232'/>
+     <border  length='151' country='f0_300'/>
+     <border  length='287' country='f0_370'/>
+   </country>
+   <country id='f0_144'      name='Andorra'>
+     <border  length='60' country='f0_213'/>
+     <border  length='65' country='f0_385'/>
+   </country>
+   <country id='f0_149'      name='Austria'>
+     <border  length='362' country='f0_184'/>
+     <border  length='784' country='f0_220'/>
+     <border  length='366' country='f0_251'/>
+     <border  length='430' country='f0_268'/>
+     <border  length='37' country='f0_285'/>
+     <border  length='91' country='f0_375'/>
+     <border  length='324' country='f0_380'/>
+     <border  length='164' country='f0_404'/>
+   </country>
+   <country id='f0_157'      name='Belarus'>
+     <border  length='141' country='f0_280'/>
+     <border  length='502' country='f0_290'/>
+     <border  length='605' country='f0_337'/>
+     <border  length='891' country='f0_411'/>
+     <border  length='959' country='f0_358'/>
+   </country>
+   <country id='f0_162'      name='Belgium'>
+     <border  length='620' country='f0_213'/>
+     <border  length='167' country='f0_220'/>
+     <border  length='148' country='f0_295'/>
+     <border  length='450' country='f0_325'/>
+   </country>
+   <country id='f0_169'      name='Bosnia and Herzegovina'>
+     <border  length='932' country='f0_179'/>
+     <border  length='527' country='f0_370'/>
+   </country>
+   <country id='f0_174'      name='Bulgaria'>
+     <border  length='494' country='f0_232'/>
+     <border  length='148' country='f0_300'/>
+     <border  length='608' country='f0_351'/>
+     <border  length='318' country='f0_370'/>
+     <border  length='240' country='f0_670'/>
+   </country>
+   <country id='f0_179'      name='Croatia'>
+     <border  length='932' country='f0_169'/>
+     <border  length='329' country='f0_251'/>
+     <border  length='266' country='f0_370'/>
+     <border  length='546' country='f0_380'/>
+   </country>
+   <country id='f0_184'      name='Czech Republic'>
+     <border  length='362' country='f0_149'/>
+     <border  length='646' country='f0_220'/>
+     <border  length='658' country='f0_337'/>
+     <border  length='214' country='f0_375'/>
+   </country>
+   <country id='f0_193'      name='Denmark'>
+     <border  length='68' country='f0_220'/>
+   </country>
+   <country id='f0_198'      name='Estonia'>
+     <border  length='267' country='f0_280'/>
+     <border  length='290' country='f0_358'/>
+   </country>
+   <country id='f0_203'      name='Faroe Islands'>
+   </country>
+   <country id='f0_208'      name='Finland'>
+     <border  length='729' country='f0_332'/>
+     <border  length='586' country='f0_397'/>
+     <border  length='1313' country='f0_358'/>
+   </country>
+   <country id='f0_213'      name='France'>
+     <border  length='60' country='f0_144'/>
+     <border  length='620' country='f0_162'/>
+     <border  length='451' country='f0_220'/>
+     <border  length='488' country='f0_268'/>
+     <border  length='73' country='f0_295'/>
+     <border  length='4.4' country='f0_320'/>
+     <border  length='623' country='f0_385'/>
+     <border  length='573' country='f0_404'/>
+   </country>
+   <country id='f0_220'      name='Germany'>
+     <border  length='784' country='f0_149'/>
+     <border  length='167' country='f0_162'/>
+     <border  length='646' country='f0_184'/>
+     <border  length='68' country='f0_193'/>
+     <border  length='451' country='f0_213'/>
+     <border  length='138' country='f0_295'/>
+     <border  length='577' country='f0_325'/>
+     <border  length='456' country='f0_337'/>
+     <border  length='334' country='f0_404'/>
+   </country>
+   <country id='f0_227'      name='Gibraltar'>
+     <border  length='1.2' country='f0_385'/>
+   </country>
+   <country id='f0_232'      name='Greece'>
+     <border  length='282' country='f0_136'/>
+     <border  length='494' country='f0_174'/>
+     <border  length='228' country='f0_300'/>
+     <border  length='206' country='f0_670'/>
+   </country>
+   <country id='f0_239'      name='Guernsey'>
+   </country>
+   <country id='f0_244'      name='Holy See'>
+     <border  length='3.2' country='f0_268'/>
+   </country>
+   <country id='f0_251'      name='Hungary'>
+     <border  length='366' country='f0_149'/>
+     <border  length='329' country='f0_179'/>
+     <border  length='443' country='f0_351'/>
+     <border  length='151' country='f0_370'/>
+     <border  length='515' country='f0_375'/>
+     <border  length='102' country='f0_380'/>
+     <border  length='103' country='f0_411'/>
+   </country>
+   <country id='f0_258'      name='Iceland'>
+   </country>
+   <country id='f0_263'      name='Ireland'>
+   </country>
+   <country id='f0_268'      name='Italy'>
+     <border  length='430' country='f0_149'/>
+     <border  length='488' country='f0_213'/>
+     <border  length='3.2' country='f0_244'/>
+     <border  length='39' country='f0_365'/>
+     <border  length='235' country='f0_380'/>
+     <border  length='740' country='f0_404'/>
+   </country>
+   <country id='f0_275'      name='Jersey'>
+   </country>
+   <country id='f0_280'      name='Latvia'>
+     <border  length='141' country='f0_157'/>
+     <border  length='267' country='f0_198'/>
+     <border  length='453' country='f0_290'/>
+     <border  length='217' country='f0_358'/>
+   </country>
+   <country id='f0_285'      name='Liechtenstein'>
+     <border  length='37' country='f0_149'/>
+     <border  length='41' country='f0_404'/>
+   </country>
+   <country id='f0_290'      name='Lithuania'>
+     <border  length='502' country='f0_157'/>
+     <border  length='453' country='f0_280'/>
+     <border  length='91' country='f0_337'/>
+     <border  length='227' country='f0_358'/>
+   </country>
+   <country id='f0_295'      name='Luxembourg'>
+     <border  length='148' country='f0_162'/>
+     <border  length='73' country='f0_213'/>
+     <border  length='138' country='f0_220'/>
+   </country>
+   <country id='f0_300'      name='Macedonia'>
+     <border  length='151' country='f0_136'/>
+     <border  length='148' country='f0_174'/>
+     <border  length='228' country='f0_232'/>
+     <border  length='221' country='f0_370'/>
+   </country>
+   <country id='f0_305'      name='Malta'>
+   </country>
+   <country id='f0_310'      name='Man'>
+   </country>
+   <country id='f0_315'      name='Moldova'>
+     <border  length='450' country='f0_351'/>
+     <border  length='939' country='f0_411'/>
+   </country>
+   <country id='f0_320'      name='Monaco'>
+     <border  length='4.4' country='f0_213'/>
+   </country>
+   <country id='f0_325'      name='Netherlands'>
+     <border  length='450' country='f0_162'/>
+     <border  length='577' country='f0_220'/>
+   </country>
+   <country id='f0_332'      name='Norway'>
+     <border  length='729' country='f0_208'/>
+     <border  length='1619' country='f0_397'/>
+     <border  length='167' country='f0_358'/>
+   </country>
+   <country id='f0_337'      name='Poland'>
+     <border  length='605' country='f0_157'/>
+     <border  length='658' country='f0_184'/>
+     <border  length='456' country='f0_220'/>
+     <border  length='91' country='f0_290'/>
+     <border  length='444' country='f0_375'/>
+     <border  length='428' country='f0_411'/>
+     <border  length='206' country='f0_358'/>
+   </country>
+   <country id='f0_344'      name='Portugal'>
+     <border  length='1214' country='f0_385'/>
+   </country>
+   <country id='f0_351'      name='Romania'>
+     <border  length='608' country='f0_174'/>
+     <border  length='443' country='f0_251'/>
+     <border  length='450' country='f0_315'/>
+     <border  length='476' country='f0_370'/>
+     <border  length='531' country='f0_411'/>
+   </country>
+   <country id='f0_358'      name='Russia'>
+     <border  length='959' country='f0_157'/>
+     <border  length='290' country='f0_198'/>
+     <border  length='1313' country='f0_208'/>
+     <border  length='217' country='f0_280'/>
+     <border  length='227' country='f0_290'/>
+     <border  length='167' country='f0_332'/>
+     <border  length='206' country='f0_337'/>
+     <border  length='1576' country='f0_411'/>
+     <border  length='284' country='f0_435'/>
+     <border  length='3645' country='f0_475'/>
+     <border  length='723' country='f0_487'/>
+     <border  length='6846' country='f0_538'/>
+     <border  length='19' country='f0_545'/>
+     <border  length='3441' country='f0_592'/>
+   </country>
+   <country id='f0_365'      name='San Marino'>
+     <border  length='39' country='f0_268'/>
+   </country>
+   <country id='f0_370'      name='Serbia and Montenegro'>
+     <border  length='287' country='f0_136'/>
+     <border  length='527' country='f0_169'/>
+     <border  length='318' country='f0_174'/>
+     <border  length='266' country='f0_179'/>
+     <border  length='151' country='f0_251'/>
+     <border  length='221' country='f0_300'/>
+     <border  length='476' country='f0_351'/>
+   </country>
+   <country id='f0_375'      name='Slovakia'>
+     <border  length='91' country='f0_149'/>
+     <border  length='215' country='f0_184'/>
+     <border  length='515' country='f0_251'/>
+     <border  length='444' country='f0_337'/>
+     <border  length='90' country='f0_411'/>
+   </country>
+   <country id='f0_380'      name='Slovenia'>
+     <border  length='324' country='f0_149'/>
+     <border  length='546' country='f0_179'/>
+     <border  length='102' country='f0_251'/>
+     <border  length='235' country='f0_268'/>
+   </country>
+   <country id='f0_385'      name='Spain'>
+     <border  length='65' country='f0_144'/>
+     <border  length='623' country='f0_213'/>
+     <border  length='1.2' country='f0_227'/>
+     <border  length='1214' country='f0_344'/>
+   </country>
+   <country id='f0_392'      name='Svalbard'>
+   </country>
+   <country id='f0_397'      name='Sweden'>
+     <border  length='586' country='f0_208'/>
+     <border  length='1619' country='f0_332'/>
+   </country>
+   <country id='f0_404'      name='Switzerland'>
+     <border  length='164' country='f0_149'/>
+     <border  length='573' country='f0_213'/>
+     <border  length='334' country='f0_220'/>
+     <border  length='740' country='f0_268'/>
+     <border  length='41' country='f0_285'/>
+   </country>
+   <country id='f0_411'      name='Ukraine'>
+     <border  length='891' country='f0_157'/>
+     <border  length='103' country='f0_251'/>
+     <border  length='939' country='f0_315'/>
+     <border  length='428' country='f0_337'/>
+     <border  length='531' country='f0_351'/>
+     <border  length='90' country='f0_375'/>
+     <border  length='1576' country='f0_358'/>
+   </country>
+   <country id='f0_418'      name='United Kingdom'>
+     <border  length='360' country='f0_263'/>
+   </country>
+   <country id='f0_425'      name='Afghanistan'>
+     <border  length='76' country='f0_475'/>
+     <border  length='936' country='f0_505'/>
+     <border  length='2430' country='f0_607'/>
+     <border  length='1206' country='f0_656'/>
+     <border  length='744' country='f0_677'/>
+     <border  length='137' country='f0_693'/>
+   </country>
+   <country id='f0_430'      name='Armenia'>
+     <border  length='164' country='f0_487'/>
+     <border  length='35' country='f0_505'/>
+     <border  length='268' country='f0_670'/>
+   </country>
+   <country id='f0_435'      name='Azerbaijan'>
+     <border  length='787' country='f0_430'/>
+     <border  length='322' country='f0_487'/>
+     <border  length='611' country='f0_505'/>
+     <border  length='284' country='f0_358'/>
+     <border  length='9' country='f0_670'/>
+   </country>
+   <country id='f0_440'      name='Bahrain'>
+   </country>
+   <country id='f0_445'      name='Bangladesh'>
+     <border  length='193' country='f0_461'/>
+     <border  length='4053' country='f0_492'/>
+   </country>
+   <country id='f0_451'      name='Bhutan'>
+     <border  length='470' country='f0_475'/>
+     <border  length='605' country='f0_492'/>
+   </country>
+   <country id='f0_456'      name='Brunei'>
+     <border  length='381' country='f0_585'/>
+   </country>
+   <country id='f0_461'      name='Burma'>
+     <border  length='193' country='f0_445'/>
+     <border  length='2185' country='f0_475'/>
+     <border  length='1463' country='f0_492'/>
+     <border  length='235' country='f0_570'/>
+     <border  length='1800' country='f0_663'/>
+   </country>
+   <country id='f0_470'      name='Cambodia'>
+     <border  length='541' country='f0_570'/>
+     <border  length='803' country='f0_663'/>
+     <border  length='1228' country='f0_700'/>
+   </country>
+   <country id='f0_475'      name='China'>
+     <border  length='76' country='f0_425'/>
+     <border  length='470' country='f0_451'/>
+     <border  length='2185' country='f0_461'/>
+     <border  length='30' country='f0_21203'/>
+     <border  length='3380' country='f0_492'/>
+     <border  length='1533' country='f0_538'/>
+     <border  length='1416' country='f0_545'/>
+     <border  length='858' country='f0_565'/>
+     <border  length='423' country='f0_570'/>
+     <border  length='0.34' country='f0_580'/>
+     <border  length='4673' country='f0_592'/>
+     <border  length='1236' country='f0_597'/>
+     <border  length='523' country='f0_607'/>
+     <border  length='3645' country='f0_358'/>
+     <border  length='414' country='f0_656'/>
+     <border  length='1281' country='f0_700'/>
+   </country>
+   <country id='f0_482'      name='Cyprus'>
+   </country>
+   <country id='f0_487'      name='Georgia'>
+     <border  length='164' country='f0_430'/>
+     <border  length='322' country='f0_435'/>
+     <border  length='723' country='f0_358'/>
+     <border  length='252' country='f0_670'/>
+   </country>
+   <country id='f0_492'      name='India'>
+     <border  length='4053' country='f0_445'/>
+     <border  length='605' country='f0_451'/>
+     <border  length='1463' country='f0_461'/>
+     <border  length='3380' country='f0_475'/>
+     <border  length='1690' country='f0_597'/>
+     <border  length='2912' country='f0_607'/>
+   </country>
+   <country id='f0_499'      name='Indonesia'>
+     <border  length='1782' country='f0_585'/>
+     <border  length='820' country='f0_613'/>
+   </country>
+   <country id='f0_505'      name='Iran'>
+     <border  length='936' country='f0_425'/>
+     <border  length='35' country='f0_430'/>
+     <border  length='1458' country='f0_512'/>
+     <border  length='909' country='f0_607'/>
+     <border  length='499' country='f0_670'/>
+     <border  length='992' country='f0_677'/>
+   </country>
+   <country id='f0_512'      name='Iraq'>
+     <border  length='1458' country='f0_505'/>
+     <border  length='181' country='f0_533'/>
+     <border  length='242' country='f0_560'/>
+     <border  length='814' country='f0_629'/>
+     <border  length='605' country='f0_644'/>
+     <border  length='331' country='f0_670'/>
+   </country>
+   <country id='f0_519'      name='Israel'>
+     <border  length='51' country='f0_21163'/>
+     <border  length='238' country='f0_533'/>
+     <border  length='79' country='f0_575'/>
+     <border  length='76' country='f0_644'/>
+     <border  length='307' country='f0_21840'/>
+     <border  length='255' country='f0_1241'/>
+   </country>
+   <country id='f0_526'      name='Japan'>
+   </country>
+   <country id='f0_533'      name='Jordan'>
+     <border  length='181' country='f0_512'/>
+     <border  length='238' country='f0_519'/>
+     <border  length='728' country='f0_629'/>
+     <border  length='375' country='f0_644'/>
+     <border  length='97' country='f0_21840'/>
+   </country>
+   <country id='f0_538'      name='Kazakstan'>
+     <border  length='1533' country='f0_475'/>
+     <border  length='1051' country='f0_565'/>
+     <border  length='6846' country='f0_358'/>
+     <border  length='379' country='f0_677'/>
+     <border  length='2203' country='f0_693'/>
+   </country>
+   <country id='f0_545'      name='North Korea'>
+     <border  length='1416' country='f0_475'/>
+     <border  length='238' country='f0_553'/>
+     <border  length='19' country='f0_358'/>
+   </country>
+   <country id='f0_553'      name='South Korea'>
+     <border  length='238' country='f0_545'/>
+   </country>
+   <country id='f0_560'      name='Kuwait'>
+     <border  length='242' country='f0_512'/>
+     <border  length='222' country='f0_629'/>
+   </country>
+   <country id='f0_565'      name='Kyrgyzstan'>
+     <border  length='858' country='f0_475'/>
+     <border  length='1051' country='f0_538'/>
+     <border  length='870' country='f0_656'/>
+     <border  length='1099' country='f0_693'/>
+   </country>
+   <country id='f0_570'      name='Laos'>
+     <border  length='235' country='f0_461'/>
+     <border  length='541' country='f0_470'/>
+     <border  length='423' country='f0_475'/>
+     <border  length='1754' country='f0_663'/>
+     <border  length='2130' country='f0_700'/>
+   </country>
+   <country id='f0_575'      name='Lebanon'>
+     <border  length='79' country='f0_519'/>
+     <border  length='375' country='f0_644'/>
+   </country>
+   <country id='f0_580'      name='Macau'>
+     <border  length='0.34' country='f0_475'/>
+   </country>
+   <country id='f0_585'      name='Malaysia'>
+     <border  length='381' country='f0_456'/>
+     <border  length='1782' country='f0_499'/>
+     <border  length='506' country='f0_663'/>
+   </country>
+   <country id='f0_592'      name='Mongolia'>
+     <border  length='4673' country='f0_475'/>
+     <border  length='3441' country='f0_358'/>
+   </country>
+   <country id='f0_597'      name='Nepal'>
+     <border  length='1236' country='f0_475'/>
+     <border  length='1690' country='f0_492'/>
+   </country>
+   <country id='f0_602'      name='Oman'>
+     <border  length='676' country='f0_629'/>
+     <border  length='410' country='f0_684'/>
+     <border  length='288' country='f0_707'/>
+   </country>
+   <country id='f0_607'      name='Pakistan'>
+     <border  length='2430' country='f0_425'/>
+     <border  length='523' country='f0_475'/>
+     <border  length='2912' country='f0_492'/>
+     <border  length='909' country='f0_505'/>
+   </country>
+   <country id='f0_613'      name='Papua New Guinea'>
+     <border  length='820' country='f0_499'/>
+   </country>
+   <country id='f0_618'      name='Philippines'>
+   </country>
+   <country id='f0_624'      name='Qatar'>
+     <border  length='60' country='f0_629'/>
+   </country>
+   <country id='f0_629'      name='Saudi Arabia'>
+     <border  length='814' country='f0_512'/>
+     <border  length='728' country='f0_533'/>
+     <border  length='222' country='f0_560'/>
+     <border  length='676' country='f0_602'/>
+     <border  length='60' country='f0_624'/>
+     <border  length='457' country='f0_684'/>
+     <border  length='1458' country='f0_707'/>
+   </country>
+   <country id='f0_634'      name='Singapore'>
+   </country>
+   <country id='f0_639'      name='Sri Lanka'>
+   </country>
+   <country id='f0_644'      name='Syria'>
+     <border  length='605' country='f0_512'/>
+     <border  length='76' country='f0_519'/>
+     <border  length='375' country='f0_533'/>
+     <border  length='375' country='f0_575'/>
+     <border  length='822' country='f0_670'/>
+   </country>
+   <country id='f0_649'      name='Taiwan'>
+   </country>
+   <country id='f0_656'      name='Tajikistan'>
+     <border  length='1206' country='f0_425'/>
+     <border  length='414' country='f0_475'/>
+     <border  length='870' country='f0_565'/>
+     <border  length='1161' country='f0_693'/>
+   </country>
+   <country id='f0_663'      name='Thailand'>
+     <border  length='1800' country='f0_461'/>
+     <border  length='803' country='f0_470'/>
+     <border  length='1754' country='f0_570'/>
+     <border  length='506' country='f0_585'/>
+   </country>
+   <country id='f0_670'      name='Turkey'>
+     <border  length='240' country='f0_174'/>
+     <border  length='206' country='f0_232'/>
+     <border  length='268' country='f0_430'/>
+     <border  length='9' country='f0_435'/>
+     <border  length='252' country='f0_487'/>
+     <border  length='499' country='f0_505'/>
+     <border  length='331' country='f0_512'/>
+     <border  length='822' country='f0_644'/>
+   </country>
+   <country id='f0_677'      name='Turkmenistan'>
+     <border  length='744' country='f0_425'/>
+     <border  length='992' country='f0_505'/>
+     <border  length='379' country='f0_538'/>
+     <border  length='1621' country='f0_693'/>
+   </country>
+   <country id='f0_684'      name='United Arab Emirates'>
+     <border  length='410' country='f0_602'/>
+     <border  length='457' country='f0_629'/>
+   </country>
+   <country id='f0_693'      name='Uzbekistan'>
+     <border  length='137' country='f0_425'/>
+     <border  length='2203' country='f0_538'/>
+     <border  length='1099' country='f0_565'/>
+     <border  length='1161' country='f0_656'/>
+     <border  length='1621' country='f0_677'/>
+   </country>
+   <country id='f0_700'      name='Vietnam'>
+     <border  length='982' country='f0_470'/>
+     <border  length='1281' country='f0_475'/>
+     <border  length='1555' country='f0_570'/>
+   </country>
+   <country id='f0_707'      name='Yemen'>
+     <border  length='288' country='f0_602'/>
+     <border  length='1458' country='f0_629'/>
+   </country>
+   <country id='f0_723'      name='Anguilla'>
+   </country>
+   <country id='f0_728'      name='Antigua and Barbuda'>
+   </country>
+   <country id='f0_733'      name='Argentina'>
+     <border  length='832' country='f0_760'/>
+     <border  length='1224' country='f0_765'/>
+     <border  length='5150' country='f0_789'/>
+     <border  length='1880' country='f0_915'/>
+     <border  length='579' country='f0_978'/>
+   </country>
+   <country id='f0_740'      name='Aruba'>
+   </country>
+   <country id='f0_745'      name='Bahamas'>
+   </country>
+   <country id='f0_750'      name='Barbados'>
+   </country>
+   <country id='f0_755'      name='Belize'>
+     <border  length='266' country='f0_852'/>
+     <border  length='250' country='f0_885'/>
+   </country>
+   <country id='f0_760'      name='Bolivia'>
+     <border  length='832' country='f0_733'/>
+     <border  length='3400' country='f0_765'/>
+     <border  length='861' country='f0_789'/>
+     <border  length='750' country='f0_915'/>
+     <border  length='900' country='f0_920'/>
+   </country>
+   <country id='f0_765'      name='Brazil'>
+     <border  length='1224' country='f0_733'/>
+     <border  length='3400' country='f0_760'/>
+     <border  length='1643' country='f0_794'/>
+     <border  length='673' country='f0_837'/>
+     <border  length='1119' country='f0_858'/>
+     <border  length='1290' country='f0_915'/>
+     <border  length='1560' country='f0_920'/>
+     <border  length='597' country='f0_952'/>
+     <border  length='985' country='f0_978'/>
+     <border  length='2200' country='f0_983'/>
+   </country>
+   <country id='f0_772'      name='British Virgin Islands'>
+   </country>
+   <country id='f0_777'      name='Canada'>
+     <border  length='8893' country='f0_967'/>
+   </country>
+   <country id='f0_784'      name='Cayman Islands'>
+   </country>
+   <country id='f0_789'      name='Chile'>
+     <border  length='5150' country='f0_733'/>
+     <border  length='861' country='f0_760'/>
+     <border  length='160' country='f0_920'/>
+   </country>
+   <country id='f0_794'      name='Colombia'>
+     <border  length='225' country='f0_908'/>
+     <border  length='1643' country='f0_765'/>
+     <border  length='590' country='f0_825'/>
+     <border  length='2900' country='f0_920'/>
+     <border  length='2050' country='f0_983'/>
+   </country>
+   <country id='f0_801'      name='Costa Rica'>
+     <border  length='309' country='f0_902'/>
+     <border  length='330' country='f0_908'/>
+   </country>
+   <country id='f0_808'      name='Cuba'>
+   </country>
+   <country id='f0_815'      name='Dominica'>
+   </country>
+   <country id='f0_820'      name='Dominican Republic'>
+     <border  length='275' country='f0_863'/>
+   </country>
+   <country id='f0_825'      name='Ecuador'>
+     <border  length='590' country='f0_794'/>
+     <border  length='1420' country='f0_920'/>
+   </country>
+   <country id='f0_830'      name='El Salvador'>
+     <border  length='203' country='f0_852'/>
+     <border  length='342' country='f0_868'/>
+   </country>
+   <country id='f0_837'      name='French Guiana'>
+     <border  length='673' country='f0_765'/>
+     <border  length='510' country='f0_952'/>
+   </country>
+   <country id='f0_842'      name='Grenada'>
+   </country>
+   <country id='f0_847'      name='Guadeloupe'>
+   </country>
+   <country id='f0_852'      name='Guatemala'>
+     <border  length='266' country='f0_755'/>
+     <border  length='203' country='f0_830'/>
+     <border  length='256' country='f0_868'/>
+     <border  length='962' country='f0_885'/>
+   </country>
+   <country id='f0_858'      name='Guyana'>
+     <border  length='1119' country='f0_765'/>
+     <border  length='600' country='f0_952'/>
+     <border  length='743' country='f0_983'/>
+   </country>
+   <country id='f0_863'      name='Haiti'>
+     <border  length='275' country='f0_820'/>
+   </country>
+   <country id='f0_868'      name='Honduras'>
+     <border  length='342' country='f0_830'/>
+     <border  length='256' country='f0_852'/>
+     <border  length='922' country='f0_902'/>
+   </country>
+   <country id='f0_875'      name='Jamaica'>
+   </country>
+   <country id='f0_880'      name='Martinique'>
+   </country>
+   <country id='f0_885'      name='Mexico'>
+     <border  length='250' country='f0_755'/>
+     <border  length='962' country='f0_852'/>
+     <border  length='3326' country='f0_967'/>
+   </country>
+   <country id='f0_892'      name='Montserrat'>
+   </country>
+   <country id='f0_897'      name='Netherlands Antilles'>
+   </country>
+   <country id='f0_902'      name='Nicaragua'>
+     <border  length='309' country='f0_801'/>
+     <border  length='922' country='f0_868'/>
+   </country>
+   <country id='f0_908'      name='Panama'>
+     <border  length='330' country='f0_801'/>
+     <border  length='225' country='f0_794'/>
+   </country>
+   <country id='f0_915'      name='Paraguay'>
+     <border  length='1880' country='f0_733'/>
+     <border  length='750' country='f0_760'/>
+     <border  length='1290' country='f0_765'/>
+   </country>
+   <country id='f0_920'      name='Peru'>
+     <border  length='900' country='f0_760'/>
+     <border  length='1560' country='f0_765'/>
+     <border  length='160' country='f0_789'/>
+     <border  length='2900' country='f0_794'/>
+     <border  length='1420' country='f0_825'/>
+   </country>
+   <country id='f0_927'      name='Puerto Rico'>
+   </country>
+   <country id='f0_932'      name='Saint Kitts and Nevis'>
+   </country>
+   <country id='f0_937'      name='Saint Lucia'>
+   </country>
+   <country id='f0_942'      name='Saint Pierre and Miquelon'>
+   </country>
+   <country id='f0_947'      name='Saint Vincent and the Grenadines'>
+   </country>
+   <country id='f0_952'      name='Suriname'>
+     <border  length='597' country='f0_765'/>
+     <border  length='510' country='f0_837'/>
+     <border  length='600' country='f0_858'/>
+   </country>
+   <country id='f0_957'      name='Trinidad and Tobago'>
+   </country>
+   <country id='f0_962'      name='Turks and Caicos Islands'>
+   </country>
+   <country id='f0_967'      name='United States'>
+     <border  length='8893' country='f0_777'/>
+     <border  length='29' country='f0_808'/>
+     <border  length='3326' country='f0_885'/>
+   </country>
+   <country id='f0_978'      name='Uruguay'>
+     <border  length='579' country='f0_733'/>
+     <border  length='985' country='f0_765'/>
+   </country>
+   <country id='f0_983'      name='Venezuela'>
+     <border  length='2200' country='f0_765'/>
+     <border  length='2050' country='f0_794'/>
+     <border  length='743' country='f0_858'/>
+   </country>
+   <country id='f0_990'      name='Virgin Islands'>
+   </country>
+   <country id='f0_995'      name='American Samoa'>
+   </country>
+   <country id='f0_1000'      name='Australia'>
+   </country>
+   <country id='f0_1007'      name='Bermuda'>
+   </country>
+   <country id='f0_1012'      name='Christmas Island'>
+   </country>
+   <country id='f0_1017'      name='Cocos Islands'>
+   </country>
+   <country id='f0_1022'      name='Cook Islands'>
+   </country>
+   <country id='f0_1027'      name='Falkland Islands'>
+   </country>
+   <country id='f0_1032'      name='Fiji'>
+   </country>
+   <country id='f0_1037'      name='French Polynesia'>
+   </country>
+   <country id='f0_1042'      name='Greenland'>
+   </country>
+   <country id='f0_1047'      name='Guam'>
+   </country>
+   <country id='f0_1052'      name='Kiribati'>
+   </country>
+   <country id='f0_1057'      name='Maldives'>
+   </country>
+   <country id='f0_1062'      name='Marshall Islands'>
+   </country>
+   <country id='f0_1067'      name='Mauritius'>
+   </country>
+   <country id='f0_1072'      name='Micronesia'>
+   </country>
+   <country id='f0_1077'      name='Nauru'>
+   </country>
+   <country id='f0_1082'      name='New Caledonia'>
+   </country>
+   <country id='f0_1087'      name='New Zealand'>
+   </country>
+   <country id='f0_1092'      name='Niue'>
+   </country>
+   <country id='f0_1097'      name='Norfolk Island'>
+   </country>
+   <country id='f0_1102'      name='Northern Mariana Islands'>
+   </country>
+   <country id='f0_1107'      name='Palau'>
+   </country>
+   <country id='f0_1112'      name='Pitcairn Islands'>
+   </country>
+   <country id='f0_1117'      name='Reunion'>
+   </country>
+   <country id='f0_1122'      name='Saint Helena'>
+   </country>
+   <country id='f0_1127'      name='Seychelles'>
+   </country>
+   <country id='f0_1132'      name='Solomon Islands'>
+   </country>
+   <country id='f0_1141'      name='Tonga'>
+   </country>
+   <country id='f0_1146'      name='Tuvalu'>
+   </country>
+   <country id='f0_1151'      name='Vanuatu'>
+   </country>
+   <country id='f0_1156'      name='Wallis and Futuna'>
+   </country>
+   <country id='f0_1161'      name='Western Samoa'>
+   </country>
+   <country id='f0_1166'      name='Algeria'>
+     <border  length='982' country='f0_1302'/>
+     <border  length='1376' country='f0_1319'/>
+     <border  length='463' country='f0_1324'/>
+     <border  length='1559' country='f0_1334'/>
+     <border  length='956' country='f0_1353'/>
+     <border  length='965' country='f0_1427'/>
+     <border  length='42' country='f0_1437'/>
+   </country>
+   <country id='f0_1172'      name='Angola'>
+     <border  length='201' country='f0_1226'/>
+     <border  length='1376' country='f0_1348'/>
+     <border  length='2511' country='f0_1441'/>
+     <border  length='1110' country='f0_1448'/>
+   </country>
+   <country id='f0_1179'      name='Benin'>
+     <border  length='306' country='f0_1189'/>
+     <border  length='266' country='f0_1353'/>
+     <border  length='773' country='f0_1358'/>
+     <border  length='644' country='f0_1422'/>
+   </country>
+   <country id='f0_1184'      name='Botswana'>
+     <border  length='1360' country='f0_1348'/>
+     <border  length='1840' country='f0_1391'/>
+     <border  length='813' country='f0_1455'/>
+   </country>
+   <country id='f0_1189'      name='Burkina Faso'>
+     <border  length='306' country='f0_1179'/>
+     <border  length='584' country='f0_1231'/>
+     <border  length='548' country='f0_1269'/>
+     <border  length='1000' country='f0_1319'/>
+     <border  length='628' country='f0_1353'/>
+     <border  length='126' country='f0_1422'/>
+   </country>
+   <country id='f0_1194'      name='Burundi'>
+     <border  length='290' country='f0_1364'/>
+     <border  length='451' country='f0_1410'/>
+     <border  length='233' country='f0_1441'/>
+   </country>
+   <country id='f0_1199'      name='Cameroon'>
+     <border  length='797' country='f0_1211'/>
+     <border  length='1094' country='f0_1216'/>
+     <border  length='523' country='f0_1226'/>
+     <border  length='189' country='f0_1248'/>
+     <border  length='298' country='f0_1264'/>
+     <border  length='1690' country='f0_1358'/>
+   </country>
+   <country id='f0_1206'      name='Cape Verde'>
+   </country>
+   <country id='f0_1211'      name='Central African Republic'>
+     <border  length='797' country='f0_1199'/>
+     <border  length='1197' country='f0_1216'/>
+     <border  length='467' country='f0_1226'/>
+     <border  length='1165' country='f0_1398'/>
+     <border  length='1577' country='f0_1441'/>
+   </country>
+   <country id='f0_1216'      name='Chad'>
+     <border  length='1094' country='f0_1199'/>
+     <border  length='1197' country='f0_1211'/>
+     <border  length='1055' country='f0_1302'/>
+     <border  length='1175' country='f0_1353'/>
+     <border  length='87' country='f0_1358'/>
+     <border  length='1360' country='f0_1398'/>
+   </country>
+   <country id='f0_1221'      name='Comoros'>
+   </country>
+   <country id='f0_1226'      name='Congo'>
+     <border  length='201' country='f0_1172'/>
+     <border  length='523' country='f0_1199'/>
+     <border  length='467' country='f0_1211'/>
+     <border  length='1903' country='f0_1264'/>
+     <border  length='2410' country='f0_1441'/>
+   </country>
+   <country id='f0_1231'      name='Cote dIvoire'>
+     <border  length='584' country='f0_1189'/>
+     <border  length='668' country='f0_1269'/>
+     <border  length='610' country='f0_1275'/>
+     <border  length='716' country='f0_1297'/>
+     <border  length='532' country='f0_1319'/>
+   </country>
+   <country id='f0_1236'      name='Djibouti'>
+     <border  length='113' country='f0_1253'/>
+     <border  length='337' country='f0_1258'/>
+     <border  length='58' country='f0_1386'/>
+   </country>
+   <country id='f0_1241'      name='Egypt'>
+     <border  length='11' country='f0_21163'/>
+     <border  length='255' country='f0_519'/>
+     <border  length='1150' country='f0_1302'/>
+     <border  length='1273' country='f0_1398'/>
+   </country>
+   <country id='f0_1248'      name='Equatorial Guinea'>
+     <border  length='189' country='f0_1199'/>
+     <border  length='350' country='f0_1264'/>
+   </country>
+   <country id='f0_1253'      name='Eritrea'>
+     <border  length='113' country='f0_1236'/>
+     <border  length='912' country='f0_1258'/>
+     <border  length='605' country='f0_1398'/>
+   </country>
+   <country id='f0_1258'      name='Ethiopia'>
+     <border  length='337' country='f0_1236'/>
+     <border  length='912' country='f0_1253'/>
+     <border  length='830' country='f0_1285'/>
+     <border  length='1626' country='f0_1386'/>
+     <border  length='1606' country='f0_1398'/>
+   </country>
+   <country id='f0_1264'      name='Gabon'>
+     <border  length='298' country='f0_1199'/>
+     <border  length='1903' country='f0_1226'/>
+     <border  length='350' country='f0_1248'/>
+   </country>
+   <country id='f0_1269'      name='Ghana'>
+     <border  length='548' country='f0_1189'/>
+     <border  length='668' country='f0_1231'/>
+     <border  length='877' country='f0_1422'/>
+   </country>
+   <country id='f0_1275'      name='Guinea'>
+     <border  length='610' country='f0_1231'/>
+     <border  length='386' country='f0_1280'/>
+     <border  length='563' country='f0_1297'/>
+     <border  length='858' country='f0_1319'/>
+     <border  length='330' country='f0_1374'/>
+     <border  length='652' country='f0_1381'/>
+   </country>
+   <country id='f0_1280'      name='Guinea-Bissau'>
+     <border  length='386' country='f0_1275'/>
+     <border  length='338' country='f0_1374'/>
+   </country>
+   <country id='f0_1285'      name='Kenya'>
+     <border  length='830' country='f0_1258'/>
+     <border  length='682' country='f0_1386'/>
+     <border  length='232' country='f0_1398'/>
+     <border  length='769' country='f0_1410'/>
+     <border  length='933' country='f0_1432'/>
+   </country>
+   <country id='f0_1292'      name='Lesotho'>
+     <border  length='909' country='f0_1391'/>
+   </country>
+   <country id='f0_1297'      name='Liberia'>
+     <border  length='716' country='f0_1231'/>
+     <border  length='563' country='f0_1275'/>
+     <border  length='306' country='f0_1381'/>
+   </country>
+   <country id='f0_1302'      name='Libya'>
+     <border  length='982' country='f0_1166'/>
+     <border  length='1055' country='f0_1216'/>
+     <border  length='1150' country='f0_1241'/>
+     <border  length='354' country='f0_1353'/>
+     <border  length='383' country='f0_1398'/>
+     <border  length='459' country='f0_1427'/>
+   </country>
+   <country id='f0_1307'      name='Madagascar'>
+   </country>
+   <country id='f0_1314'      name='Malawi'>
+     <border  length='1569' country='f0_1341'/>
+     <border  length='475' country='f0_1410'/>
+     <border  length='837' country='f0_1448'/>
+   </country>
+   <country id='f0_1319'      name='Mali'>
+     <border  length='1376' country='f0_1166'/>
+     <border  length='1000' country='f0_1189'/>
+     <border  length='532' country='f0_1231'/>
+     <border  length='858' country='f0_1275'/>
+     <border  length='2237' country='f0_1324'/>
+     <border  length='821' country='f0_1353'/>
+     <border  length='419' country='f0_1374'/>
+   </country>
+   <country id='f0_1324'      name='Mauritania'>
+     <border  length='463' country='f0_1166'/>
+     <border  length='2237' country='f0_1319'/>
+     <border  length='813' country='f0_1374'/>
+     <border  length='1561' country='f0_1437'/>
+   </country>
+   <country id='f0_1329'      name='Mayotte'>
+   </country>
+   <country id='f0_1334'      name='Morocco'>
+     <border  length='1559' country='f0_1166'/>
+     <border  length='443' country='f0_1437'/>
+   </country>
+   <country id='f0_1341'      name='Mozambique'>
+     <border  length='1569' country='f0_1314'/>
+     <border  length='491' country='f0_1391'/>
+     <border  length='105' country='f0_1405'/>
+     <border  length='756' country='f0_1410'/>
+     <border  length='419' country='f0_1448'/>
+     <border  length='1231' country='f0_1455'/>
+   </country>
+   <country id='f0_1348'      name='Namibia'>
+     <border  length='1376' country='f0_1172'/>
+     <border  length='1360' country='f0_1184'/>
+     <border  length='855' country='f0_1391'/>
+     <border  length='233' country='f0_1448'/>
+   </country>
+   <country id='f0_1353'      name='Niger'>
+     <border  length='956' country='f0_1166'/>
+     <border  length='266' country='f0_1179'/>
+     <border  length='628' country='f0_1189'/>
+     <border  length='1175' country='f0_1216'/>
+     <border  length='354' country='f0_1302'/>
+     <border  length='821' country='f0_1319'/>
+     <border  length='1497' country='f0_1358'/>
+   </country>
+   <country id='f0_1358'      name='Nigeria'>
+     <border  length='773' country='f0_1179'/>
+     <border  length='1690' country='f0_1199'/>
+     <border  length='87' country='f0_1216'/>
+     <border  length='1497' country='f0_1353'/>
+   </country>
+   <country id='f0_1364'      name='Rwanda'>
+     <border  length='290' country='f0_1194'/>
+     <border  length='217' country='f0_1410'/>
+     <border  length='169' country='f0_1432'/>
+     <border  length='217' country='f0_1441'/>
+   </country>
+   <country id='f0_1369'      name='Sao Tome and Principe'>
+   </country>
+   <country id='f0_1374'      name='Senegal'>
+     <border  length='740' country='f0_1417'/>
+     <border  length='330' country='f0_1275'/>
+     <border  length='338' country='f0_1280'/>
+     <border  length='419' country='f0_1319'/>
+     <border  length='813' country='f0_1324'/>
+   </country>
+   <country id='f0_1381'      name='Sierra Leone'>
+     <border  length='652' country='f0_1275'/>
+     <border  length='306' country='f0_1297'/>
+   </country>
+   <country id='f0_1386'      name='Somalia'>
+     <border  length='58' country='f0_1236'/>
+     <border  length='1626' country='f0_1258'/>
+     <border  length='682' country='f0_1285'/>
+   </country>
+   <country id='f0_1391'      name='South Africa'>
+     <border  length='1840' country='f0_1184'/>
+     <border  length='909' country='f0_1292'/>
+     <border  length='491' country='f0_1341'/>
+     <border  length='855' country='f0_1348'/>
+     <border  length='430' country='f0_1405'/>
+     <border  length='225' country='f0_1455'/>
+   </country>
+   <country id='f0_1398'      name='Sudan'>
+     <border  length='1165' country='f0_1211'/>
+     <border  length='1360' country='f0_1216'/>
+     <border  length='1273' country='f0_1241'/>
+     <border  length='605' country='f0_1253'/>
+     <border  length='1606' country='f0_1258'/>
+     <border  length='232' country='f0_1285'/>
+     <border  length='383' country='f0_1302'/>
+     <border  length='435' country='f0_1432'/>
+     <border  length='628' country='f0_1441'/>
+   </country>
+   <country id='f0_1405'      name='Swaziland'>
+     <border  length='105' country='f0_1341'/>
+     <border  length='430' country='f0_1391'/>
+   </country>
+   <country id='f0_1410'      name='Tanzania'>
+     <border  length='451' country='f0_1194'/>
+     <border  length='769' country='f0_1285'/>
+     <border  length='475' country='f0_1314'/>
+     <border  length='756' country='f0_1341'/>
+     <border  length='217' country='f0_1364'/>
+     <border  length='396' country='f0_1432'/>
+     <border  length='338' country='f0_1448'/>
+   </country>
+   <country id='f0_1417'      name='Gambia'>
+     <border  length='740' country='f0_1374'/>
+   </country>
+   <country id='f0_1422'      name='Togo'>
+     <border  length='644' country='f0_1179'/>
+     <border  length='126' country='f0_1189'/>
+     <border  length='877' country='f0_1269'/>
+   </country>
+   <country id='f0_1427'      name='Tunisia'>
+     <border  length='965' country='f0_1166'/>
+     <border  length='459' country='f0_1302'/>
+   </country>
+   <country id='f0_1432'      name='Uganda'>
+     <border  length='933' country='f0_1285'/>
+     <border  length='169' country='f0_1364'/>
+     <border  length='435' country='f0_1398'/>
+     <border  length='396' country='f0_1410'/>
+     <border  length='765' country='f0_1441'/>
+   </country>
+   <country id='f0_1437'      name='Western Sahara'>
+     <border  length='42' country='f0_1166'/>
+     <border  length='1561' country='f0_1324'/>
+     <border  length='443' country='f0_1334'/>
+   </country>
+   <country id='f0_1441'      name='Zaire'>
+     <border  length='2511' country='f0_1172'/>
+     <border  length='233' country='f0_1194'/>
+     <border  length='1577' country='f0_1211'/>
+     <border  length='2410' country='f0_1226'/>
+     <border  length='217' country='f0_1364'/>
+     <border  length='628' country='f0_1398'/>
+     <border  length='765' country='f0_1432'/>
+     <border  length='1930' country='f0_1448'/>
+   </country>
+   <country id='f0_1448'      name='Zambia'>
+     <border  length='1110' country='f0_1172'/>
+     <border  length='837' country='f0_1314'/>
+     <border  length='419' country='f0_1341'/>
+     <border  length='233' country='f0_1348'/>
+     <border  length='338' country='f0_1410'/>
+     <border  length='1930' country='f0_1441'/>
+     <border  length='797' country='f0_1455'/>
+   </country>
+   <country id='f0_1455'      name='Zimbabwe'>
+     <border  length='813' country='f0_1184'/>
+     <border  length='1231' country='f0_1341'/>
+     <border  length='225' country='f0_1391'/>
+     <border  length='797' country='f0_1448'/>
+   </country>
+ </mondial>
+
