@@ -1,14 +1,14 @@
 debug/
 Debug/
-.project
-.cproject
-.settings
-.DS_Store
+*.project
+*.cproject
+*.settings
+*.DS_Store
 *.xcodeproj/
-.vcxproj
-.filters
-.sdf
-.sln
-.opensdf
-.suo
+*.vcxproj
+*.filters
+*.sdf
+*.sln
+*.opensdf
+*.suo
 
