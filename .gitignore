@@ -5,3 +5,8 @@ Debug/
 .settings
 .DS_Store
 *.xcodeproj/
+.vcxproj
+.filters
+.sdf
+.sln
+
