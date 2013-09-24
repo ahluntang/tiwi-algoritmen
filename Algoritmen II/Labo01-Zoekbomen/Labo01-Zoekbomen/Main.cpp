@@ -16,7 +16,7 @@ int main(){
 
 	cout << b << endl;
 
-// cout << *b.zoekdata(20) << endl;
+	cout << *(b.zoekdata(20)) << endl;
 
 	cout << endl;
 
