@@ -6,10 +6,13 @@
 
 #include <iostream>
 #include "exhash.h"
+#include "cstring.h"
 #include <limits>
+#include <string>
 using std::ostream;
 using std::cout;
 using std::endl;
+using std::string;
 
 int main()
 {
@@ -39,14 +42,24 @@ int main()
      cout << *rechts;
      */
     
-    Exhash<unsigned int, double> h;
-    for(int i = 0 ; i < 9; i++)
-    {
-        h.voegtoe(i, 1);
-        cout << h << endl;
-    }
-    cout << h;
+    srand(time(NULL));
     
+    Exhash<cstring, double> h;
+    for(int i = 0 ; i < 1200; i++)
+    {
+        int antl = rand() % 100;
+        char randomstr[antl] ;
+        for (int j =0; j<antl; j++) {
+            randomstr[j] = rand() % (255 * 255);
+        }
+        
+        string str = randomstr;
+        cstring s(str);
+        h.voegtoe(s, i);
+        //cout << h << endl;
+     }
+    cout << h;
+    cout<< endl << "done";
     
     return 0;
 }

@@ -33,7 +33,7 @@ class Exhash;
  */
 const unsigned int EEN=1;
 const int AANTBITS=sizeof(unsigned int)*8;
-const int PAGINAGROOTTE=8;
+const int PAGINAGROOTTE=32;
 template <class T,class D>
 class Schijfpagina{
     //static const unsigned int EEN;
@@ -57,7 +57,7 @@ private:
     };
     
     friend ostream& operator<<(ostream& os,knoop& k){
-        os << k.sleutel;
+        os << k.data;
         return os;
     };
     //we werken hier rechtstreeks; andere oplossing zou zijn een tabel
@@ -67,6 +67,19 @@ private:
         return aantalBitsInHashwaarde;
     }
     Schijfpagina():index(0),aantalBitsInHashwaarde(0),aantalKnopen(0){
+        /*cout<<"--startconstructor--"<<endl;
+        for (int i=0; i<aantalKnopen; i++)
+        {
+            cout << kn[i] << " ";
+        }
+        for (int i=aantalKnopen;i<PAGINAGROOTTE;i++)
+        {
+            cout << "-" << " ";
+            
+        }
+        cout << endl;
+        
+        cout<<"--eindconstructor--"<<endl;*/
     }
     
     void schrijf(ostream& os)
@@ -77,7 +90,7 @@ private:
         }
         for (int i=aantalKnopen;i<PAGINAGROOTTE;i++)
         {
-            cout << "-" << " ";
+            os << "-" << " ";
             
         }
         os << endl;
@@ -100,7 +113,7 @@ private:
 
         while(startEindigenOpEen < aantalKnopen && eindigdNietOpEen)
         {
-            eindigdNietOpEen = ((kn[startEindigenOpEen].sleutel & mask) == 0);
+            eindigdNietOpEen = ((kn[startEindigenOpEen].sleutel.geef_exhashindex() & mask) == 0);
             if(aantalKnopen > 0 &&  eindigdNietOpEen)
             {
                 startEindigenOpEen++;

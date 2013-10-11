@@ -23,11 +23,19 @@ class Exhash{
     
     void schrijf(ostream& os)
     {
-        
+        Schijfpagina<T, D> * laatste = 0;
+        int aantalvorige= 0;
         for (int i=0; i<grootte; i++)
         {
-            os << "pagina " << i << ":" << endl;
-            os << (*tab)[i];
+            if(tab[i] == laatste){
+                aantalvorige++;
+            } else {
+                os << "aantal:" << aantalvorige <<endl;
+                os << "pagina " << i << ":" << endl;
+                os << *(tab[i]);
+                aantalvorige = 1;
+                laatste = tab[i];
+            }
         }
         os << endl;
     }
@@ -52,8 +60,8 @@ private: unsigned int index(const T& sleutel) const{
     if (maxk==0)//computer weigert 32 plaatsen shift
         return 0;
     else{
-        //unsigned int q=sleutel.geef_exhashindex();
-        unsigned int q=sleutel;
+        unsigned int q=sleutel.geef_exhashindex();
+        //unsigned int q=sleutel;
         return (q>>(AANTBITS-maxk));
     }
 };
@@ -71,17 +79,25 @@ private: void verdubbel()
         tab = tempTab;
         delete teVerwijderenTab;
         grootte *= 2;
+        maxk++;
+
     }
     
 public:
     void voegtoe(const T& sleutel,const D& data)
     {
         unsigned int gevondenIndex = index(sleutel);
+        cout << gevondenIndex << endl;
         Schijfpagina<T,D>  * gevondenPagina = tab[gevondenIndex];
         if(gevondenPagina->aantalKnopen == PAGINAGROOTTE)
         {
             Schijfpagina<T,D> * rechts = new Schijfpagina<T,D>();
+            //cout<<"gevonden: voor splitsen:";
+            //cout<<*rechts<<endl;
             gevondenPagina->splits(rechts);
+            
+            //cout<<"gevonden: na splitsen:";
+            //cout<<*rechts<<endl;
             if (maxk < gevondenPagina->aantalBitsInHashwaarde)
             {
                 verdubbel();
@@ -90,6 +106,8 @@ public:
             tab[gevondenIndex+1]  = rechts;
             
             voegtoe(sleutel, data);
+            
+            //cout<< *tab[gevondenIndex+1]<<endl;
         }
         gevondenPagina->voegtoe(sleutel, data);
         
