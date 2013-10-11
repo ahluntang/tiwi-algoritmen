@@ -114,7 +114,14 @@ public:
     }
     
     // verwijder: lege pagina's blijven bestaan.
-public: void verwijder(const T& sleutel);
+public: void verwijder(const T& sleutel){
+    unsigned int gevondenIndex = index(sleutel);
+    cout << gevondenIndex << endl;
+    Schijfpagina<T,D>  * gevondenPagina = tab[gevondenIndex];
+    cout<<"pagina " << gevondenIndex << " voor verwijderen:" << *gevondenPagina << endl;
+    gevondenPagina->verwijder(sleutel);
+    cout<<"pagina " << gevondenIndex << " na verwijderen:" << *gevondenPagina << endl;
+}
     
 public: D* zoekData(const T& sleutel);
 };

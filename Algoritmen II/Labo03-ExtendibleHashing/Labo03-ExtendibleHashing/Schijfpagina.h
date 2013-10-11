@@ -33,7 +33,7 @@ class Exhash;
  */
 const unsigned int EEN=1;
 const int AANTBITS=sizeof(unsigned int)*8;
-const int PAGINAGROOTTE=32;
+const int PAGINAGROOTTE=8;
 template <class T,class D>
 class Schijfpagina{
     //static const unsigned int EEN;

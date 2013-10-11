@@ -45,7 +45,9 @@ int main()
     srand(time(NULL));
     
     Exhash<cstring, double> h;
-    for(int i = 0 ; i < 1200; i++)
+    
+    string teverwijderen;
+    for(int i = 0 ; i < 100; i++)
     {
         int antl = rand() % 100;
         char randomstr[antl] ;
@@ -54,11 +56,14 @@ int main()
         }
         
         string str = randomstr;
+        teverwijderen = str;
         cstring s(str);
         h.voegtoe(s, i);
         //cout << h << endl;
      }
     cout << h;
+    cout<<"te verwijderen: "<< teverwijderen;
+    h.verwijder(teverwijderen);
     cout<< endl << "done";
     
     return 0;
