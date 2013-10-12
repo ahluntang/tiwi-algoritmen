@@ -47,22 +47,24 @@ int main()
     Exhash<cstring, double> h;
     
     string teverwijderen;
-    for(int i = 0 ; i < 100; i++)
+    string str = "a";
+    for(int i = 0 ; i < 12000; i++)
     {
-        int antl = rand() % 100;
+        /*int antl = rand() % 100;
         char randomstr[antl] ;
         for (int j =0; j<antl; j++) {
             randomstr[j] = rand() % (255 * 255);
-        }
+        }*/
         
-        string str = randomstr;
+        str += (char) 65 + (rand() % 26) ;
+        
+        //string str = randomstr;
         teverwijderen = str;
         cstring s(str);
         h.voegtoe(s, i);
         //cout << h << endl;
      }
     cout << h;
-    cout<<"te verwijderen: "<< teverwijderen;
     h.verwijder(teverwijderen);
     cout<< endl << "done";
     

@@ -86,8 +86,10 @@ private: void verdubbel()
 public:
     void voegtoe(const T& sleutel,const D& data)
     {
+        
         unsigned int gevondenIndex = index(sleutel);
-        cout << gevondenIndex << endl;
+        //cout << gevondenIndex << endl;
+        //cout << &sleutel << endl;
         Schijfpagina<T,D>  * gevondenPagina = tab[gevondenIndex];
         if(gevondenPagina->aantalKnopen == PAGINAGROOTTE)
         {

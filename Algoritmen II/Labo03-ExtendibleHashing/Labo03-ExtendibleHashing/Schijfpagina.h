@@ -57,7 +57,7 @@ private:
     };
     
     friend ostream& operator<<(ostream& os,knoop& k){
-        os << k.data;
+        os << k.sleutel;
         return os;
     };
     //we werken hier rechtstreeks; andere oplossing zou zijn een tabel
@@ -108,8 +108,8 @@ private:
         bool eindigdNietOpEen = true;
 
         unsigned int mask = 1;
-        mask = 1 << (AANTBITS - aantalBitsInHashwaarde - 1);
-        //cout << mask << endl;
+        mask = 1 << (AANTBITS - aantalBitsInHashwaarde -1);
+        cout << "mask: " << mask << endl;
 
         while(startEindigenOpEen < aantalKnopen && eindigdNietOpEen)
         {
@@ -126,7 +126,7 @@ private:
             eenbit->voegtoe(kn[i].sleutel, kn[i].data);
         }
         
-        aantalKnopen -= (aantalKnopen - startEindigenOpEen);
+        aantalKnopen = (startEindigenOpEen);
         
     }
     

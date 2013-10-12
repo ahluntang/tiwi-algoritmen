@@ -33,7 +33,7 @@ public:
     
     cstring(){}
     
-    friend ostream& operator<<(ostream& os,cstring & cstr){
+    friend ostream& operator<<(ostream& os,const cstring & cstr){
         os << cstr.s;
         return os;
     };
