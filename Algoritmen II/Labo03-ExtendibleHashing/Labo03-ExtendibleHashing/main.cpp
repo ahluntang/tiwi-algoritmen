@@ -48,7 +48,7 @@ int main()
     
     string teverwijderen;
     string str = "a";
-    for(int i = 0 ; i < 12000; i++)
+    for(int i = 0 ; i < 100; i++)
     {
         /*int antl = rand() % 100;
         char randomstr[antl] ;
