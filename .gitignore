@@ -1,5 +1,6 @@
 debug/
 Debug/
+*.out
 *.1
 *.project
 *.cproject
@@ -12,4 +13,4 @@ Debug/
 *.sln
 *.opensdf
 *.suo
-
+*.csv
