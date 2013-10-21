@@ -49,7 +49,7 @@ int main()
     aantal = 0;
     
     cout << "overloop coord van spiraal 2 en vergelijk afstanden met spiraal 1" << endl;
-    int min = INT_MAX;
+    double min = 10000000;
     for (int i = 0; i < 29000; i++) {
         if (i == 4407 || i == 18407)
             continue;
