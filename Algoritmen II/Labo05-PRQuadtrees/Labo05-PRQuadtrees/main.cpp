@@ -40,28 +40,46 @@ int main()
         
         int x = (1000000-5*i)* cos(i*0.23*M_PI);
         int y =  (1000000-5*i)* sin(i*0.23*M_PI);
-        cout << "(" << x << "," << y << ")" << endl;
+        //cout << "(" << x << "," << y << ")" << endl;
         spiraal1.voegtoe( x, y );
         
-        diepte_spiraal1.push_back(spiraal1.geefaantalknopen());
+        //diepte_spiraal1.push_back(spiraal1.geefaantalknopen());
     }
     
     aantal = 0;
+    
+    cout << "overloop coord van spiraal 2 en vergelijk afstanden met spiraal 1" << endl;
+    int min = INT_MAX;
     for (int i = 0; i < 29000; i++) {
+        if (i == 4407 || i == 18407)
+            continue;
         
         int x = (1000007-3*i)* cos(i*0.27*M_PI);
         int y = (1000007-3*i)* sin(i*0.27*M_PI);
-        cout << "(" << x << "," << y << ")" << endl;
-        spiraal2.voegtoe( x, y );
+        //cout << "(" << x << "," << y << ")" << endl;
+        //spiraal2.voegtoe( x, y );
+        pair<int,int> * loc = spiraal1.zoek(x, y);
+        if (loc == 0){
+            //cout<<"ERROR, blad niet gevonden!!!"<< endl;
+        } else {
+            int x2 = loc->first;
+            int y2 = loc->second;
+            double afstand;
+            afstand = sqrt( (x-x2)*(x-x2) + (y-y2)*(y-y2) );
+            if (afstand < min)
+                min = afstand;
+        }
+        delete loc;
         
-        diepte_spiraal2.push_back(spiraal2.geefaantalknopen());
+        //diepte_spiraal2.push_back(spiraal2.geefaantalknopen());
     }
     
+    cout<< min << endl;
     
-	grafiek_spiraal1.voegDataToe(diepte_spiraal1);
-	grafiek_spiraal2.voegDataToe(diepte_spiraal2);
-
-    cout << "Hello World!" << endl;
+	//grafiek_spiraal1.voegDataToe(diepte_spiraal1);
+	//grafiek_spiraal2.voegDataToe(diepte_spiraal2);
+    
+    
     return 0;
 }
 

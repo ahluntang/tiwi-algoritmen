@@ -33,15 +33,6 @@ private:
 };
 
 class PRquadtree{
-public:
-    PRquadtree(int _maxcoordinaat):maxcoordinaat(_maxcoordinaat),k(0),aantalknopen(0),aantalpunten(0){};
-    //voegtoe veronderstelt dat het punt in het gebied ligt.
-    void voegtoe(int x,int y);
-    void print(){
-        Knoop** huidig = &k;
-    }
-    int geefaantalknopen();
-    int geefaantalpunten();
 protected:
     class Knoop{
     public:
@@ -71,6 +62,16 @@ protected:
     int aantalknopen;
     int aantalpunten;
     Knoop* k;
+public:
+    PRquadtree(int _maxcoordinaat):maxcoordinaat(_maxcoordinaat),k(0),aantalknopen(0),aantalpunten(0){};
+    //voegtoe veronderstelt dat het punt in het gebied ligt.
+    void voegtoe(int x, int y);
+    std::pair<int,int> * zoek(int x, int y);
+    void print(){
+        Knoop** huidig = &k;
+    }
+    int geefaantalknopen();
+    int geefaantalpunten();
     
 };
 const int PRquadtree::Nietblad::OOST=OOST;
@@ -78,6 +79,13 @@ const int PRquadtree::Nietblad::WEST=WEST;
 const int PRquadtree::Nietblad::NOORD=NOORD;
 const int PRquadtree::Nietblad::ZUID=ZUID;
 
+
+/**
+ * voegt coordinaten toe aan PRQuadtree
+ * maakt extra knopen aan tot een nieuw blad.
+ * @param int x x-abscis
+ * @param int y ordinaat
+ */
 void PRquadtree::voegtoe(int x, int y){
     if (x > maxcoordinaat || x < -maxcoordinaat || y > maxcoordinaat || y < -maxcoordinaat) {
         return;
@@ -109,6 +117,40 @@ int PRquadtree::geefaantalknopen(){
 int PRquadtree::geefaantalpunten(){
     return aantalpunten;
 }
+
+
+/**
+ * @param int x abscis
+ * @param int y ordinaat
+ * @param pair<int,int> coordinaat van (dichtsbijzijnd) gevonden blad.
+ */
+std::pair<int,int>* PRquadtree::zoek(int x, int y){
+    
+    if (x > maxcoordinaat || x < -maxcoordinaat || y > maxcoordinaat || y < -maxcoordinaat) {
+        return 0;
+    }
+    
+    Gebied g(maxcoordinaat);
+    
+    Knoop** huidig=&k;
+    
+    while(*huidig != 0 && ! (*huidig)->isblad()){
+        huidig = &(((Nietblad*) *huidig)->kind[g.geefKwadrant(x,y)]);
+        g.maakdeelgebied(x,y);
+    }
+    // geen blad gevonden :o
+    if (*huidig == 0){
+        return 0;
+    } else {
+        Blad* blad =(Blad*) *huidig;
+        std::pair<int,int> *loc = new std::pair<int,int>;
+        loc->first = blad->x;
+        loc->second = blad->y;
+        return loc;
+    }
+}
+
+
 
 #endif
 
