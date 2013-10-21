@@ -34,12 +34,14 @@ private:
 
 class PRquadtree{
 public:
-    PRquadtree(int _maxcoordinaat):maxcoordinaat(_maxcoordinaat),k(0){};
+    PRquadtree(int _maxcoordinaat):maxcoordinaat(_maxcoordinaat),k(0),aantalknopen(0),aantalpunten(0){};
     //voegtoe veronderstelt dat het punt in het gebied ligt.
     void voegtoe(int x,int y);
     void print(){
         Knoop** huidig = &k;
     }
+    int geefaantalknopen();
+    int geefaantalpunten();
 protected:
     class Knoop{
     public:
@@ -66,6 +68,8 @@ protected:
         //leeg gebied: nulpointer
     };
     const int maxcoordinaat;//wordt opgegeven in constructor;
+    int aantalknopen;
+    int aantalpunten;
     Knoop* k;
     
 };
@@ -87,17 +91,24 @@ void PRquadtree::voegtoe(int x, int y){
             if (x == blad->x && y == blad->y){
                 return;
             }
+            aantalknopen++;
             *huidig = new Nietblad();
             ((Nietblad*) *huidig)->kind[g.geefKwadrant(blad->x,blad->y)] = blad;
         }
         huidig = &(((Nietblad*) *huidig)->kind[g.geefKwadrant(x,y)]);
         g.maakdeelgebied(x,y);
     }
-    
+    aantalknopen++;
+    aantalpunten++;
     *huidig=new Blad(x,y);
 }
 
-
+int PRquadtree::geefaantalknopen(){
+    return aantalknopen;
+}
+int PRquadtree::geefaantalpunten(){
+    return aantalpunten;
+}
 
 #endif
 
