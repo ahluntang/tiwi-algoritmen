@@ -59,6 +59,37 @@ DeBruijnreeks<T>::DeBruijnreeks(int N,int M){ // N= orde , M=alfabet
     // als alle verbindingen van een knoop overlopen zijn, knoop markeren als behandeld
     // volgende niet-behandelde knoop (waarvan verbindingen nog niet bezocht zijn) nemen en herhalen.
     
+    // initialisatie
+    bool knoop_behandeld[g.aantalKnopen()];
+    for(int i = 0; i < g.aantalKnopen(); i++){
+        knoop_behandeld[i] = false;
+    }
+    /*bool verbinding_bezocht[g.aantalVerbindingen()];
+    for(int i = 0; i < g.aantalVerbindingen(); i++){
+        verbinding_bezocht[i] = false;
+    }*/
+    std::map<int, bool> verbinding_bezocht;
+    
+    // knopen overlopen
+    for(int i = 0; i < g.aantalKnopen(); i++){
+        if(!knoop_behandeld[i]){
+            // alle verbindingen van knoop i overlopen.
+            std::map<int, int> knoop = g[i]; // knoop: sleutel buurnr ; value: verbindingsnummer
+            for(std::map<int, int>::const_iterator it = knoop.begin(); it != knoop.end(); it++){
+                if (verbinding_bezocht.count(it->second) == 0){ // als verbinding al bezocht is zal count groter zijn dan 0
+                    // verbinding behandelen: lus maken
+                    
+                    
+                    // als we terug bij startknoop zitten: lus gevonden
+                    
+                    verbinding_bezocht[it->second] = true;
+                }
+            }
+            // alle verbindingen van knoop behandeld
+            knoop_behandeld[i] = false;
+        }
+    }
+    
     
     // resultaat opslaan in this[];
     

@@ -39,8 +39,10 @@ int main(int argc, const char * argv[])
     
 	DeBruijnreeks<int> dbr(2,2);
     
-    string s;
-    cin >> s;
+    /*
+     string s;
+     cin >> s;
+     */
     return 0;
 }
 
