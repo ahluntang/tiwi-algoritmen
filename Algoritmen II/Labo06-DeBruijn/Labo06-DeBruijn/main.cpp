@@ -38,6 +38,7 @@ int main(int argc, const char * argv[])
      */
     
 	DeBruijnreeks<int> dbr(2,2);
+    cout << "reeks: " << dbr.resultaat << endl;
     
     /*
      string s;
