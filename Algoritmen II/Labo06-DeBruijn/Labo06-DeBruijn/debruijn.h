@@ -95,7 +95,7 @@ DeBruijnreeks<T>::DeBruijnreeks(int N,int M){ // N= orde , M=alfabet
                     verbinding_bezocht[startverbinding] = true;
                     
                     std::vector<int> lus;
-                    lus.push_back(i);
+                    //lus.push_back(i);
                     // als verbinding al bezocht is zal count groter zijn dan 0
                     // verbinding behandelen: lus maken
                     int buur = it->first;

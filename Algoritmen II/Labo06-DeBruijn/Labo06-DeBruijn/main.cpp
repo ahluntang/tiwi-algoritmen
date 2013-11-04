@@ -37,7 +37,7 @@ int main(int argc, const char * argv[])
      std::cerr<<gg<<'\n';
      */
     
-	DeBruijnreeks<int> dbr(2,2);
+	DeBruijnreeks<int> dbr(3,2);
     cout << "reeks: " << dbr.resultaat << endl;
     
     /*
