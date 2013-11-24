@@ -1,4 +1,3 @@
-#include <cassert>
 //Deze header bevat de code voor de klassen:
 //
 //
@@ -50,7 +49,6 @@
 #include <exception>
 
 
-
 enum RichtType { GERICHT, ONGERICHT }; 
 
 
@@ -68,9 +66,9 @@ template<RichtType RT>
 class Graaf{
 public:
 typedef std::map<int, int>  Knoop;      // beeldt knoopnummer (van buur) af op verbindingsnummer
-
     // Construeert een graaf met gegeven RichtType en aantal knopen (default 0), zonder verbindingen.
     Graaf(int n=0);
+    
     // Geeft true indien het richttype GERICHT is, false indien het ONGERICHT is.
     bool isGericht() const;
 
@@ -144,17 +142,12 @@ std::ostream &operator<<(std::ostream& os, const Graaf<RT>& g);
 
 template<RichtType RT>
 void Graaf<RT>::controleerKnoopnummer(int k) const{
-    if (k<0 || (size_t)k>=knopen.size()){
-        std::ostringstream out;
-        out << "Ongeldig knoopnummer "<<k
-            <<". Moet >= 0 en < "<<knopen.size()<<" zijn.";
-        throw GraafExceptie(out.str());
-    }
+    if (k<0 || (size_t)k>=knopen.size())
+        throw GraafExceptie("ongeldig knoopnummer");    
 }
 
 template<RichtType RT>
-Graaf<RT>::Graaf(int n) : knopen(n), hoogsteVerbindingsnummer(0){};
-
+Graaf<RT>::Graaf(int n) : knopen(n), hoogsteVerbindingsnummer(0){}
 
 template<RichtType RT>
 bool Graaf<RT>::isGericht() const { return true; }//voor gerichte graaf
@@ -265,7 +258,7 @@ void Graaf<RT>::schrijf(std::ostream &os) const{
 
 template<RichtType RT>
 void Graaf<RT>::schrijfKnoop(std::ostream &os, int k) const{
-    os<<"Knoop "<<k<<"::\n";
+    os << "knoop " << k << ":" << std::endl;
     for (Knoop::const_iterator it=knopen[k].begin(); it!=knopen[k].end(); ++it)
     {
         os << "  ->" << it->first;
@@ -275,7 +268,7 @@ void Graaf<RT>::schrijfKnoop(std::ostream &os, int k) const{
     
 template<RichtType RT>
 void Graaf<RT>::schrijfVerbinding(std::ostream &os, int v) const{
-    os << " via verbinding nr. " << v << std::endl;
+    os << " via " << v << std::endl;
 }
 
 template<RichtType RT>
@@ -287,6 +280,7 @@ std::ostream &operator<<(std::ostream &os, const Graaf<RT> &g){
 template<RichtType RT,class Takdata>
 class GraafMetTakdata: public virtual Graaf<RT>{
 public:
+    // Construeert een graaf met gegeven RichtType en aantal knopen (default 0), zonder verbindingen.
     GraafMetTakdata(int n=0):Graaf<RT>(n){};
     //Noot: toevoegfunctie zonder takdata op te geven kan alleen gebruikt als de klasse
     //      Takdata een defaultconstructor heeft.
@@ -306,7 +300,7 @@ public:
     // Schrijft de gegevens van de verbinding met verbindingsnummer v naar outputstream os.
     virtual void schrijfVerbinding(std::ostream &os, int v) const;
 
-//protected:
+protected:
     std::vector<Takdata> takdatavector;
 };
 
@@ -324,7 +318,7 @@ int GraafMetTakdata<RT,Takdata>::voegVerbindingToe(int van, int naar, const Takd
         takdatavector.push_back(td);
     else
         takdatavector[taknummer]=td;
-    return taknummer;
+	return taknummer;
 }
 
 
@@ -356,7 +350,7 @@ void GraafMetTakdata<RT,Takdata>::wis(){
 
 template<RichtType RT,class Takdata>
 void  GraafMetTakdata<RT,Takdata>::schrijfVerbinding(std::ostream &os, int v) const{
-    os << " via verbinding nr. " << v <<" (Data: "<<takdatavector[v]<<")"<< std::endl;
+    os << " via " << v <<"(Data: "<<takdatavector[v]<<")"<< std::endl;
 }
 
 template<RichtType RT, class Knoopdata>
@@ -441,5 +435,6 @@ public:
         this->takdatavector.clear();
     }
 };
+
 
 #endif // __GRAAF_H
