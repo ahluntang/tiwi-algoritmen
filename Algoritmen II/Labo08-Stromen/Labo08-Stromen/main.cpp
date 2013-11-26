@@ -54,7 +54,7 @@ void bipartiteGraaf() {
     input >> naar;
     
     while ( !input.eof() ) {
-        // shortcut: als verbinding van producent naar van en naar->consument ook niet, dan hebben we al een koppel gevonden.
+        // shortcut: als verbinding producent->van niet bestaat en naar->consument ook niet, dan hebben we al een koppel gevonden.
         if (netwerk.geefTakdata(PRODUCENT, van) == 0 && netwerk.geefTakdata(naar, CONSUMENT) == 0){
             std::pair<int,int> koppel(van,naar);
             koppels.push_back(koppel);
