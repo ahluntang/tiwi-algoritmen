@@ -7,6 +7,8 @@
 #ifndef Labo08_Stromen_stroomnetwerk_h
 #define Labo08_Stromen_stroomnetwerk_h
 
+#include <iomanip>
+#include <vector>
 #include "pad.h"
 #include "vergrotendpadzoeker.h"
 #include "graaf.h"
@@ -24,8 +26,10 @@ public:
     void operator-=( const Pad<Takdata>& pad );
     
     Takdata wordMaxStroomVan(GraafMetTakdata<GERICHT, Takdata>& netwerk, int producent, int verbruiker);
+    void schrijfPaden( std::ostream& os ) const;
     
 protected:
+    std::vector< Pad<Takdata> > paden;
 };
 
 // IMPLEMENTATIE
@@ -68,12 +72,15 @@ Takdata StroomNetwerk<Takdata>::wordMaxStroomVan(GraafMetTakdata<GERICHT, Takdat
     Pad< Takdata> vergrotendPad;
     
     // zolang vergrotendPad niet leeg is, heeft de padzoeker een pad gevonden.
-    Vergrotendpadzoeker<int> padzoeker(restnetwerk, producent, verbruiker, vergrotendPad);
+    Vergrotendpadzoeker<Takdata> padzoeker(restnetwerk, producent, verbruiker, vergrotendPad);
+    //Kortstepadzoeker<Takdata> padzoeker(restnetwerk, producent, verbruiker, vergrotendPad);
     while(vergrotendPad.size() !=0 ){
+        this->paden.push_back(vergrotendPad);
         capaciteit += vergrotendPad.geefCapaciteit(); // capaciteit opslaan.
         restnetwerk-=vergrotendPad; // pad uit restnetwerk halen
         *this+=vergrotendPad; // pad toevoegen aan huidig netwerk
-        Vergrotendpadzoeker<int> padzoeker(restnetwerk, producent, verbruiker, vergrotendPad);
+        Vergrotendpadzoeker<Takdata> padzoeker(restnetwerk, producent, verbruiker, vergrotendPad);
+        //Kortstepadzoeker<Takdata> padzoeker(restnetwerk, producent, verbruiker, vergrotendPad);
     }
     return capaciteit;
 }
@@ -106,6 +113,7 @@ void StroomNetwerk<Takdata>::operator+=( const Pad<Takdata>& pad ) {
  */
 template <class Takdata>
 void StroomNetwerk<Takdata>::operator-=( const Pad<Takdata>& pad ) {
+    
 	for (int i = 1; i < pad.size(); i++) {
         Takdata van = pad[i-1];
         Takdata naar = pad[i];
@@ -118,6 +126,16 @@ void StroomNetwerk<Takdata>::operator-=( const Pad<Takdata>& pad ) {
 		} else {
 			this->voegVerbindingToe(naar, van, pad.geefCapaciteit());
 		}
+	}
+}
+
+template <class Takdata>
+void StroomNetwerk< Takdata >::schrijfPaden( std::ostream& os ) const {
+	for (int i = 0; i < this->paden.size(); i++) {
+		for (int j = 0; j < this->paden[i].size(); j++) {
+			os << std::setw(5) << this->paden[i][j];
+		}
+		os << std::endl;
 	}
 }
 

@@ -3,9 +3,12 @@
 
 #include "stroomnetwerk.h"
 #include <iostream>
+#include <fstream>
+#include <vector>
 using namespace std;
 
-int main() {
+
+void stroomvoorbeeld(){
 	GraafMetTakdata<GERICHT, int> netwerk(8);
 	const int PRODUCENT = 0; // Knoop 0 is PRODUCENT
 	const int CONSUMENT = 7; // Knoop 7 is CONSUMENT
@@ -29,7 +32,60 @@ int main() {
     StroomNetwerk<int> stroomnet;
     int capaciteit = stroomnet.wordMaxStroomVan(netwerk, PRODUCENT, CONSUMENT);
     std::cout << "Capaciteit: " << capaciteit << std::endl;
-    std::cout << stroomnet << std::endl;
+    //std::cout << stroomnet << std::endl;
+
+}
+
+void bipartiteGraaf() {
+	ifstream input("bipartitegraaf.txt");
+    std::vector< std::pair<int,int> > koppels;
+    
+	string lijn;
+	getline(input, lijn);
+	int aantal = atoi(lijn.c_str());
+	GraafMetTakdata<GERICHT, int> netwerk(aantal);
+    
+	const int PRODUCENT = netwerk.voegKnoopToe();
+	const int CONSUMENT = netwerk.voegKnoopToe();
+    
+	int van;
+	int naar;
+    input >> van;
+    input >> naar;
+    
+	while ( !input.eof() ) {
+        // shortcut: als verbinding van producent naar van en naar->consument ook niet, dan hebben we al een koppel gevonden.
+        if (netwerk.geefTakdata(PRODUCENT, van) == 0 && netwerk.geefTakdata(naar, CONSUMENT) == 0){
+            std::pair<int,int> koppel(van,naar);
+            koppels.push_back(koppel);
+        }
+        // BAM, opgelost!
+        
+		if (netwerk.geefTakdata(PRODUCENT, van) == 0 ) {
+			netwerk.voegVerbindingToe(PRODUCENT, van, 1);
+		}
+		
+        netwerk.voegVerbindingToe(van, naar, 1);
+        
+		if (netwerk.geefTakdata(naar, CONSUMENT) == 0 ) {
+			netwerk.voegVerbindingToe(naar, CONSUMENT, 1);
+		}
+        
+        
+        input >> van;
+        input >> naar;
+	}
+    
+    cout<< "Aantal koppels: "<< koppels.size()<< std::endl;
+    
+	StroomNetwerk<int> stroomnet;
+	cout << "Capaciteit: " << stroomnet.wordMaxStroomVan(netwerk, PRODUCENT, CONSUMENT);
+	stroomnet.schrijfPaden(cout);
+}
+
+int main() {
+    stroomvoorbeeld();
+    bipartiteGraaf();
 	//cin.get();
 	return 0;
 }
