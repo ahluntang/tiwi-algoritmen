@@ -45,7 +45,7 @@ StroomNetwerk<Takdata>::StroomNetwerk(){
  */
 template < class Takdata >
 StroomNetwerk<Takdata>::StroomNetwerk(const GraafMetTakdata<GERICHT, Takdata>& gr):
-    Graaf<GERICHT>(gr), GraafMetTakdata<GERICHT, Takdata>(gr){
+Graaf<GERICHT>(gr), GraafMetTakdata<GERICHT, Takdata>(gr){
 }
 
 /** Maximale stroom berekenen
