@@ -79,7 +79,7 @@ void bipartiteGraaf() {
     cout<< "Aantal koppels: "<< koppels.size()<< std::endl;
     
     StroomNetwerk<int> stroomnet;
-    cout << "Capaciteit: " << stroomnet.wordMaxStroomVan(netwerk, PRODUCENT, CONSUMENT);
+    //cout << "Capaciteit: " << stroomnet.wordMaxStroomVan(netwerk, PRODUCENT, CONSUMENT);
     stroomnet.schrijfPaden(cout);
 }
 
