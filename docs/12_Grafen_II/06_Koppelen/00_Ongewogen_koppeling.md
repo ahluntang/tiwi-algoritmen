@@ -4,4 +4,4 @@
     * omvormen tot stroomnetwerk
     * producent invoeren die met alle knopen van \\(L\\) verbonden wordt
     * verbruiker invoeren die met alle knopen van \\(R\\) verbonden wordt
-    * alle verbindingen krijgt capaciteit gelijk aan \\(1\\)
+    * elke verbinding krijgt een capaciteit gelijk aan \\(1\\)

@@ -20,8 +20,8 @@
 \\[
  pseudopolynomiaal \Rightarrow
 \begin{cases}
-\text{complexiteit van graaf ($n \times m$)} \\
-\text{grootte van capaciteiten}  \\
+    \text{complexiteit van graaf ($n \times m$)} \\\
+    \text{grootte van capaciteiten}  \\\
 \end{cases}
 \\]
 

@@ -49,21 +49,21 @@
     * onaanvaardbare partners weglaten.
 * koppeling \\(M(man,vrouw)\\) onstabiel als
     * man en vrouw geen partners zijn, maar wel aanvaardbaar voor elkaar.
-    * man ofwe longekoppeld blijft, ofwel vrouw verkiest boven zijn partner.
+    * man ofwel ongekoppeld blijft, ofwel vrouw verkiest boven zijn partner.
     * vrouw ofwel ongekoppeld blijft, ofwel man verkiest boven haar partner.
 * twee groepen
-    * zij die partners krijgen in alle stebiele koppelingen
+    * zij die partners krijgen in alle stabiele koppelingen
     * zij die nooit partners krijgen.
 
 #### gelijke voorkeuren
 
-* voorkeurslijsten mogen ex aequo's bevatten
+* voorkeurslijsten mogen ex-aequo's bevatten
 * **super stabiliteit**
-    * koppeling onstabiel als man en vrouw bestaan die geen partners zijn en elkaar minstens evenzeer verkiezen als hun partners.
+    * koppeling onstabiel als er een man en een vrouw bestaan die geen partners zijn en elkaar minstens evenzeer verkiezen als hun partners.
 * **sterke stabiliteit**
-    * koppeling onstabiel als er man en vrouw bestaat die geen partners zijn waarvan
+    * koppeling onstabiel als er een man en een vrouw bestaan die geen partners zijn waarvan
         * ene de andere strikt erkiest boven de partner
         * andere de eerste minstens even graag heeft als de partner
 * **zwakke stabiliteit**
-    * koppeling onstabiel als er man en vrouw bestaat die geen partner zijn en elkaar strikt verkiezen boven hun eigen partner.
+    * koppeling onstabiel als er een man en een vrouw bestaan die geen partners zijn en elkaar strikt verkiezen boven hun eigen partner.
     * gelijke voorkeuren arbitrair ordenen.

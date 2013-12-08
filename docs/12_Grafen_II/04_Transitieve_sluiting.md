@@ -22,14 +22,14 @@
 
 ## Opbouwen transitieve sluiting
 
-### diepte-eerst of breedte-eerst zoeken
+### Diepte-eerst of breedte-eerst zoeken
 
 * alle knopen opsporen die vanuit startknoop bereikbaar zijn
 * herhalen met elke knoop als startknoop
 * ijle grafen: \\( \Theta( n(n+m) ) \\)
 * dichte grafen: \\( O(n^3) \\)
 
-### componentengraaf
+### Componentengraaf
 
 * als graaf dicht is
 * bevat gering aantal sterk samenhangende componenten (alle knopen onderling bereikbaar)
@@ -53,8 +53,8 @@ met als "mogelijke" intermediaire knopen \\( 1, 2, ..., k \\)
 \\[
  t_{ij}^{(0)} =
 \begin{cases}
-false,  & \text{als $i \ne j$ en $g_{ij} = \infty$} \\
-true, & \text{als $i=j$ of $g_{ij} < \infty$}  \\
+false,  & \text{als $i \ne j$ en $g_{ij} = \infty$} \\\
+true, & \text{als $i=j$ of $g_{ij} < \infty$}  \\\
 \end{cases}
 \\]
 * volgende matrices (voor \\(1 \le k \le n\\) ):
