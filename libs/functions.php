@@ -367,6 +367,13 @@ function get_tree($path = '.', $clean_path = '', $title = '', $first = true, $la
  */
 function get_uri($prefix_slash = true)
 {
+    
+    $uri = $_SERVER['REQUEST_URI'];
+    if (strncmp($uri, '/', 1) == 0)
+    {
+        $uri = substr($uri, 1);
+    }
+    return ($prefix_slash ? '/' : '').str_replace(array('//', '../'), '/', trim($uri, '/'));
     if (isset($_SERVER['PATH_INFO']))
     {
         $uri = $_SERVER['PATH_INFO'];
