@@ -4,8 +4,9 @@
 
 ```
 std::string hooiberg;
-int begin;
-string naald;
+std::string naald;
+int begin = naald.size();
+
 std::vector<int> prefix(naald.length());
 int j = prefix[0] = 0;
 for(int i = 1; i < naald.length(); i++){
