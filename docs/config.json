@@ -5,7 +5,7 @@
         "theme": "red",
         "date_modified": false,
         "float": false,
-        "clean_urls": false,
+        "clean_urls": true,
         "twitter": ["ahtanu"],
         "google_analytics": "",
         "links": {
