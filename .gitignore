@@ -16,3 +16,12 @@ Debug/
 *.csv
 
 /node_modules/
+
+/css
+/Gruntfile.js
+/img
+/index.php
+/js
+/less
+/libs
+/package.json
