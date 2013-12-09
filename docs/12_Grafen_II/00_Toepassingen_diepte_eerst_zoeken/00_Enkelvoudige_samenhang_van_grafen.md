@@ -81,8 +81,7 @@ enum Kleur {
 };
 
 template<RichtType RT>
-std::stack<int> Graaf<RT>::diepte_eerst_zoeken(
-        int begin_knoop) {
+std::stack<int> Graaf<RT>::diepte_eerst_zoeken(int begin_knoop) {
     // We doen DEZ op de begin_knoop
     // en postorderen de knopen.
     // Alles wit.
@@ -94,8 +93,7 @@ std::stack<int> Graaf<RT>::diepte_eerst_zoeken(
 }
 
 template<RichtType RT>
-void Graaf<RT>::behandel(int knoop_id,
-        std::vector<Kleur>& kleuren, std::stack<int>& pad) {
+void Graaf<RT>::behandel(int knoop_id, std::vector<Kleur>& kleuren, std::stack<int>& pad) {
     kleuren[knoop_id] = GRIJS;
     // Alle buren ophalen en over lopen
     std::map<int, int> buren = knopen[knoop_id];

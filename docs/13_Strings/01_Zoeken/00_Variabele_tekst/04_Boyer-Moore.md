@@ -51,56 +51,56 @@
 ```
 int d = 256; // alfabet
 // constructie
-BoyerMoore(const uchar * naald, uint _naaldlengte): naaldlengte(_naaldlengte){
+BoyerMoore(const uchar * naald, uint _naaldlengte): naaldlengte(_naaldlengte) {
     // verkeerd karakter, horspool en sunday
-    for(int i = 0; i < naaldlengte; i++)
+    for (int i = 0; i < naaldlengte; i++)
         verkeerd_karakter[ naald[i] ] = i+1;
     
     // uitgebreide verkeerd karakter
-    for(int i = 0; i < d; i++)  
-        for(int j = 0; j < naaldlengte; j++)
-            for(int k = j; k < naaldlengte; k++)
+    for (int i = 0; i < d; i++)  
+        for (int j = 0; j < naaldlengte; j++)
+            for (int k = j; k < naaldlengte; k++)
                 uitgebreide_vk[i][k] = j + 1;
 
     // juiste suffix
-    for(int i = naaldlengte - 2; i >= 0; i--){  
+    for (int i = naaldlengte - 2; i >= 0; i--){  
         int k = juiste_suffix[i+1];
-        while( k > 0 && naald[i] != naald[naaldlengte - 1 - k] )
+        while (k > 0 && naald[i] != naald[naaldlengte - 1 - k])
             k = juiste_suffix[ naaldlengte - k ];
-        if( naald[i] == naald[ naaldlengte - 1 - k ] )
+        if (naald[i] == naald[ naaldlengte - 1 - k ])
             k++;
         juiste_suffix[i] = k;
     }
 }
 
 
-void zoek(std::queue<const uchar*> & resultaten, const uchar* hooiberg, uint hooiberglengte){
+void zoek(std::queue<const uchar*> & resultaten, const uchar* hooiberg, uint hooiberglengte) {
     int n = hooiberglengte;
     int m = naaldlengte;
     int i = 0;
 
-    while( i < n - m + 1 ){
+    while (i < n - m + 1){
         int k = 1;
         int j = m - 1;
         bool good = true;
-        while( j >= 0 && good ){
-            char c = hooiberg[ i + j ];
-            if( c =! naald[j] ){
-                char ch = hooiberg[ i + m ]; // voor horspool
-                int vk = j + 1 - verkeerd_karakter[c]; // verkeerd karakter
-                int uvk = j + 1 - uitgebreide_vk[c][j]; // uitgebreide heuristiek verkeerd karakter
-                int hor = naaldlengte - verkeerd_karakter[ch]; // horspool
+        while (j >= 0 && good) {
+            char c = hooiberg[i+j];
+            if (c =! naald[j]) {
+                char ch = hooiberg[i+m]; // voor horspool
+                int vk = j+1-verkeerd_karakter[c]; // verkeerd karakter
+                int uvk = j+1-uitgebreide_vk[c][j]; // uitgebreide heuristiek verkeerd karakter
+                int hor = naaldlengte-verkeerd_karakter[ch]; // horspool
                 int js = juiste_suffix[j]; // juiste suffix
                 k = std::max( vk , std::max( uvk , std::max( hor , js ) ) );
             } else {
                 j--;
             }
-            if( j == -1 ){
+            if (j == -1){
                 resultaten.push( &hooiberg[i] );
             }
             i += k;
-        } // /while( j >= 0 && good )
-    } // /while( i < n - m + 1 )
+        }
+    }
 }
 
 

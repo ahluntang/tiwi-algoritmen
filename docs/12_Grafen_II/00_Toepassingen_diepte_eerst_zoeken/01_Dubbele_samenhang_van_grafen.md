@@ -39,29 +39,36 @@
 ### zoek scharnierpunten en zoek bruggen
 
 ```
-void rec_zoek_scharnierpunten(int i){ // rec_zoek_bruggen
+void rec_zoek_scharnierpunten(int i) { // rec_zoek_bruggen
     ontdekt[i] = true;
     pre[i] = num++;
     laagst[i] = pre[i]; // initialisatie: elke knoop bereikt minstens zichzelf
-    for(alle buren j van knoop i){
-        if(!ontdekt[j]){
-            // boomtak, dus kint van i
-            ouder[j] = i;
-            rec_zoek_scharnierpunten(j); // recursief oproepen
-            if( laagst[j] < laagst[i] )
-                laagst[i] = laagst[j] ; // nieuw minimum
-            else if ( laagst[j] >= pre[i] ) // voor bruggen: laagst[j] > pre[i]
-                cout << "Knoop " << i << "is scharnierpunt voor" << j << endl;
+
+    // Alle buren ophalen en over lopen
+    std::map<int, int> buren = knopen[knoop_id];
+    std::map<int, int>::iterator buren_it = buren.begin();
+    while (buren_it != buren.end()) {
+        int buur = buren_it->first;
+
+        if (!ontdekt[buur]) {
+            // boomtak, dus kind van i
+            ouder[buur] = i;
+            rec_zoek_scharnierpunten(buur); // recursief oproepen
+            if (laagst[buur] < laagst[i])
+                laagst[i] = laagst[buur] ; // nieuw minimum
+            else if (laagst[buur] >= pre[i]) // voor bruggen: laagst[buur] > pre[i]
+                std::cout << "Knoop " << i << "is scharnierpunt voor" << buur << std::endl;
         } else {
-            if( j != ouder[i] ) // eventueel terugverbinding
-                if( pre[j] < laagst[i] ) // dan is zeker pre[j] < pre[i] : dus terugverbinding
-                    laagst[i] = pre[j]; // nieuw minimum
+            if (buur != ouder[i]) // eventueel terugverbinding
+                if (pre[buur] < laagst[i]) // dan is zeker pre[buur] < pre[i] : dus terugverbinding
+                    laagst[i] = pre[buur]; // nieuw minimum
         }
+        buren_it++;
     }
 }
 
 void zoek_scharnierpunten() { // zoek_bruggen
-    for(int i = 0; i < n; i++){ // initialisatie
+    for (int i = 0; i < n; i++) { // initialisatie
         ontdekt[i] = false;
         ouder[i] = -1; // nog geen ouder
     }

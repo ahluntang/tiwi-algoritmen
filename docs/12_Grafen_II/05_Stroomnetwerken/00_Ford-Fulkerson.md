@@ -33,48 +33,53 @@ f = \sum_{j \in K}{s(p,j)-s(j,p)}
 
 ```
 Stroomnetwerk(const GraafMetTakdata<GERICHT, T>& gr, int _van, int _naar, int option):
-                    Graaf<GERICHT>(gr.aantalKnopen()),van(_van),naar(_naar), graaf(gr){
+    Graaf<GERICHT>(gr.aantalKnopen()),van(_van),naar(_naar), graaf(gr) {
+
     capaciteit = 0;
     Stroomnetwerk<T> restnetwerk(gr);
     Pad<T> vergrotendpad;
-    zoekPad (restnetwerk, van, naar, vergrotendpad, option);
-    while(vergrotendpad.size() !=0 ){
-        restnetwerk-=vergrotendpad;
-        *this+=vergrotendpad;
-        zoekPad (restnetwerk, van, naar, vergrotendpad, option);
+    zoekPad(restnetwerk, van, naar, vergrotendpad, option);
+    while (vergrotendpad.size() !=0 ) {
+        restnetwerk -= vergrotendpad;
+        *this += vergrotendpad;
+        zoekPad(restnetwerk, van, naar, vergrotendpad, option);
     }
 }
 
-Stroomnetwerk &operator-=(const Pad<T> pad){
-    for (unsigned int i = 0; i < pad.size() - 1; i++){
-        int *data = this->geefTakdata(pad[i],pad[i+1]);
+Stroomnetwerk &operator-=(const Pad<T> pad) {
+    for (unsigned int i = 0; i < pad.size() - 1; i++) {
+        int van = pad[i];
+        int naar = pad[i+1];
+        int *data = this->geefTakdata(van, naar);
         *data -= pad.geefCapaciteit();
-        int verbinding = this->verbindingsnummer(pad[i+1],pad[i]);
+        int verbinding = this->verbindingsnummer(naar, van);
         if (verbinding == -1)
-            this->voegVerbindingToe(pad[i+1],pad[i],0);
-        data = this->geefTakdata(pad[i+1],pad[i]);
+            this->voegVerbindingToe(naar, van,0);
+        data = this->geefTakdata(naar, van);
         *data += pad.geefCapaciteit();
     } 
     return *this;
 }
 
 Stroomnetwerk &operator+=(const Pad<T> pad){
-    for (unsigned int i = 0; i < pad.size() - 1; i++){      
-        int verbinding = graaf.verbindingsnummer(pad[i],pad[i+1]);
-        if (verbinding != -1){
-            verbinding = this->verbindingsnummer(pad[i],pad[i+1]);
+    for (unsigned int i = 0; i < pad.size() - 1; i++) {
+        int van = pad[i];
+        int naar = pad[i+1];
+        int verbinding = graaf.verbindingsnummer(van, naar);
+        if (verbinding != -1) {
+            verbinding = this->verbindingsnummer(van, naar);
             if (verbinding == -1)
-                this->voegVerbindingToe(pad[i],pad[i+1],0);
-            int *data = this->geefTakdata(pad[i],pad[i+1]);
+                this->voegVerbindingToe(van, naar, 0);
+            int *data = this->geefTakdata(van, naar);
             *data += pad.geefCapaciteit();
-            verbinding = this->verbindingsnummer(pad[i],pad[i+1]);
+            verbinding = this->verbindingsnummer(van, naar);
         } else {
-            verbinding = this->verbindingsnummer(pad[i+1],pad[i]);
+            verbinding = this->verbindingsnummer(naar, van);
             if (verbinding != -1){
-                int *data = this->geefTakdata(pad[i+1],pad[i]);
+                int *data = this->geefTakdata(naar, van);
                 *data -= pad.geefCapaciteit();
                 if (*data == 0)
-                    this->verwijderVerbinding(pad[i+1],pad[i]);
+                    this->verwijderVerbinding(naar, van);
             }
         }
     } 

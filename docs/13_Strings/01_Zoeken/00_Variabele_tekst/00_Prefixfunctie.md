@@ -9,21 +9,22 @@ int begin = naald.size();
 
 std::vector<int> prefix(naald.length());
 int j = prefix[0] = 0;
-for(int i = 1; i < naald.length(); i++){
-    while( j > 0 && naald[i] != naald[j] )
+for (int i = 1; i < naald.length(); i++) {
+    while (j > 0 && naald[i] != naald[j])
         j = prefix[j-1];
-    if( naald[i] == naald[j] )
+    if (naald[i] == naald[j])
         j++;
     prefix[i] = j;
 }
 
 j = 0;
-for(int i = begin; i < hooiberg.length(); i++){
-    while( j > 0 && naald[j] != hooiberg[i] )
+
+for (int i = begin; i < hooiberg.length(); i++) {
+    while (j > 0 && naald[j] != hooiberg[i])
         j = prefix[j-1];
-    if( hooiberg[i] == naald[j] )
+    if (hooiberg[i] == naald[j])
         j++;
-    if( j == naald.length() )
+    if (j == naald.length())
         resultaat.push( &hooiberg[ i - 2 * m ] );
 }
 ```

@@ -49,11 +49,11 @@ int findMethod(int knoopnr, vector<int> & vertegenwoordigers){
  * @param lijst2
  * @param vertegenwoordigers
  */
-void unionMethod(vector< list<int> > & verzameling,int lijst1, int lijst2, vector<int> & vertegenwoordigers){
+void unionMethod(vector< list<int> > & verzameling,int lijst1, int lijst2, vector<int> & vertegenwoordigers) {
     list<int> * kortste = &verzameling[lijst1];
     list<int> * langste = &verzameling[lijst2];
-    if(kortste->size() > langste->size()){
-        swap(kortste,langste);
+    if (kortste->size() > langste->size()) {
+        swap(kortste, langste);
         int temp = lijst1;
         lijst1 = lijst2;
         lijst2 = temp;
@@ -61,7 +61,7 @@ void unionMethod(vector< list<int> > & verzameling,int lijst1, int lijst2, vecto
     
     //Vertegenwoordigers aanpassen
     int vertegenwoordiger = vertegenwoordigers[lijst2];
-    for(list<int>::const_iterator it = kortste->begin(); it != kortste->end(); it++){
+    for (list<int>::const_iterator it = kortste->begin(); it != kortste->end(); it++) {
         vertegenwoordigers[*it]=vertegenwoordiger;
     }
     
