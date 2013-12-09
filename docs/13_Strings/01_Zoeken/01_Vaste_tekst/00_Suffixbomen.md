@@ -100,6 +100,9 @@
     * bij volgende ronde(s)
         * start vanaf waar je in vorige ronde voor het eerst een niet-blad tegenkwam: actief punt van ronde  
           ![](/assets/suffixtree_actiefpunt.png)
+* afwerken: expliciete suffixboom maken
+    * door alle suffixen te verlengen met afsluitkarakter
+    * geen enkele inwendige knoop heeft er een uitweg voor
 
 ### Vinden van suffix
 
