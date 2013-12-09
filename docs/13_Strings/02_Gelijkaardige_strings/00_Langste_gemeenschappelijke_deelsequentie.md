@@ -49,6 +49,8 @@ c[i,j] =
     \max{( c[i,j-1], c[i-1,j] )} & \text{als} & i > 0 & \text{en} & j > 0 & \text{en} & x_i \ne y_j  \\\
 \end{cases}
 \\]
+
+
 * Recursief?
     * Performantie om \\(c[n,m]\\) vinden is exponentieel
     * Er zijn maar \\( \Theta(nm) \\) verschillende deelproblemen: **dynamisch programmeren**
@@ -57,6 +59,29 @@ c[i,j] =
     * waarden van \\(c[i,j]\\) opslaan in tweedimensionale \\( (n+1)\times(m+1)\\) tabel \\(c\\)
     * rij per rij van links naar rechts berekenen
     * eerste rij en eerste kolom initialiseren met nullen
+
+### Voorbeeld
+
+\\[
+\begin{array}{c|c|cccccc}
+  &   & B & D & C & A & B & A \\\
+\\hline
+  & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\
+\\hline
+A & 0 & 0 & 0 & 0 & 1 & 1 & 1 \\\
+B & 0 & 1 & 1 & 1 & 1 & 2 & 2 \\\
+C & 0 & 1 & 1 & 2 & 2 & 2 & 2 \\\
+B & 0 & 1 & 1 & 2 & 2 & 3 & 3 \\\
+D & 0 & 1 & 2 & 2 & 2 & 3 & 3 \\\
+A & 0 & 1 & 2 & 2 & 2 & 3 & 4 \\\
+B & 0 & 1 & 2 & 2 & 2 & 4 & 4 \\\
+\end{array}
+\\]
+
+* 3 deelsequenties van lengte 4
+    * BCBA
+    * BDAB
+    * BCAB
 
 ## Juiste deelsequentie vinden
 
