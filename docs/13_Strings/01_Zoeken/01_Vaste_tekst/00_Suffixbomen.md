@@ -106,4 +106,66 @@
 
 ### Vinden van suffix
 
+![](/assets/suffixtree_suffixlink.png)
 
+* in elke expliciete inwendige knoop
+    * als \\(x\alpha\\) erin zit: dan zit \\(\alpha\\) er ook in
+    * pointer naar volgende kortere suffix
+        * er was geen uitweg na \\(x\alpha\\) voor nieuw karakter
+    * als daar nodig was om expliciete knoop te maken, dan zal volgende kortere suffix ook geen uitweg hebben en zal daar ook een expliciete knoop gemaakt worden.
+    * wachten tot volgende ronde om suffixlink te leggen
+* als inwendige knoop impliciet is
+    * geen uitweg: welke eerstvolgende kortere start met \\(\alpha\\)?
+    * in midden van een tak
+        * vorige expliciete knoop had suffixlink
+            * wijst naar volgende kortere suffix dat start met \\(\alpha\\)
+            * vanaf daar opnieuw de weg volgen
+        * je weet wat er staat in de volgende wegen: je weet hoe ver je moet dalen
+            * van knoop naar knoop gaan kost \\(O(1)\\)
+            * per knoop \\(O(1)\\): dalen tot je op juiste plaats bent
+    * elke expliciete knoop op weg heeft link naar kortere suffixknoop
+        * link kan hoogstens 1 knoop in weg doen dalen
+* vinden: \\(O(n)\\)
+    * max \\(O(n)\\) keer dalen per ronde
+    * max \\(O(n)\\) ker stijgen per ronde
+
+### Voorbeeld
+
+![](/assets/suffixtree_rondesvb.png)
+
+## Toepassingen
+
+### Klassieke deelstringprobleem: zoeken naar patroon
+
+![](/assets/suffixtree_toepassing_patroon.png)
+
+* zoeken naar patroon **ab** uit tekst **abababø**
+* kijken naar deelboom onder **ab**
+    * alle bladeren hieronder hebben dezelfde prefix
+    * bladeren verwijzen naar index 1, 3 en 5.
+    * op plaats 1, 3 en 5 start van patroon te vinden
+
+|   a   |   b   |   a   |   b   |   a   |   b   |   ø   |
+|-------|-------|-------|-------|-------|-------|-------|
+| **1** |   2   | **3** |   4   | **5** |   6   |   7   |
+
+
+### Langste gemeenschappelijke deelstring
+
+* langste gemeenschappelijke string
+* **veralgemeende suffixboom** voor verzameling strings bevat al de suffixen van al de strings uit de verzameling
+    * hetzelfde suffix kan tot meerdere strings behoren
+    * bladeren bevatten
+        * beginpositie van suffix
+        * string waartoe die behoort
+    * takken
+        * duiden begin- en eindindex in string aan en in welke string
+    * elke inwendige knoop komt overeen met prefix van suffix
+        * deelstring komt voor in elke string die vermeld wordt bij blad dat opvolger is van die knoop
+    * boom wordt systematisch overlopen om 
+        * lengte van de prefixen te bepalen
+        * aantal **verschillende strings** te bepalen waarin ze voorkomen
+
+* boom in postorder doorlopen
+    * kijken bij elkek noop of die eronder in voorkomen
+    * diepste van die knopen is langst gemeenschappelijke deelstring
