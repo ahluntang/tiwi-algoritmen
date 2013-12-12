@@ -9,7 +9,7 @@
 |   |             |  Databank                                                       | Zoekmachine                                                                        |
 |---|-------------|-----------------------------------------------------------------|------------------------------------------------------------------------------------|
 | 1 |  **Query**  | kan zo ingewikkeld zijn als je wilt                             | *bag of words* (hoogstens een zin)                                                 |
-| 2 |  Resultaten | document is pas **match** als het precies overeenkomt met query | statistische heuristieken (soms krijg je documenten war zoekterm niet in voorkomt) |
+| 2 |  Resultaten | document is pas **match** als het precies overeenkomt met query | statistische heuristieken (soms krijg je documenten waar zoekterm niet in voorkomt) |
 | 3 |  Filtering  | alle documenten die voldoen worden teruggegeven                 | niet alles wordt gegeven (niet te doen met miljoenen documenten)                   |
 | 4 |  Opslag     | databank slaat enkel documenten op                              | bevat ook nog metadata over documenten                                             |
 
