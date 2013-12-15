@@ -74,5 +74,5 @@
         * deelbomen samenvoegen
     * samenvoegen van splay trees (join operatie)
         * grootste element in linkse deelboom zoeken en wortel maken via splay-operatie
-        * kleinste element in rechtse deelboom zoeken en wortel maken vai splay-operatie
+        * kleinste element in rechtse deelboom zoeken en wortel maken via splay-operatie
 
