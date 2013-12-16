@@ -126,7 +126,7 @@
 * op einde is \\(c\\) wortel, met als rang \\(r_w\\)
 
 
-## Geamomrtiseerde tijden van woordenboekoperaties
+## Geamortiseerde tijden van woordenboekoperaties
 
 * geamortiseerde tijden van woordenboekoperaties op (bottom-up) splay tree met \\(n\\) knopen bepalen
 
