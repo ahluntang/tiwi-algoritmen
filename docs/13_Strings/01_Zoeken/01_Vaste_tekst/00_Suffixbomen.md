@@ -167,5 +167,5 @@
         * aantal **verschillende strings** te bepalen waarin ze voorkomen
 
 * boom in postorder doorlopen
-    * kijken bij elkek noop of die eronder in voorkomen
+    * kijken bij elke knoop of die eronder in voorkomen
     * diepste van die knopen is langst gemeenschappelijke deelstring
