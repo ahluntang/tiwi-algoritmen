@@ -7,4 +7,16 @@ Indien je fouten vindt of extra uitleg en voorbeelden wilt toevoegen, dan kan je
 
 ## Work in progress
 
-<iframe style="width:100%; border:0; max-height: 100%; min-height: 450px; overflow: auto;" src="https://waffle.io/ahluntang/tiwi-algoritmen"></iframe>
+<script type="text/javascript">
+    function setframe() {
+        var height = $(window).height() - 350; 
+        $("#waffle").height(height);
+    }
+
+    $(window).resize(setframe);
+    $(function(){
+        $(window).trigger("resize");
+    });
+</script>
+
+<iframe id="waffle" style="width:100%; border:0;" src="https://waffle.io/ahluntang/tiwi-algoritmen"></iframe>
