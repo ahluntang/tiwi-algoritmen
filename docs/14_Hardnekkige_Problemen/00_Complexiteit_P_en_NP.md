@@ -36,7 +36,7 @@
 
 ### Veeltermen
 
-* als uitvoeringstijd niet kan begrensd worden door veelterm: probelem zeker niet efficiënt oplosbaar
+* als uitvoeringstijd niet kan begrensd worden door veelterm: probleem zeker niet efficiënt oplosbaar
     * graad van veelterm gewoonlijk heel beperkt
 * veelterm: kleinste klasse functies die kunnen gecombineerd worden
     * leveren opnieuw veeltermen op
