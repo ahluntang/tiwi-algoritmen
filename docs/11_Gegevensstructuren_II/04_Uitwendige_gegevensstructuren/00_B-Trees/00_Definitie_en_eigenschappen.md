@@ -41,6 +41,7 @@
         * tenzij B-tree ledig is
 * alle bladeren op zelfde niveau
 * elke knoop bevat
+    ![](/assets/btree_knoop.png)
     * geheel getal \\(k\\)
         * duidt aantal sleutels in knoop aan (niet elke knoop heeft kinderen)
     * logische waarde \\(b\\)

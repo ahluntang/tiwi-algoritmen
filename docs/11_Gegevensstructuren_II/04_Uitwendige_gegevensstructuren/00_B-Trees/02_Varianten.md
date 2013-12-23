@@ -17,6 +17,7 @@
     * sequentieel doorlopen van alle gegevens efficiënter
         * elke knoop wordt slechts éénmaal bezocht
         * in inwendig geheugen slechts plaats nodig voor 1 knoop
+![](/assets/bplustree.png)
 * scheiden van index en sequence set
     * inwendige knopen dienen uitsluitend om juiste weg te vinden
         * bevatten enkel sleutels en kindwijzers, zonder bijbehorende informatie

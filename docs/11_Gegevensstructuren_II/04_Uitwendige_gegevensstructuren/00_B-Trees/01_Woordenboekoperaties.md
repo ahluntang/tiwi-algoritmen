@@ -12,7 +12,7 @@
                 * werkt slechts als sleutels niet uniform verdeeld zijn
 * bij gevonden sleutel: zoeken stopt
     * resultaat bevat 
-        * verwijing naar knoop op schijf
+        * verwijzing naar knoop op schijf
         * plaats van sleutel in die knoop
 * bij niet gevonden sleutel
     * knoop is blad
@@ -72,6 +72,7 @@
         * gewoonlijk heeft ouder plaats voor extra sleutel
         * indien niet: ouder splitsen
             * bij kinderen: samen met sleutels over originele en nieuwe knoop verdelen
+    ![](/assets/btree_bu_add_nieuweknoop.png)
 * soms splitsing uitstellen
     * gegevens overbrengen naar broerknoop
         * over beide knopen zo goed mogelijk verdelen
@@ -79,6 +80,7 @@
     * inorder volgorde moet intact blijven
         * overbrengen via rotatie
         * sleutel gaat van knoop naar ouder, ouder staat sleutel af naar broer, broer krijgt kindwijzer van de knoop
+    ![](/assets/btree_bu_add_broerknoop.png)
 
 ### Performantie toevoegen (bottom-up)
 
@@ -132,6 +134,7 @@
     * eerst helemaal afdalen om achteraf nog wijziging aan te brengen in hoger gelegen knoop
     * zeldzaam: meeste sleutels van B-tree zitten in bladeren
 * alternatief: sleutel ontlenen aan broerknoop
+    ![](/assets/btree_del_broerknoop.png)
     * met rotatie
         * sleutel van broer naar ouder
         * sleutel van ouder naar knoop die ook kindwijzer van broer overneemt
