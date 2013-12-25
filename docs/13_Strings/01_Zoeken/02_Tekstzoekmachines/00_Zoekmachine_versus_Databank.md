@@ -58,12 +58,12 @@
 
 #### Meten van relevantie document voor query
 
-* via vector: stelt query of document voor in n-dimensionale ruimte
-    * vector bevat n gegevens/elementen/coördinaten
+* via vector: stelt query of document voor in \\(n\\)-dimensionale ruimte
+    * vector bevat \\(n\\) gegevens/elementen/coördinaten
     ![vector q en vector d](/assets/tekstzoekmachines_vectoren.png)
     * voor elk document is er een vector
 * relevantie document voor query kan gemeten worden door de hoek met de query-vector te berekenen
-    * document met vector die kleinste hoek maakt met query-vector is het meest relevant  
+    * document met vector dat kleinste hoek maakt met query-vector is het meest relevant  
     ![vector q en vectoren d](/assets/tekstzoekmachines_vector_hoek.png)
 * hoek berekenen
     * wiskunde: via inwendig product (cosinus)
