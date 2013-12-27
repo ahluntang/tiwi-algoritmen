@@ -41,5 +41,6 @@
 
 ## kost per stroomeenheid (minimale kostprobleem)
 
+* maximale stroom zoeken met minimale kost
 * speciaal geval van maximaal stroomprobleem
     * met minimale kost

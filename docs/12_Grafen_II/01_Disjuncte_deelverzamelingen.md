@@ -95,7 +95,13 @@ void unionMethod(vector< list<int> > & verzameling,int lijst1, int lijst2, vecto
         * gemiddeld \\( O(m) \\)
             * geamortiseerd: \\(O(1)\\)
     * `path compression`
-        * bij elke find alle knopen op gevolgde weg naar wortel laten wijzen
+        * optimale find
+            * elke knoop wijst rechstreeks naar wortel van boom
+            * maakt union-operatie inefficiënt: alle knopen van één boom moet aangepast worden
+        * benaderen
+            * bij elke find alle knopen op gevolgde weg naar wortel laten wijzen
+            * volgende find op één van die knopen zal optimaal zijn
+            * hoe meer find-operaties, hoe kleiner hoogte
 * performantie in slechtste geval
     * sterk verbeterd als beide heuristieken gebruikt worden
-    * \\(O(1)\\) 
+    * geamortiseerde performantie per operatie \\(O(1)\\) 

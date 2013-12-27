@@ -42,3 +42,4 @@
 * gewichten aanpassen: \\( \Theta(m) \\)
 * n keer `Dijkstra`: \\( O( n(n+m)\lg(n) ) \\) (belangrijkste term)
 * totaal:  \\( O( nm\lg(n) ) \\)
+    * voor ijle grafen beter dan `Floyd Warshall`

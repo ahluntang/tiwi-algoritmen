@@ -20,10 +20,10 @@
 ## algoritme
 
 * \\(n-1\\) iteraties
-* kortste wegen mogen telkens \\(1\\) verbinding langer worden
-* voor elke knoop: onderzoeken of kortste afstand verbeterd kan worden via knopen waarvan hij buur is.
-    * alle voorlopige afstanden in tabel bijhouden
-    * om kortste wegen te reconstrueren: voorlopersknoop op elke voorlopige kortste weg opslaan.
+    * kortste wegen mogen telkens \\(1\\) verbinding langer worden
+    * voor elke knoop: onderzoeken of kortste afstand verbeterd kan worden via knopen waarvan hij buur is.
+        * alle voorlopige afstanden in tabel bijhouden
+        * om kortste wegen te reconstrueren: voorlopersknoop op elke voorlopige kortste weg opslaan.
 * in principe per iteratie: alle \\(m\\) verbindingen testen: \\(O(nm)\\)
     * slechter dan `Dijkstra`
     * maar gewichten zijn gewoonlijk positief.
