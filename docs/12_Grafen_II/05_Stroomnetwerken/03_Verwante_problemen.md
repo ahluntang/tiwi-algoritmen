@@ -18,7 +18,7 @@
 
 ## ongericht stroomnetwerk
 
-* stroom inverbinding kan in ene of andere richting lopen
+* stroom in verbinding kan in ene of andere richting lopen
     * mag capaciteit niet overschrijden
 * **elke** verbinding vervangen door een **paar gerichte** verbindingen
     * één in elke richting

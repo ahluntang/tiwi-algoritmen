@@ -83,7 +83,7 @@
         * met \\(s_w\\) als wortel: \\(z_w(i,j) = p_w + \left( z(i,w-1) + g(i,w-1) \right) + \left( z(w+1,j) + g(w+1,j) \right) \\)
         * vereenvoudigd: \\( z_w(i,j) = z(i,w-1) + z(w+1,j) + g(i,j) \\)
     * \\(z(i,j)\\) moet minimaal zijn voor optimale deelboom
-        * achtereenvolgens elke sleutel van deelboom tot wortel make nen minimum bepalen
+        * achtereenvolgens elke sleutel van deelboom tot wortel maken en minimum bepalen
         * index \\(w\\) doorloopt alle waarden tussen i en j
           \\[ z(i,j) = \min_{i \le w \le j}{ \left\\{ z_w(i,j) \right\\} } = \min_{i \le w \le j}{ \left\\{ z(i,w-1) + z(w+1,j) \right\\} } +g(i,j) \\]
         * minimum bepalen heeft enkel zin als de deelboom sleutels bevat (als \\(i \le j\\))
@@ -99,7 +99,7 @@
     * zou veel deeloplossingen meermaals bepalen
         * ook bij berekening van alle waarden \\(g(i,j)\\) komen veel deelsommen meermaals voor
 * deeloplossingen bottom-up bepalen
-    * resultaten opslan in tabellen
+    * resultaten opslaan in tabellen
     * resultaten hogerop beschikbaar
 * drie tweedimensionale tabellen (driehoeksmatrix volstaat)
     * tabel \\( z[1..n+1, 0..n] \\)

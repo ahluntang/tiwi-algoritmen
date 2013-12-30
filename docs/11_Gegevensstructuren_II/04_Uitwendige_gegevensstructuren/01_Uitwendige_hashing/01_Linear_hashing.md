@@ -12,14 +12,14 @@
         * *overflow* pagina gebruiken
     * als volle pagina gesplitst wordt
         * gegevens van volle pagina en *overflow* pagina verdelen aan de hand van \\(d+1^\text{de}\\) eindbit
-    * adresse nvan nog niet gesplitste pagina's blijven nog steeds \\(d\\) bits lang
+    * adressen van nog niet gesplitste pagina's blijven nog steeds \\(d\\) bits lang
 
 ## Woordenboekoperaties
 
 ### Zoeken
 
 * hashwaarde van sleutel berekenen
-* aantal eindbits van hashwaardig nodig om te adresseren
+* aantal eindbits van hashwaarde nodig om te adresseren
     * logisch adres van volgende te splitsen pagina wordt bijgehouden in variabele \\(p\\)
     * adres gevormd door \\(d\\) eindbits vergelijken met dat in \\(p\\) (telt ook \\(d\\) bits)
         * als kleiner: gezochte pagina is reeds gesplitst

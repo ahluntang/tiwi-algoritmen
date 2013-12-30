@@ -16,7 +16,7 @@
         * veel lijsten
         * veel geheugen nodig om op te slaan
 * aantal rastergebieden
-    * best constante fracie van aantal punten \\(n\\)
+    * best constante fractie van aantal punten \\(n\\)
     * gemiddeld aantal punten in elk rastergebied wordt kleine constante
 * als er nogal wat rastergebieden ledig blijven
     * meerdimensionale tabel neemt onnodig veel geheugen in beslag
@@ -31,7 +31,7 @@
 * vast raster (al dan niet regelmatig)
     * veronderstelt statische gegevens
 * bij dynamische gegevens
-    * er kunnen zowel overvolle las ledige rastergebieden ontstaan
+    * er kunnen zowel overvolle als ledige rastergebieden ontstaan
     * overvolle gebieden vermijden
         * raster aanpassen door rastergrenzen te verplaatsen of toe te voegen
             * kan weer ledige gebieden opleveren

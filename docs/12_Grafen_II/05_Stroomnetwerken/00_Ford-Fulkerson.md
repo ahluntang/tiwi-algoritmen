@@ -30,7 +30,7 @@ f = \sum_{j \in K}{s(p,j)-s(j,p)}
             * niet noodzakelijk dezelfde verbindingen en capaciteiten
             * = **restnetwerk**
     * in **restnetwerk**
-        * weg van *producent* en *verbruiker* zoeken die stroom toelaat = **vergrotende weg**
+        * weg van *producent* naar *verbruiker* zoeken die stroom toelaat = **vergrotende weg**
             * extra stroom wordt in oorspronkelijke stroomverdeling aangepast
         * als geen vergrotende weg gevonden wordt
             * netwerkstroom is maximaal
@@ -82,7 +82,7 @@ f = \sum_{j \in K}{s(p,j)-s(j,p)}
       \\]
     * voor alle knopen \\(j\\) uit \\(P\\) komt elke stroom \\(s(i,j)\\) tweemaal voor, met tegengesteld teken
         * enkel knopen \\(J\\) uit \\(V = K \setminus P \\) blijven over
-          is nettostroom van snede \\(P,V\\)
+          is nettostroom van snede \\((P,V)\\)
           \\[
             f = \sum_{i \in P}{ \sum_{j \in V}{ \left( s(i,j) - s(j,i) \right) } } = f(P,V)
           \\]

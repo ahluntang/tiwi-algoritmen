@@ -72,7 +72,7 @@
 * stroomtoename langs weg kan opgedeeld worden in stroomtoename langs zijn verbindingen
 * maximale stroom vinden door stroomtoename langs individuele verbindingen
     * *push*-operatie
-* stroom is tijdens uitvoering van algoritme niet noodzakelijk conservatieef
+* stroom is tijdens uitvoering van algoritme niet noodzakelijk conservatief
     * er kan meer stroom binnenkomen in knoop dan er buiten gaat
         * stroom is tijdelijk *preflow*
 * knopen met dergelijk positie overschot/excess zijn actief

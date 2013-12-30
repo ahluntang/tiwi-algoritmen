@@ -26,7 +26,7 @@
     * als elke toevoegvolgorde even waarschijnlijk is: zoeken en toevoegen \\(O(\lg{n})\\)
     * in slechtste geval: \\(O(n)\\)
 * als punten op voorhand gekend zijn
-    * ervoor zorgen dat geen enkel deelboom meer dan helft van punten dna die van zijn ouder bevat
+    * ervoor zorgen dat geen enkel deelboom meer dan helft van punten dan die van zijn ouder bevat
     * punten lexicografisch rangschikken (op \\(x\\), bij gelijke \\(x\\) op \\(y\\))
     * mediaan wordt wortel
     * alle punten vóór mediaan
@@ -43,7 +43,7 @@
         * punten verdelen over deelbomen zodat ze gerangschikt blijven: \\(O(n)\\)
 * zoeken naar punten in zoekrechthoek
     * recursief
-    * bij knoop testne of punt in rechthoek ligt
+    * bij knoop testen of punt in rechthoek ligt
     * deelbomen onderzoeken die rechthoek overlappen
 * verwijderen
     * moeilijk
@@ -52,7 +52,7 @@
 
 ## Point region quadtrees
 
-* gegevensstructuur voor ruimtelijke objectne (*gebieden* in twee dimensies)
+* gegevensstructuur voor ruimtelijke objecten (*gebieden* in twee dimensies)
 * vereist dat zoekruimte rechthoek is (in tegenstelling to quadtree)
     * is ofwel gegeven of moet eerst bepaald worden
         * als kleinste rechthoek die alle punten bevat
@@ -77,8 +77,8 @@
         * als \\(z\\) grootste zijde van zoekruimte is
             * grootste zijde van gebied op diepte \\(d\\): \\( \frac{z}{2^d} \\)
             * maximale afstand tussen twee punten in gebied: \\( z\frac{\sqrt{k}}{2^d} \\)
-            * gebied van elke inwendigek noop bevat minstens twee punten
-                * onderlinge afstand is tenminsta \\(a\\)
+            * gebied van elke inwendige knoop bevat minstens twee punten
+                * onderlinge afstand is tenminste \\(a\\)
             * op elke diepte \\(d\\) : \\( z\frac{\sqrt{k}}{2^d} \ge a \\) of \\( \lg{\left( \frac{z}{a} \right)} + \frac{\lg{k}}{2} \\)
             * hoogte \\(h\\) = maximale diepte van inwendige knoop + 1
               voor tweedimensionale quadtree: \\( h \le \lg{\left( \frac{z}{a} \right)} + \frac{3}{2} \\)

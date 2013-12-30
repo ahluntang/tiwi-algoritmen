@@ -23,10 +23,10 @@
 ### binaire boom waarbij
 
 * elke knoop rood of zwart gekleurd is
-* elk blad (uitwenidge knoop) zwart is
+* elk blad (uitwendige knoop) zwart is
 * rode knoop steeds 2 zwarte kinderen heeft
 * elke mogelijke weg vanuit knoop naar blad heeft steeds evenveel zwarte knopen
-    * zwarte hooogte van knoop (knoop zelf wordt niet meegerekend, blad wel)
+    * zwarte hoogte van knoop (knoop zelf wordt niet meegerekend, blad wel)
 * wortel is zwart
 
 ## Eigenschappen
@@ -55,7 +55,7 @@
             * \\( n \ge 2^{z(w)}-1 \ge 2^{\frac{h}{2}} -1 \\)
             * \\( h \le 2\lg{(n+1)} \\)
     * hoogte van rood-zwarte boom met \\(n\\) knopen is steeds \\(O(\lg{n})\\)
-    * boom is slechts bij benadering evenwichtig, eisen zijn minster streng dan bij AVL boom
+    * boom is slechts bij benadering evenwichtig, eisen zijn minder streng dan bij AVL boom
         * operaties zijn eenvoudiger en efficiënter te implementeren
 
 ## Woordenboekoperaties
@@ -133,7 +133,7 @@
 * knoop \\(c\\), ouder \\(p\\) en grootouder \\(g\\) moeten op één lijn liggen
     * indien niet geval, knoop \\(c\\) met zijn ouder \\(p\\) roteren naar links  
     ![](/assets/rzboom_bu_add_cpglijn.png)
-* rode ouder p wegnemen via rotatie naar rechts
+* rode ouder \\(p\\) wegnemen via rotatie naar rechts
     * bezorgt extra knoop in rechterdeelboom
 * \\(p\\) komt bovenaan: heeft invloed op twee wegen
     * **zwarte kleur overnemen** van grootouder \\(g\\)
@@ -144,7 +144,7 @@
 #### performantie
 
 * in totaal 
-    * hoogstens twee rotatie nodig om boom te herstellen
+    * hoogstens twee rotaties nodig om boom te herstellen
     * eventueel voorafgegaan door \\(O(\lg{n})\\) keer opschuiven (hoogte boom)
 * roteren en opschuiven: \\(O(1)\\)
 * initieel afdalen: \\(O(\lg{n})\\)
@@ -214,7 +214,7 @@
 
 ####### Zwarte broer \\(b\\) van \\(c\\) heeft rood kind
 
-* broer \\(b\\) moet samen met zijn ouder \\(p) en zijn rood kind **op 1 lijn** liggen
+* broer \\(b\\) moet samen met zijn ouder \\(p\\) en zijn rood kind **op 1 lijn** liggen
     * kind van broer \\(b\\) met broer \\(b\\) roteren als rood kind niet op 1 lijn ligt met broer \\(b\\) en ouder \\(p\\)
     * broer \\(b\\) en rood linkerkind \\(l\\) roteren naar rechts
     * \\(b\\) rood maken en \\(l\\) zwart
@@ -284,14 +284,14 @@
     * ofwel één van rode kinderen van \\(c\\)
     * ofwel via broer \\(b\\)
 
-#### Knoop \\(c\\) heeft minstens één rood kind
+#### Knoop \\(p\\) heeft minstens één rood kind
 
-* indien eje naar rood kind moet: terug bij beginsituatie
+* indien je naar rood kind moet: terug bij beginsituatie
 * naar zwart kind \\(c\\)
     * rood maken door ouder \\(p\\) met zijn rood kind \\(b\\) (broer van \\(c\\)) te roteren en kleuren van \\(c\\) en \\(b\\) om te keren  
     ![](/assets/rzboom_td_del_roodkind.png)
 
-#### Knoop \\(c\\) heeft twee zwarte kinderen (of geen inwendige kinderen)
+#### Knoop \\(p\\) heeft twee zwarte kinderen (of geen inwendige kinderen)
 
 * \\(c\\) rood maken via zwarte broer \\(b\\): kijken naar zijn kinderen
 

@@ -19,7 +19,7 @@
     * meeste knopen hebben geen ouderwijzer
     * knoop loskoppelen van ouder
     * wordt wortel van nieuwe heap
-    * samenvoegen met oorspronkleijke (gewijzigde) heap
+    * samenvoegen met oorspronkelijke (gewijzigde) heap
 * minimum verwijderen
     * wortel verwijderen
         * levert collectie van \\(c\\) heaps op
@@ -30,9 +30,9 @@
     * standaardmanier gebruikt twee doorgangen
         * eerst heaps in paren samenvoegen, beginnend bij links
         * daarna beginnen bij meest rechtse (nieuwe) heap
-            * anderen één voor één aan toveogen: van rechts naar links
+            * anderen één voor één aan toevoegen: van rechts naar links
 * willekeurige (gelokaliseerde) knoop verwijderen
     * loskoppelen van ouder
-    * wordt wortel van niewue heap
+    * wordt wortel van nieuwe heap
     * minimum van nieuwe heap verwijderen (wortel)
     * rest van heap samenvoegen met oorspronkelijke (gewijzigde) heap

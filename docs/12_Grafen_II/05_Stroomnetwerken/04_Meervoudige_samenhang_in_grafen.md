@@ -15,7 +15,7 @@
 * meervoudige vormen: stroomnetwerken
     * nauw verband tussen maximale netwerkstromen en minimale snede
         * als men maximale netwerkstroom vindt, heeft men meteen minimale snede
-    * als alle capcaciteiten één zijn: capaciteit van snede \\((P,V)\\) gelijk aan aantal verbindingen van knopen in \\(P\\) naar knopen in \\(V\\)
+    * als alle capaciteiten één zijn: capaciteit van snede \\((P,V)\\) gelijk aan aantal verbindingen van knopen in \\(P\\) naar knopen in \\(V\\)
     * elke vergrotende weg laat stroomtoename van één toe
         * weg van \\(p\\) naar \\(v\\) in stroomnetwerk
         * gebruikt één voorwaartse verbinding over minimale snede
@@ -29,7 +29,7 @@
 
 * in 4 versies
     * zowel voor gerichte als ongerichte grafen
-    * zowel voor meevroudige samenhang als meevroudige lijnsamenhang
+    * zowel voor meervoudige samenhang als meervoudige lijnsamenhang
 * voor meervoudig lijnsamenhangende gerichte graaf
     * minimum aantal verbindingen dat moet verwijderd worden om knoop \\(v\\) van gerichte graaf onbereikbaar te maken vanuit andere knoop \\(p\\)
       = aantal maximaal lijnonafhankelijke wegen (zonder gemeenschappelijke verbindingen) van \\(p\\) naar \\(v\\)
@@ -72,13 +72,13 @@
 * maximaal stroomprobleem oplossen voor elk knopenpaar
     * minimum van die oplossingen nemen
     * \\(\Theta(n^2)\\) knopenparen: performantie \\(\Theta(n^3m)\\)
-* \\(Theta(n)\\) stroomproblemen volstaan
+* \\(\Theta(n)\\) stroomproblemen volstaan
     * stel dat \\(r\\) en \\(s\\) producent en verbruiker zijn van stroomnetwerk met kleinste minimale snede \\(R,S\\) onder alle \\(\Theta(n^2)\\) knopenparen
     * hetzelfde resultaat kan gevonden worden door stroomnetwerk met willekeurige knoop \\(x\\) uit \\(R\\) als producent en willekeurige knoop \\(y\\) uit \\(S\\) als verbruiker
         * \\((R,S)\\) was bij veronderstelling kleinste minimale snede
     * probleem \\((R,S)\\) niet gekend, dus ook \\(x\\) en \\(y\\) niet
         * alle knopen cyclisch in willekeurige volgorde zetten: \\( x_1, x_2, ..., x_n \\)
-        * altijd twee opeenvolgende knopen \\(x_i\\) en \\(x_{i+1}\\) zodat \\(x_i\\) in \\(R\\) ligt en \\(x_{i+1}\\ in \\(S\\)
+        * altijd twee opeenvolgende knopen \\(x_i\\) en \\(x_{i+1}\\) zodat \\(x_i\\) in \\(R\\) ligt en \\(x_{i+1}\\) in \\(S\\)
     * slechts \\(n\\) stroomnetwerken oplossen
         * voor alle paren opeenvolgende knopen
         * minimum van alle oplossingen bijhouden

@@ -3,11 +3,11 @@
 * maximale koppeling
     * koppeling met grootste aantal verbindingen (gekoppelde knopen)
 * verbindingen met gewicht: drukken voorkeur voor bepaalde koppelingen uit
-    * gewoen koppelingsprobleem zoekt koppeling met grootste totale gewicht
+    * gewogen koppelingsprobleem zoekt koppeling met grootste totale gewicht
 
 * `bipartite graph` ( tweeledig)
     * knopen kunnen verdeeld worden in twee deelverzamelingen \\(L\\) en \\(R\\)
-* als elke uitvoerder slechts één tak tegelijk kan verrichten
+* als elke uitvoerder slechts één taak tegelijk kan verrichten
     * maximale ongewogen koppeling zorgt ervoor dat er zoveel mogelijk taken tegelijk uitgevoerd worden
 * nauw verband tussen koppelingen en maximale stroom
     * op te lossen met dezelfde efficiëntie
@@ -27,7 +27,7 @@
     * als eenheid stroom van producent in knoop van \\(L\\) aankomt
         * moet over precies één verbinding naar overkant
     * elke knoop van \\(R\\) kan slechts stroom ontvangen van één enkele knoop uit \\(L\\)
-        * verbinidngen bepalen overeenkomstige koppeling
+        * verbindingen bepalen overeenkomstige koppeling
         * netwerkstroom = \\(k\\)
         * evenveel verbindingen in deze koppeling
 * maximale koppeling komt overeen met maximale gehele stroomverdeling

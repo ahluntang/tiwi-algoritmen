@@ -55,7 +55,7 @@
 * clusters = samenhangende componenten
 * dichtbijgelegen objecten: in dezelfde cluster
     * vermijden dat ze in andere cluster terechtkomen
-* verbinding liggen tussen paren objecten
+* verbinding leggen tussen paren objecten
     * volgens stijgende onderlinge afstand
     zonder lussen: verzameling wortelloze bomen
 * elk toegevoegde verbinding voegt 2 clusters samen
@@ -66,11 +66,11 @@
 ### Is spreiding van clustering maximaal?
 
 * spreiding = lengte \\( d^* \\) van verbinding die algoritme van Kruskal zou toegevoegd hebben indien we die niet onderbroken hadden.
-* bestaat er andere clustering \\( C'=\{C_1', C_2', ..., C_k'\} \\) met grotere spriding?
+* bestaat er andere clustering \\( C'=\{C_1', C_2', ..., C_k'\} \\) met grotere spreiding?
 * \\( C' \neq C \\) :
-    * cluster van \\( C \\) moet 2 elementen bevatten die tot verschillende clusters van \\( C' \\)
+    * cluster van \\( C \\) moet 2 elementen bevatten die tot verschillende clusters van \\( C' \\) behoren
     * beide elementen behoren tot dezelfde cluster
-        * verbonden via weg waarvan alle verbindingen door Kruskal tgoegevoegd werden.
+        * verbonden via weg waarvan alle verbindingen door Kruskal toegevoegd werden.
         * gewicht van al die verbindingen hoogstens \\( d^* \\).
 * in \\( C' \\) : beide elementen behoren tot verschillende clusters
     * weg tussen beide moet twee opeenvolgende knopen \\( p \\) en \\( p' \\) bevatten die ook tot verschillende clusters van \\( C' \\) behoren.

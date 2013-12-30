@@ -52,14 +52,14 @@
         * bij blad: tabel ongedefinieerd
     * tabel voor maximaal \\(m-1\\) sleutels die stijgend gerangschikt zijn
         * eventueel met extra tabel met bijhorende informatie of verwijzing ernaar
-        * \\(k-1\\) geordende sleutels van inwenidge knoop
+        * \\(k-1\\) geordende sleutels van inwendige knoop
             * verdelen sleutelbereik in k gebieden
             * sleutels van elk deelgebied zitten in deelboom met als wortel kind van deze knoop
 * eenvoudigste B-trees: 2-3 bomen (orde \\(3\\)) en 2-3-4 bomen (orde \\(4\\))
     * normaal is orde \\(m\\) veel groter (reden: grotere \\(m\\) betekent kleinere hoogte)
 * knopen moeten plaats reserveren voor maximale grote van tabellen
     * waarde van \\(m\\) hangt af van grootte van
-        * schijfparina
+        * schijfpagina
         * sleutel
         * bijbehorende gegevens
 
@@ -87,7 +87,7 @@
                \\[
                     h \le \log_{\lceil \frac{m}{2} \rceil}{\left( \frac{n+1}{2} \right)}
                \\] 
-        * hoogte is dus \\(O(\lg{n}\\)
+        * hoogte is dus \\(O(\lg{n})\\)
             * zoals bij rood-zwarte boom
             * verborgen constante is factor \\( \log_{\lceil \frac{m}{2} \rceil} \\) kleiner
 * B-tree met \\(n\\) uniform verdeelde sleutels gebruikt gemiddeld \\( \frac{n}{m\ln{2}} \\) schijfpagina's
@@ -160,7 +160,7 @@
 * als blad \\(m\\) sleutels bevat
     * splitsen bij middelste sleutel (op index \\( \lceil \frac{m}{2} \rceil \\))
     * nieuwe knoop wordt op hetzelfde niveau aangemaakt
-        * in inwenzig gehugen en op schijf
+        * in inwendig geheugen en op schijf
         * krijgt gegevens rechts van middelste sleutel
     * middelste sleutel zelf gaat naar ouder (met bijbehorende informatie)
     * ouder krijgt ook verwijzing naar nieuwe knoop
@@ -243,7 +243,7 @@
         * als beide broers geen sleutels kan missen
             * samenvoegen met broer
             * knoop verdwijnt uit boom
-            * ouder verlist kind
+            * ouder verliest kind
             * sleutel tussen twee broers moet verdwijnen
                 * wordt toegevoegd aan samengevoegde knoop
                 * mogelijk gevolg: ouder houdt te weinig sleutels over
@@ -277,7 +277,7 @@
         * zowel toevoegen als verwijderen moet uiteindelijk toch in blad gebeuren
     * zoeken naar opvolger van sleutel: vereist \\(O\left( \log_{ \lceil \frac{m}{2} \rceil }{(n)} \right) \\) schijfoperaties
 * B<sup>+</sup>-tree: alle gegevens in bladeren opslaan
-* inwendige knopen als index g ebruiken die tolaat om gegevens snel te lokaliseren
+* inwendige knopen als index gebruiken die toelaat om gegevens snel te lokaliseren
 * bladeren en inwendige knopen: verschillende structuur
     * mogen in grootte verschillen
 * *sequence set*: gelinkte lijst van alle bladeren, in stijgende sleutelvolgorde
@@ -316,7 +316,7 @@
 
 * als sleutels strings zijn
     * nemen teveel plaats in
-* functie vna sleutel
+* functie van sleutel
     * sleutels in twee deelbomen van elkaar onderscheiden
 * Prefix B<sup>+</sup>-tree gebruikt zo'n kort mogelijke string (prefix)
 * meer plaats voor sleutels in inwendige knopen

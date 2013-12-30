@@ -65,7 +65,7 @@
     * door speciaal scheidingskarakter
 * enkel eerste `m` waarden van prefixfunctie bewaren
     * methode vereist slechts \\( \Theta(m)\\) plaats
-    * naast platas voor `T` en `P`
+    * naast plaats voor `T` en `P`
 
 ### Implementatie
 

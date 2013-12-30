@@ -85,7 +85,7 @@
 * zoals bij gewone binaire zoekboom
     * nadien nieuwe knoop wortel maken via splay-operaties
 * alternatieve manier (geamortiseerd trager)
-    * eerst toe te vogen sleutel zoeken
+    * eerst toe te voegen sleutel zoeken
     * wortel bevat ofwel sleutel ofwel opvolger/voorloper
     * als sleutel niet aanwezig is: opslaan in nieuwe wortelknoop
         * linkerkind: wordt voorloper met zijn linkse deelboom
@@ -153,9 +153,9 @@
 ### Splay-operatie voltooien
 
 * als gezochte knoop \\(c\\) wortel van \\(M\\) geworden is
-* drie deelbome nsamenvoegen tot één boom met wortel \\(c\\)
+* drie deelbomen samenvoegen tot één boom met wortel \\(c\\)
 * alle sleutels in linkse deelboom van \\(c\\) zijn groter dan sleutels in \\(L\\)
-    * wortel van \\(L\\) word meest rechtse plaats in die deelboom
+    * wortel van \\(L\\) wordt meest rechtse plaats in die deelboom
 * analoog: wortel van \\(R\\) wordt meest linkse plaats in rechterdeelboom van \\(c\\)
 
 ### Woordenboekoperaties
@@ -178,12 +178,12 @@
 * analoog als alternatieve versie van bottom-up
 * eerst sleutel zoeken
 * als gevonden: staat bij wortel
-* wortel verwijderne en deelbomen samenvoegen via **join**operatie
+* wortel verwijderen en deelbomen samenvoegen via **join**operatie
 
 ### Performantie
 
 * na topdown operatie is boom niet noodzakelijk dezelfde als analoge bottom-up operatie
-* geammorteerde efficiëntie van alle operaties: \\(O(\lg{n})\\)
+* geamortiseerde efficiëntie van alle operaties: \\(O(\lg{n})\\)
 
 ## Performantie splay trees
 
@@ -220,7 +220,7 @@
 ### Keuze potentiaalfunctie en rang van knoop
 
 * potentiaalfunctie zo kiezen dat eindpotentiaal niet kleiner is dan beginpotentiaal
-    * totaal geamortiseerde tijd is dan bovengrens voor wekelijke tijd van reeks operaties
+    * totaal geamortiseerde tijd is dan bovengrens voor werkelijke tijd van reeks operaties
 * eenvoudigste keuze: geef elke knoop \\(i\\) gewicht \\(s_i\\)
 * \\(s_i\\) is gelijk aan aantal knopen in deelboom waarvan het de wortel is
 * som van logaritmen van al de gewichten 
@@ -255,10 +255,10 @@
 * onbekend aantal zig-zags en/of zig-zigs, eventueel gevolgd door één zig
     * eerst geamortiseerde tijd \\(a\\) voor de drie gevallen apart bepalen
     * dezelfde knoop \\(c\\) stijgt telkens één of twee niveau's
-        * resultaten trachten te bekomen waarin enkel rang van c vóór en na de operatie voorkomt
+        * resultaten trachten te bekomen waarin enkel rang van \\(c\\) vóór en na de operatie voorkomt
         * geamortiseerde tijd van volledige splay-operatie is som van afzonderlijke tijden
-            * rang van \\(c\\) na operatie is gelijk an rang van \\(c\\) vóór volgende operatie
-                * meeste terme nin som vallen weg
+            * rang van \\(c\\) na operatie is gelijk aan rang van \\(c\\) vóór volgende operatie
+                * meeste termen in som vallen weg
             * \\(s_i\\) en \\(r_i\\): gewicht en rang van knoop vóór operatie \\(i\\)
             * \\(s_i'\\) en \\(r_i'\\): gewicht en rang van knoop na operatie \\(i\\)
             * vóór operatie: 
@@ -304,7 +304,7 @@
 
 ##### Bovengrenzen
 
-* bovengrenzen voor de drie soorten operatie bevateen dezelfde positieve term \\(r_c'-r_c\\) (want \\(r_c' > r_c\\) )
+* bovengrenzen voor de drie soorten operaties bevatten dezelfde positieve term \\(r_c'-r_c\\) (want \\(r_c' > r_c\\) )
     * maar met verschillende coëfficiënten
 * totale geamortiseerde tijd: som van dergelijke tijden
     * kunnen maar vereenvoudigd worden als coëfficiënten gelijk zijn

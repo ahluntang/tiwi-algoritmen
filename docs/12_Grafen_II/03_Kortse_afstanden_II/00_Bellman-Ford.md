@@ -36,7 +36,7 @@
 * enkel knopen waarvan afstand door huidige iteratie gewijzigd werd in wachtrij plaatsen.
 * enkel buren van deze knopen worden bij volgende iteratie getest
     * ~ `breedte-eerst` zoeken
-* knoop moet niet meer nagaan of afstand van knopen waarvan hij buur is verbeterd wrd (*pull-based*), maar wordt door die knopen van de wijziging verwittigd (*push-based*).
+* knoop moet niet meer nagaan of afstand van knopen waarvan hij buur is verbeterd werd (*pull-based*), maar wordt door die knopen van de wijziging verwittigd (*push-based*).
     * heeft geen invloed op asymptotische waarden voor performantie
 * als: knoop uit wachtrij verwijderd wordt en afstand van \\(1\\) van zijn buren aangepast wordt
     * die buur moet in wachtrij gestopt worden, ook als hij er reeds vroeger uit verwijderd werd
@@ -46,7 +46,7 @@
     * met dergelijke lus zou algo nooit stoppen
     * beveiliging
         * aantal iteraties bijhouden
-        * als wachtrij niet leeg is na n iteraties: graaf heeft **negatieve lus**
+        * als wachtrij niet leeg is na \\(n\\) iteraties: graaf heeft **negatieve lus**
 
 ### via deque
 
@@ -62,7 +62,7 @@
     * als knoop \\(i\\) ooit in `deque` zat
         * werd verwijderd en alle buren werden onderzocht.
     * stel: afstand van sommige buren werd aangepast
-        * knwamen terecht in `deque`
+        * kwamen terecht in `deque`
         * als die nog steeds in `deque` zitten op moment dat afstand opnieuw aangepast wordt
             * mogelijk dat afstand nogmaals zou wijzigen met nieuwe afstand
         * als het achteraan wordt toegevoegd
@@ -75,7 +75,7 @@
 
 ## Vergelijking Bellman-Ford met Dijkstra
 
-* `BF`: laat negatieve gewichten toe, flexibeler en gedecentraliseerd dan `Dijkstra`
+* `BF`: laat negatieve gewichten toe, flexibeler en gedecentraliseerder dan `Dijkstra`
     * afstand van buren kan ook mogelijks verbeterd worden
     * buren worden verwittigd
     * ideaal voor netwerk (netwerkrouters)

@@ -21,16 +21,16 @@
 ![](/assets/digitalezoekboom.png)
 
 * volgens diepte juiste bit gebruiken
-* in knoop op diepte \\(i\\)  wordt bit \\(i+1) van zoeksleutel gebruikt
+* in knoop op diepte \\(i\\)  wordt bit \\(i+1\\) van zoeksleutel gebruikt
     * om te beslissen of we afdalen naar linker- of naar rechterkind
-* in-order overlope nvan (binaire) digitale zoekboom levert niet noodzakelijk opgeslagen sleutels in volgorde
+* in-order overlopen van (binaire) digitale zoekboom levert niet noodzakelijk opgeslagen sleutels in volgorde
     * alle sleutels in linkerdeelboom van knoop op diepte \\(i\\) zijn kleiner dan deze in zijn rechterdeelboom
-    * \\(i\\) beginbigs van al deze sleutels zijn gelijk
+    * \\(i\\) beginbits van al deze sleutels zijn gelijk
     * onderscheid werd gemaakt op grond van bit \\(i+1\\)
     * sleutel in knoop zelf heeft dezelfde \\(i\\) beginbits
         * kan toch om het even waar vallen tussen sleutels van beide deelbomen
 * elke sleutel in digitale zoekboom bevindt zich ergens op weg vanuit wortel bepaald door opeenvolgende bits van sleutel
-    * langste weg in boom (hoogte) wordt beperkt door aantal bits van lanst opgeslagen sleutel
+    * langste weg in boom (hoogte) wordt beperkt door aantal bits van langst opgeslagen sleutel
 * voor groot aantal sleutels met relatief kleine bitlengte
     * performantie in slechtste geval veel beter dan gewone binaire zoekboom
     * vergelijkbaar met rood-zwarte boom

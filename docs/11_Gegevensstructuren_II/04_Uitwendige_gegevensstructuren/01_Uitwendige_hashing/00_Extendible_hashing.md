@@ -112,23 +112,23 @@
     * \\(k\\) wordt met 1 verminderd
 * zodra hashtabel minstens twee verwijzingen naar elke pagina bevat
     * elke \\(k\\) is kleiner dan \\(d\\)
-    * kan gehalveerd worden (\\d \\) vermindert met 1
-* soms pagina's met wenig elementen tolereren
+    * kan gehalveerd worden, \\(d\\) vermindert met 1
+* soms pagina's met weinig elementen tolereren
     * werkt in praktijk vaak goed
 
 ### Performantie
 
 * wanneer er \\(n\\) uniform verdeelde sleutels opgeslagen zijn
     * aan te tonen dat verwachtingswaarde van aantal pagina's \\( \frac{n}{m\ln{2}} \approx \frac{1,44n}{m} \\) bedraagt
-    * elke pagina is gemiddeld voor \\(69%\\) gevuld
+    * elke pagina is gemiddeld voor \\(69\%\\) gevuld
 * grootte van hashtabel heeft verwachtingswaarde van \\( 3,92\frac{n}{m}\sqrt[m]{n} \\)
     * voor praktische waarden van \\(m\\): \\(\sqrt[m]{n} \approx 1\\)
       resultaat bedraagt ongeveer \\( \frac{4n}{m} \\)
 * als hashtabel te groot
-    * hashtabel op analoge manier in twee niveaus' implementeren
+    * hashtabel op analoge manier in twee niveaus implementeren
         * wortel in geheugen houden
         * indexeren met kleiner aantal eindbits
-            * delen van eigenlijke hashtabel in uitwendig gehugen te vinden
+            * delen van eigenlijke hashtabel in uitwendig geheugen te vinden
         * zoeken vereist extra schijfoperatie
     * maximaal aantal gegevens \\(m\\) in elke pagina vergroten
         * door naast sleutels enkel wijzers naar bijbehorende informatie op te slaan

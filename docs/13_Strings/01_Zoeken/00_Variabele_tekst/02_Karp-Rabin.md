@@ -26,7 +26,7 @@
 * toelaten dat algoritme zich af en toe vergist
     * om snel algoritme te bekomen
 
-## Definiëren getallen
+##  Getallen definiëren
 
 * minstens vergelijkbare (gemiddelde) performantie als die van eenvoudige methode behalen?
     * getal moet voor elk van \\(O(n)\\) deelstrings van tekst in \\(O(1)\\) berekend kunnen worden

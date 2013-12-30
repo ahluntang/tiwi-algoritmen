@@ -70,7 +70,7 @@
     * bevatten soms veel meer bomen
 * geamortiseerde performantie
     * samenvoegen/toevoegen/prioriteit verminderen: \\(O(1)\\)
-    * minimum verwijderen en gelokaliseeerd element verwijderen: \\(O(\lg{n})\\)
+    * minimum verwijderen en gelokaliseerd element verwijderen: \\(O(\lg{n})\\)
 * interessant wanneer verminderen van prioriteit frequenter gebeurt dan verwijderen minimum
 * verborgen constante van implementatie te groot
     * enkel theoretisch van belang

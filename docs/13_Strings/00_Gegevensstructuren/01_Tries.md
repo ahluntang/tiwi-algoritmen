@@ -33,7 +33,7 @@
     * aantal knopen is hoger dan aantal sleutels
     * trie met \\(n\\) gelijkmatig verdeelde sleutels: gemiddeld \\(\frac{n}{\ln{2}}\\) inwendige knopen
 * sleutels mogen geen prefix van andere sleutel zijn
-    * als langere sleutel reeds in boom it
+    * als langere sleutel reeds in boom zit
     * kortere sleutel zoeken/toevoegen
         * er blijven geen bits meer over om hem van eerste te onderscheiden
 * voordeel: 
@@ -60,7 +60,7 @@
     * maakt radix sort sneller
 * splitsen op meerdere bits, bv. karakter
 stel: sleutelelement kan \\(m\\) verschillende waarden aannemen
-    * elke inwendige knoop van trie krijg (potentieel) \\(m\\) kinderen
+    * elke inwendige knoop van trie krijgt (potentieel) \\(m\\) kinderen
         * \\(m\\) wegen per knoop
     * \\(m\\)-wegsboom
 * zoeken/toevoegen
@@ -150,14 +150,14 @@ stel: sleutelelement kan \\(m\\) verschillende waarden aannemen
 * elke sleutel ligt opgeslagen op eigen zoekweg
     * wordt 2 maal ontmoet
     * tijdens zoeken
-    * op einde vna zoeken
+    * op einde van zoeken
 * toevoegen
     * begint met zoeken
         * eindigt steeds met sleutelvergelijking (geen nullpointers)
     * als sleutels niet gelijk zijn: toevoegen
     * meest linkse bit zoeken waarin beide sleutels verschillen
     * sleutel tweede maal in boom zoeken
-        * bij knoop komen met hogere bitpositi dan onderscheidende bit
+        * bij knoop komen met hogere bitpositie dan onderscheidende bit
             * nieuwe knoop tussenvoegen waar bit getest wordt
             * bij die bit zou onderliggende trie een knoop met nullwijzer hebben
                 * daar moet sleutel terechtkomen (in nieuw blad)

@@ -8,7 +8,7 @@
 ## Stable marriage
 
 * twee verzamelingen met dezelfde grootte
-    * elementen: manne nen vrouwen
+    * elementen: mannen en vrouwen
 * elke man (vrouw) heeft voorkeurslijst die alle vrouwen (mannen) bevat
 * elke man moet gekoppeld worden aan vrouw zodat koppeling stabiel is
 
@@ -67,11 +67,11 @@
 #### Oplossing is steeds stabiel
 
 * als er man \\(m\\) bestaat die vrouw \\(v\\) verkiest boven zijn partner
-    *\\(v\\) moet hem ooit afgewezen hebben
-    * omdat ze verloofd was of zich verloorde met man die ze verkoos boven \\(m\\)
+    * \\(v\\) moet hem ooit afgewezen hebben
+    * omdat ze verloofd was of zich verloofde met man die ze verkoos boven \\(m\\)
     * als ze later een andere partner aanvaardde, stond die nog hoger op haar lijst
 * \\(m\\) verkiest andere vrouw \\(v\\) niet omgekeerd
-* er bestaat geen ongekoppeld paar dat stabiliteit van koppeling ingevaar brengt
+* er bestaat geen ongekoppeld paar dat stabiliteit van koppeling in gevaar brengt
 
 #### Elke mogelijke aanzoekvolgorde van mannen geeft dezelfde oplossing
 
@@ -121,7 +121,7 @@
     * lijsten opstellen: \\( \Theta(n^2) \\) 
 * lijst van vrije mannen
     * om vrije man efficiënt te vinden
-    * enkel verwijderen: afgewezen ma nkan meteen nieuw aanzoek doen.
+    * enkel verwijderen: afgewezen man kan meteen nieuw aanzoek doen.
 * stopt als laatste vrouw haar eerste aanzoek krijgt.
 * aantal aanzoeken: \\( O(n^2) \\)
 * \\(n-1\\) vrouwen kunnen elk maximaal \\(n\\) aanzoeken krijgen
@@ -140,7 +140,7 @@
     * vrouw \\(v\\) ofwel ongekoppeld blijft, ofwel man \\(m\\) verkiest boven haar partner.
 * iemand wordt liever gekoppeld dan alleen te moeten blijven
     * elke stabiele koppeling bestaat uit \\( \min{\lbrace n_m, n_v \rbrace} \\) koppels
-        * de rest van grootste grop blijft ongekoppeld
+        * de rest van grootste groep blijft ongekoppeld
     * voor kleinste groep vindt Gale-Shapley een stabiele koppeling
         * is optimaal voor iedereen uit die groep
     * slechts mogelijke koppeling voor iedereen uit grootste groep die partner krijgt
@@ -165,7 +165,7 @@
     * er zijn gevallen waarbij geen (super)stabiele koppeling mogelijk is
 * **sterke stabiliteit**
     * koppeling onstabiel als er een man en een vrouw bestaan die geen partners zijn waarvan
-        * ene de andere strikt erkiest boven de partner
+        * ene de andere strikt verkiest boven de partner
         * andere de eerste minstens even graag heeft als de partner
     * er is niet altijd een (sterk) stabiele koppeling
 * **zwakke stabiliteit**
@@ -180,7 +180,7 @@
 
 * asymmetrische veralgemening van stable marriage probleem
     * enerzijds stagiairs
-    * anderzijders hospitale ndie elk een of meer stageplaatsen aanbieden
+    * anderzijders hospitalen die elk een of meer stageplaatsen aanbieden
 * elk hospitaal moet stabiel gekoppeld worden aan aantal stagiairs
 * aantal plaatsen moet niet noodzakelijk gelijk zijn aan aantal stagiairs
 * voorkeurslijsten mogen onvolledig zijn (van zowel hospitalen als stagiairs)

@@ -96,7 +96,7 @@ void unionMethod(vector< list<int> > & verzameling,int lijst1, int lijst2, vecto
             * geamortiseerd: \\(O(1)\\)
     * `path compression`
         * optimale find
-            * elke knoop wijst rechstreeks naar wortel van boom
+            * elke knoop wijst rechtstreeks naar wortel van boom
             * maakt union-operatie inefficiënt: alle knopen van één boom moet aangepast worden
         * benaderen
             * bij elke find alle knopen op gevolgde weg naar wortel laten wijzen

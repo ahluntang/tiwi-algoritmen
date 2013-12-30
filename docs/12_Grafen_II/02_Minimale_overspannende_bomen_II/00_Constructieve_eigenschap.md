@@ -10,8 +10,8 @@
     * inhalige/greedy algoritmen
 * eigenschap
     * gegeven
-        * deelverzameling \\(D\\) van graafverbinding die behoren tot MOB
-        * graafverbinding \\(v\\) die niet dot \\(D\\) behoort
+        * deelverzameling \\(D\\) van graafverbindingen die behoren tot MOB
+        * graafverbinding \\(v\\) die niet tot \\(D\\) behoort
     * opdat \\(v\\) samen met verbindingen van \\(D\\) tot MOB zou behoren
         * nodig en voldoende dat er snede \\(S\\) bestaat
             * die geen verbindingen van \\(D\\) bevat

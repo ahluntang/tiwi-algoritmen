@@ -54,7 +54,7 @@
                 * via boomtakken: zeker weg van wortel \\(w\\) naar elk van knopen \\(u\\) in boom
                     * er is weg van \\(u\\) naar \\(w\\) in omgekeerde graaf
                 * \\(w\\) is steeds voorouder van \\(u\\) in `diepte-eerst` boom van omgekeerde graaf
-                    * ze kunnen niet tot tweeverschillende bomen behoren
+                    * ze kunnen niet tot twee verschillende bomen behoren
                         * door postordernummer zou \\(w\\) in rechtse deelboom moeten liggen
                             * onmogelijk: er bestaat een weg van \\(u\\) naar \\(w\\)
                             * kunnen ook niet tot nevendeelbomen behoren
