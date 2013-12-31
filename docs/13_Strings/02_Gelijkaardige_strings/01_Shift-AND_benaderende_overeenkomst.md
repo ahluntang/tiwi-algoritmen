@@ -44,7 +44,7 @@
     * in eerste geval (eerste \\(i\\) patroonkarakters komen exact overeen, inlassing **na** patroonpositie \\(i\\))
         * \\(R_{j+1}^1\\) is exacte kopie van \\(R_j^0\\)
     * in tweede geval
-        * schuifoperatie op \\(R_j^1\\) gevolgd door bit-per-bit EN-operatie met met `S[ T[j+1] ]`
+        * schuifoperatie op \\(R_j^1\\) gevolgd door bit-per-bit EN-operatie met `S[ T[j+1] ]`
     * \\( R_{j+1}^1 = R_j^0 \text{ OF } \left( Schuif(R_j^1) \text{ EN } S[ T[j+1] ] \right) \\)
     * \\(R^1\\) berekenen voor elke tekstpositie vereist ook slechts enkele processorinstructies (`true` bit inschuiven)
 
@@ -57,7 +57,7 @@
     * \\(i-1\\) van de eerste \\(i\\) karakters van `P` overeenkomen met \\(i-1\\) karakters die in tekst eindigen bij positie \\(j\\)
 * twee mogelijke gevallen voor overeenkomst van \\(i\\) eerste karakters van `P` eindigend op tekstpositie \\(j+1\\) met hoogstens één verwijdering
     * eerste \\(i-1\\) patroonkarakters komen exact overeen tot tekstpositie \\(j+1\\)
-        * `P[i]` wrdt verwijderd
+        * `P[i]` wordt verwijderd
         * bit \\(R_{j+1}^0[i-1]\\) uit nieuwe tabel \\(R^0\\) is `true`
     * eerste \\(i-1\\) patroonkarakters met hoogstens één verwijdering komt overeen tot tekstpositie \\(j\\)
         * `T[j+1] == P[i]`
@@ -151,7 +151,7 @@
 ### Jokers
 
 * één enkele joker
-    * kerakter dat overeenkomt met elk mogelijk karakter
+    * karakter dat overeenkomt met elk mogelijk karakter
 * kan als speciaal geval van *verzameling van karakters* beschouwd worden
 
 ### Onbekend aantal fouten
@@ -160,7 +160,7 @@
 * eerst exacte overeenkomst zoeken
     * als er geen is: overeenkomst met twee fouten
     * ...
-* performantier
+* performanter
     * telkens dubbel zoveel fouten + 1 toelaten: \\(( 2 \times f ) + 1\\)
         * eerst zonder fouten, dan 1 fout, dan 3 fouten, 7 fouten ...
           ~ binair zoeken
@@ -176,7 +176,7 @@
 * in bepaalde delen van patroon mogen geen fouten optreden
 * stel: nummerplaat `ABC123` zoeken
     * letters zijn zeker
-    * één vna cijfers kan verkeerd zijn
+    * één van cijfers kan verkeerd zijn
 * gedeelte van patroon moet afgeschermd worden tegen optreden van fouten
 * extra tabel `M` van \\(m\\)  logische waarden
     * masker

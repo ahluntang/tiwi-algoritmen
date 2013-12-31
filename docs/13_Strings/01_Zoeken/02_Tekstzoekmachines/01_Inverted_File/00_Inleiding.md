@@ -2,7 +2,7 @@
 ## ~ boek
 
 * boek bevat woordenlijst met verwijzing naar bladzijde = inverted file
-* in plaats van : bladzijders waar woorden voorkomen dat je wilt indexeren
+* in plaats van : bladzijde waar woorden voorkomen dat je wilt indexeren
 
 ## document-level inverted file
 

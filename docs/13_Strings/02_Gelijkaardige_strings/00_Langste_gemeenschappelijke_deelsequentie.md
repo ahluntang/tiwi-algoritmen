@@ -86,7 +86,7 @@ B & 0 & 1 & 2 & 2 & 2 & 4 & 4 \\\
 ## Juiste deelsequentie vinden
 
 * naast tabel voor lengte: extra tweedimensionale \\( n \times m\\) tabel \\(b\\)
-* in element \\(b[i,j]\\) plaats bijhoude nvan \\(c\\)-waarde die gebruikt werd om \\(c[i,j]\\) te bepalen
+* in element \\(b[i,j]\\) plaats bijhouden van \\(c\\)-waarde die gebruikt werd om \\(c[i,j]\\) te bepalen
 * vanuit \\(b[n,m]\\) langste deelsequentie te vinden in omgekeerde volgorde
     * telkens wanneer \\(c[i,j]\\) gebruikmaakt van \\(c[i-1,j-1]\\)
         * \\(x_i = y_j\\)
@@ -97,7 +97,7 @@ B & 0 & 1 & 2 & 2 & 2 & 4 & 4 \\\
     * reconstructie van \\(LGD\\) zelf: \\( O(n+m)\\)
         * bij elke iteratie: tenminste één van indices \\(i\\) of \\(j\\) gedecrementeerd
     * totale performnantie: \\( \Theta(nm) \\) (ook voor vereiste plaats)
-*als men enkel lengte van \\(LGD\\) wenst: tabel \\(c\\) volstaat
+* als men enkel lengte van \\(LGD\\) wenst: tabel \\(c\\) volstaat
     * elke rij gebruikt enkel waarden van vorige rij: twee rijen volstaan
         * vereiste plaats wordt \\( \Theta(\min(n,m)) \\)
     * niet voldoende om \\(LGD\\) te reconstrueren

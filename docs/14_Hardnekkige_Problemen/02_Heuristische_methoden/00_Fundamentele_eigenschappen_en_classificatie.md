@@ -5,7 +5,7 @@
 * doel: efficiënt de zoekruimte verkennen om (bijna) optimale oplossingen te vinden
 * technieken: variëren van simpele lokale zoekprocedures tot complexe leerprocessen
 * algoritmes zijn benaderend en vaak niet-deterministisch
-* bevatten mechanismes om te voorkomen men in bepaalde gebieden van zoekruimte vastzit
+* bevatten mechanismes om te voorkomen dat men in bepaalde gebieden van zoekruimte vastzit
 * basisconcepten van metaheuristieken worden beschreven op een abstract niveau
 * kunnen gebruikmaken van domein-specifieke kennis in de vorm van heuristieken die op een hoger niveau bestuurd worden
 * meer geavanceerde metaheuristieken gebruiken **search experience** om het zoekproces te begeleiden

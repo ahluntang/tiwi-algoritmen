@@ -31,7 +31,7 @@
 * minstens vergelijkbare (gemiddelde) performantie als die van eenvoudige methode behalen?
     * getal moet voor elk van \\(O(n)\\) deelstrings van tekst in \\(O(1)\\) berekend kunnen worden
 * hashwaarde voor string met lengte \\(m\\) berekenen in \\(O(1)\\) is niet realistisch
-    * hashwaarde voor deelsring op beginpositie \\(j+1\\) afleiden uit die voor deelstring op positie \\(j\\)
+    * hashwaarde voor deelstring op beginpositie \\(j+1\\) afleiden uit die voor deelstring op positie \\(j\\)
         * in \\(O(1)\\)
     * eerste hashwaarde zal langer duren
 * verschillende definities voor hashwaarde mogelijk
@@ -48,7 +48,7 @@
       \\[
         H_P(P) = H(P)\mod{p}
       \\]
-* eerst groot getall \\(H(P)\\) berekenen en dan pas rest bepalen is niet efficiënt
+* eerst groot getal \\(H(P)\\) berekenen en dan pas rest bepalen is niet efficiënt
     * rest bij deling door \\(p\\) van som van twee getallen is gelijk aan rest van som van hun resten
       \\[
         (a+b) \mod{p} \equiv \left( a\mod{p}+b\mod{p} \right)\mod{p}
@@ -74,7 +74,7 @@
 ## Performantie
 
 * berekeningen
-    * \\(H_P(P)\\), \\(H_P(T[1])\\) en \\(d^(m-1)\mod{P}\\) vereisen \\( \Theta(m) \\) operaties
+    * \\(H_P(P)\\), \\(H_P(T[1])\\) en \\(d^{(m-1)}\mod{P}\\) vereisen \\( \Theta(m) \\) operaties
     * berekening alle andere fingerprints vergt in totaal \\(\Theta(n)\\) operaties
     * totaal \\(\Theta(n+m)\\)
 * stringvergelijkingen ter controle
@@ -82,7 +82,7 @@
     * strings met lengte \\(m\\) vergelijken: \\(O(m)\\) operaties
     * in slechtste geval: \\(O(nm)\\)
         * als fingerprints op elke positie gelijk zijn
-    * er bestaat \\(O(n)\\) tests die nagaan of alle gelijke fringerprings weldelijk met gelijke strings overenstemmen en stopt bij eerste gevonden fout
+    * er bestaat \\(O(n)\\) tests die nagaan of alle gelijke fringerprints weldegelijk met gelijke strings overeenstemmen en stopt bij eerste gevonden fout
 
 ## Keuze \\(p\\)
 
@@ -92,7 +92,7 @@
 
 ### Vaste \\(p\\)
 
-* zo groot moelijk priemgetal zonder dat \\(p \times d \le 2^w\\)
+* zo groot mogelijk priemgetal \\((p \times d \le 2^w)\\)
     * priemgetal: vermijden dat verwante deelstrings dezelfde fingerprints zouden opleveren
 * fingerprints
   \\[
@@ -109,7 +109,7 @@
 
 * vaste \\(p\\) kan nadelig zijn
     * veel vergissingen: demon seed
-* random priem \\(p\\) uit bepaadl bereik kiezen
+* random priem \\(p\\) uit bepaald bereik kiezen
     * kans op vergissingen niet langer bepaald door waarschijnlijkheidsverdelingen van patroon en/of tekst
 * foutkans klein maken door groot bereik te nemen
 * fundamentele eigenschap gebruiken dat aantal priemgetallen \\( \le k\\)

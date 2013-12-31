@@ -55,7 +55,7 @@
 ### Methodes
 
 * eerst bag-of-words gebruiken
-    * documenten zoeken waar ze elke term in voorkomt (AND-operators)
+    * documenten zoeken waar elke term in voorkomt (AND-operators)
     * kijken of woorden samen staan (woordposities nodig)  
     = False match
 * woordposities al erbij nemen tijdens evaluatie van query

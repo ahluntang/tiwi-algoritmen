@@ -50,12 +50,12 @@
     * onbezochte oplossingen van goede kwaliteit zouden niet bij de *allowed set* komen
 * *aspiration criteria* definieert de *aspiration conditions* om te gebruiken om de *allowed set* te construeren
     * kan ervoor zorgen om een oplossing toe te voegen aan de *allowed set* ook al wordt het verboden door de *tabu conditions*
-* *asperation criteria*
+* *aspiration criteria*
     * oplossingen selecteren die beter zijn dan de huidige beste
 
 ### Long-term memory
 
-* gebruiken van informatie dat verzameld wordt gedurende het voledig zoekproces
+* gebruiken van informatie dat verzameld wordt gedurende het volledig zoekproces
     * handig om het algoritme te begeleiden
 * 4 principes
     * *recency*: geeft aan hoe lang (in welke iteratie) het geleden is dat een oplossing/attribuut in betrokken is geweest

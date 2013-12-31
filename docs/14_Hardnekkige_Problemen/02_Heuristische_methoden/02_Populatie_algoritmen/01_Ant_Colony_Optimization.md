@@ -39,7 +39,7 @@ while termination conditions not met do
               \\(\alpha \\) en \\(\beta\\) : machten die gekozen worden
         * geuren verdwijnen na periode
             * om invloed ervan geleidelijk te laten verdwijnen (als het bv. geen goede opl. zou zijn)
-    * mieren gaan niet naaar componenten die niet *feasible* is
+    * mieren gaan niet naar componenten die niet *feasible* is
     * mier kan gestuurd worden door 4 verschillende parameters
 * deze oplossingen kunnen dan gebruikt worden om de pheromonen bij te werken
 * updates

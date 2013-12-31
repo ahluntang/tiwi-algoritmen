@@ -74,7 +74,7 @@
     * niet meer noodzakelijk dat `P` van achter naar voor doorlopen wordt
         * beste volgorde: deze die zo snel mogelijk fouten tussen `P` en `T` ontdekt
         * als men kans kent waarmee patroonkarakter in tekst voorkomt
-            * karaktes van `P` testen volgens stijgende kansen
+            * karakters van `P` testen volgens stijgende kansen
 
 ## Juiste suffix
 
@@ -135,7 +135,7 @@
             * grootste nemen
             * geeft kleinste verschuiving
         * lengte van gezochte suffix `s(1)`
-            * overeenkomstige verschuiving `V[i]` ( \\(- < i < m\\) ) wordt `m-s(1)`
+            * overeenkomstige verschuiving `V[i]` ( \\(0 < i < m\\) ) wordt `m-s(1)`
             * is steeds positief
                 * gelijk aan \\(m\\) als er geen suffix/overlapping bestaat
 

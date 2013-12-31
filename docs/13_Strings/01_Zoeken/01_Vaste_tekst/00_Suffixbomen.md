@@ -94,7 +94,7 @@
           ![](/assets/suffixtree_geenuitweg.png)
 * werk dat gebeurt: bladeren aanmaken, keert nooit terug
     * bij bladeren of knopen met uitweg moet je niets doen
-    * naarmate ronddes vordert, komen er meer bladeren
+    * naarmate rondes vordert, komen er meer bladeren
     * enige werk dat er is: bij impliciete/expliciete knopen zonder uitweg
         * eventueel expliciet maken en dan blad maken
     * bij volgende ronde(s)

@@ -46,7 +46,7 @@
         * samenstelling
     * efficiënte algoritmen voor eenvoudigere problemen kunnen gecombineerd worden tot efficiënt algoritme voor complexer probleem
 * efficiëntiemaat 
-    *onafhankelijk van 
+    * onafhankelijk van 
         * computermodel
         * invoer die men gebruikt om uitvoeringstijd te bepalen
     * als tijd voor bepaald model en voorstelling begrensd wordt door veelterm
@@ -55,7 +55,7 @@
 ## Klasse NP (Niet-deterministisch Polynomiaal)
 
 * trachten efficiënt op te lossen met (hypothetische) niet-deterministische machine
-    * in staat om tegelijk elke mogelijke oplossing in polynomicale tijd (deterministisch) te testen
+    * in staat om tegelijk elke mogelijke oplossing in polynomiale tijd (deterministisch) te testen
 * NP: klasse van alle problemen waarvan oplossing efficiënt kan getest worden
 * elk probleem uit P behoort zeker tot NP
 * machinekeuze is irrealistisch
@@ -64,7 +64,7 @@
 
 ## NP-compleet
 
-* NP bevat groot aantal problemen die minstens even *zwaar* zijn dna *elk* ander probleem uit NP
+* NP bevat groot aantal problemen die minstens even *zwaar* zijn dan *elk* ander probleem uit NP
 * eigenschap
     * als er één NP-compleet probleem efficiënt oplosbaar is (en dus tot P zou behoren)
     * dan zijn *alle* NP-complete problemen efficiënt oplosbaar
@@ -82,7 +82,7 @@
 
 * Problemen die minstens even *zwaar* zijn als problemen in NP
 * behoren niet tot NP
-* Alle problemen in NP kunnen ook polynomiaal gereduceerd worden tto elk NP-hard probleem
+* Alle problemen in NP kunnen ook polynomiaal gereduceerd worden tot elk NP-hard probleem
 * bv: optimalisatieproblemen waarvan beslissingsversie NP-compleet is
 
 ## NP-complete problemen oplossen

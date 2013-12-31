@@ -76,11 +76,11 @@
                 *  \\(c\\) wordt nieuwe \\(l\\) (\\(p_l\\) verandert niet)
         * \\(p_{l,c} < p_l \\):
             * karakter op positie \\(p_{l,c}+1\\) van \\(A[c]\\) is groter dan overeenkomstig karakter van \\(A[l]\\)
-            * karakter op positie \\(p_{l,c}+1\\) van \\(A[l]\\) is gelijk aan overeenkomster karakter van \\(P\\)
+            * karakter op positie \\(p_{l,c}+1\\) van \\(A[l]\\) is gelijk aan overeenkomstig karakter van \\(P\\)
             * \\(c\\) wordt nieuwe \\(r\\) (\\(p_r\\) wordt \\(p_{l,c}\\))
         * \\(p_{l,c} = p_l \\):
             * eerste \\(p_l\\) karakters van \\(P\\) en \\(A[c]\\) komen reeds overeen
-            * verder vergelijken vanaf positie \\(p_l+1 = p_{max}+1)
+            * verder vergelijken vanaf positie \\(p_l+1 = p_{max}+1\\)
                 * om te beslissen of \\(P\\) links or rechts van \\(c\\) ligt
                 * enkel eerste test is redundant
                 * bij meer testen wordt \\(p_{max}\\) navenant verhoogd

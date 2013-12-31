@@ -32,7 +32,7 @@
     * verbindingen met gemeenschappelijke eindknoop hebben verschillende kleur
 * bij planningstoepassingen
 * benaderend algoritme van *Vizing*: \\(O(n^2)\\)
-    * gebruikt hogstens één kleur teveel
+    * gebruikt hoogstens één kleur teveel
 
 ## Clique
 

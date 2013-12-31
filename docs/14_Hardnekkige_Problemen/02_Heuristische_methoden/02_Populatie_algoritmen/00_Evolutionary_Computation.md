@@ -4,7 +4,7 @@
     * passen zich aan op hun omgeving
 * kunnen gekarakteriseerd worden als computermodellen van evolutionaire processen
 * bij elke iteratie een aantal bewerkingen toepassen aan de individuen van de huidige populatie
-    * genereerd de individuen voor de volgende generatie/iteratie
+    * genereert de individuen voor de volgende generatie/iteratie
 * bewerkingen
     * *recombination* of *crossover*: twee of meer individuen te combineren om nieuwe individuen te produceren
     * *mutation* of *modification*: zorgen ervoor dat individuen zichzelf aanpassen
@@ -70,7 +70,7 @@ endwhile
 
 * *neighborhood function*: kent aan elke individu \\(i\\) een set van individuen toe die toegestaan zijn om als *recombination partner* voor \\(i\\)
     * om een nakomeling te maken
-* als een individu meet elke andere individu kan gerecombineerd worden: *unstructured populations*
+* als een individu met elke andere individu kan gerecombineerd worden: *unstructured populations*
     * anders *structured populations*
 
 

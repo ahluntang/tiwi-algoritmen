@@ -1,7 +1,9 @@
 ## Wat wordt er in geheugen bewaard?
+
 \\[ 
     S_{q,d} = \sum_{t}{ \frac{w_{d,t}.w_{q,t}}{W_d.W_q} } 
 \\]
+
 * Accumulator bijhouden voor elk document \\(d\\): \\(A_d\\)
     * Document kan in elke lijst voorkomen
 * Voor elke term \\(t\\) in \\(q\\):
@@ -14,7 +16,7 @@
 * Als er nog geen accumulator \\(A_d\\) gemaakt is voor document
     * eerst kijken of je nog onder grens \\(L\\) zit voor aantal accumulatoren: \\(|A| < L \\) 
 * Best termen uit query behandelen volgens dalende \\(w_{q,t}\\) (stijgende \\(f_t\\))
-    * meest zeldzame termen eest nemen (hebben grotere invloed)
+    * meest zeldzame termen eerst nemen (hebben grotere invloed)
 * Alternatief
     * als er nog geen accumulator voor dat document is
         * als nieuwe bijdrage groot genoeg is, dan wordt er één aangemaakt voor dat document

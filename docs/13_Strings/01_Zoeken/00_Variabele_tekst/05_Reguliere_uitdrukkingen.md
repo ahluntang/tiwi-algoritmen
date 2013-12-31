@@ -51,7 +51,7 @@
 ## Verkorte notatie
 
 * Minstens éénmaal herhalen
-    * \(r+ = rr*\\)
+    * \\(r+ = rr*\\)
 * Optionele uitdrukking
     * \\(r? = r|\epsilon\\)
         * duidt optionele string uit \\(r\\) aan
@@ -92,7 +92,7 @@
     * verzameling *eindtoestanden* \\(F\\) 
         * is deelverzameling van \\(S\\)
     * overgangsfunctie \\(m(t,a)\\)
-        * geeft nieuwe toestand wanneer automaat in toestant \\(t\\) symbool \\(a\\) ontvangt
+        * geeft nieuwe toestand wanneer automaat in toestand \\(t\\) symbool \\(a\\) ontvangt
             * elke toestand heeft precies één overgang voor elk invoersymbool
 * DA kan voorgesteld worden door gerichte gewogen overgangsgraaf (multigraaf)
     * knopen: toestanden
@@ -112,8 +112,7 @@
     * tweedimensionale overgangstabel
         * rijen: toestanden
         * kolommen: symbolen
-
-* als \\(\sum\\) en aantal toestande groot zijn
+* als \\(\sum\\) en aantal toestanden groot zijn
     * tabel kan teveel plaats vereisen
     * lijst zo kort mogelijk houden
         * afsluiten met meest voorkomende overgang als *default*
@@ -140,7 +139,7 @@
         * meerdere wegen in overgangsgraaf kunnen overeenkomen
 * strings herkennen
     * als NA minstens één eindtoestand bevat na inlezen van string
-    * als er weg bestaat tussen beeginknoop \\(s_0\\) en eindtoestand
+    * als er weg bestaat tussen beginknoop \\(s_0\\) en eindtoestand
         * met opeenvolgende symbolen van string als gewicht van verbindingen (met eventueel \\(\epsilon\\)-verbindingen)
     * er kunnen ook wegen met string overeenkomen die niet tot eindtoestand leiden
 
@@ -249,7 +248,7 @@ while (!st.ledig()) {
 * stel: \\(r\\) en \\(s\\) zijn reguliere uitdrukkingen waarvoor reeds overeenkomstige NA's \\(R\\) en \\(S\\) construeerd werden
     * NA voor \\(r|s\\)
         * nieuwe begin- en eindtoestand invoeren
-        * begintoestand met beide begintoestande nvan \\(R\\) en \\(S\\) via \\(\epsilon\\)-vergangen verbinden
+        * begintoestand met beide begintoestanden van \\(R\\) en \\(S\\) via \\(\epsilon\\)-overgangen verbinden
         * eindtoestanden van \\(R\\) en \\(S\\) via \\(\epsilon\\)-overgangen met nieuwe eindtoestand verbinden
           ![](/assets/thompson_unie.png)
     * NA voor \\(r \cdot s\\)
@@ -259,7 +258,7 @@ while (!st.ledig()) {
           ![](/assets/thompson_concatenatie.png)
     * NA voor \\(r*\\)
         * nieuwe begin- en eindtoestand invoeren
-        * zowel nieuwe begintoestnad als eindtoestand van R worden via \\(\epsilon\\)-overgangen verbonden met
+        * zowel nieuwe begintoestand als eindtoestand van R worden via \\(\epsilon\\)-overgangen verbonden met
             * begintoestand van \\(R\\)
             * nieuwe eindtoestand
         ![](/assets/thompson_kleene.png)
@@ -295,13 +294,13 @@ while (!st.ledig()) {
         * implementeren in soft- of hardware
     * eens DA geconstrueerd: herkenning van string \\(s\\) met lengte \\(|s|\\) in \\(\Theta(|s|)\\)
     * zeldzame gevallen waarbij DA exponentieel aantal toestanden heeft
-        * vereiste geheugenreuimte \\(O(2^{|r|})\\)
+        * vereiste geheugenruimte \\(O(2^{|r|})\\)
 * NA rechtstreeks simuleren
     * bepalen van alle toestanden waarin NA zich na elk ingelezen symbool kan bevinden (zoals bij deelverzamelingsconstructie)
     * alle overgangen worden bepaald die de DA voor string zou maken
     * sommige overgangen kunnen meermaals bepaald worden
         * niet-gebruikte overgangen worden nooit bepaald
-    * simulatie gebruikt derzelfde functies \\(m(T,a)\\) en \\(\epsilon-sluiting(T)\\) als deelverzamelingsconstructie
+    * simulatie gebruikt dezelfde functies \\(m(T,a)\\) en \\(\epsilon-sluiting(T)\\) als deelverzamelingsconstructie
     * grootte van deelverzamelingen \\(O(|r|)\\)
     * vanuit elke NA-toestand hoogstens twee overgangen
         * efficiënte voorstelling van overgangstabel vereist slechts \\(O(|r|)\\) plaats
@@ -311,7 +310,7 @@ while (!st.ledig()) {
 * Hybride methode
     * eerste herkenner is snel, maar vereist veel voorbereidend werk
     * tweede herkenner is \\(O(|r|)\\) maal trager, maar vraagt minder voorbereidend werk
-    * (gedeeltelijke) deelverzamelingsconstrucite bij elke string
+    * (gedeeltelijke) deelverzamelingsconstructie bij elke string
         * reeds bepaalde overgangen bijhouden in cachegeheugen
         * om later opnieuw te gebruiken
     * slechts deel van DA construeren
@@ -319,7 +318,7 @@ while (!st.ledig()) {
         * lazy transition evaluation
     * telkens er overgang moet gebeuren
         * zoeken in cache
-        * als niet gevonde: overgang bepalen en opslaan in cache
+        * als niet gevonden: overgang bepalen en opslaan in cache
     * plaatsgebruik beperken
         * oude overgangen uit volle cache verwijderen
 * alle methoden vertrekken vanuit NA
@@ -358,8 +357,8 @@ while (!st.ledig()) {
 * voor elk paar toestanden dat voorlopig niet te onderscheiden valt
     * nagaan naar welke paren toestanden ze overgaan, voor elk invoersymbool
     * testen worden herhaald tot er niets meer verandert
-    * begeinnen met minstens één paar niet-equivalente toestanden
-        * elke eindtoestand onderscheidt zich van elke gewone teostand
+    * beginnen met minstens één paar niet-equivalente toestanden
+        * elke eindtoestand onderscheidt zich van elke gewone toestand
     * wanneer men geen niet-equivalente toestanden meer kan vinden
         * overige paren zijn equivalent
 * \\(O(n^2)\\) paren toestanden
@@ -394,5 +393,5 @@ while (!st.ledig()) {
         * eindtoestanden van nieuwe DA zijn vertegenwoordigers van groepen met originele eindtoestanden
     * overgangen tussen toestanden moeten overgangen tussen groepen worden
         * tussen hun vertegenwoordigers
-    * alle toestanden uit nieuwe DA verwijderne die onbereikbaar zijn vanuit begintoestand
+    * alle toestanden uit nieuwe DA verwijderen die onbereikbaar zijn vanuit begintoestand
 
