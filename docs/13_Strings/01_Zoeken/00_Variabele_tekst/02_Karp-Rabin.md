@@ -14,7 +14,7 @@
     * tabellen gebruiken
         * vergelijken is niet efficiënt
         * vereist meer dan \\(O(1)\\) primitieve operaties
-        * vergelijken op elke beginpositie zou uitvoeringstijd van methode in alle gevallen groter make ndan gemiddelde tijd vna eenvoudige methode
+        * vergelijken op elke beginpositie zou uitvoeringstijd van methode in alle gevallen groter maken dan gemiddelde tijd vna eenvoudige methode
     * zich beperken tot getallen die wel efficiënt vergeleken kunnen worden
         * die men in één processorwoord (met lengte \\(w\\) bits) kan voorstellen
         * er zijn meestal veel minder getallen dan strings met lengte \\(m\\)
