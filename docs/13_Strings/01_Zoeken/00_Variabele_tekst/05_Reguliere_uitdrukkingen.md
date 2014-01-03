@@ -273,7 +273,7 @@ while (!st.ledig()) {
         * aanhechtingspunten zijn ondubbelzinnig
         * er worden geen onvoorziene wegen gecreëerd
 * aantal toestanden van NA is niet groter dan tweemaal aantal elementen in reguliere uitdrukking
-    * elke stap in constructie correspondeerd met alfabetsymbool of operator
+    * elke stap in constructie correspondeert met alfabetsymbool of operator
     * introduceert hoogstens twee nieuwe toestanden
 * vanuit elke toestand van NA vertrekken niet meer dan twee overgangen
     * ofwel één overgang voor symbool uit \\(\sum\\)

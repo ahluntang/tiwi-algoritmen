@@ -145,7 +145,7 @@
 #### Bottom-up toevoegen
 
 * initialisatie ledige B-tree vereist meer werk dan die van inwendige zoekboom
-    * wortelknoop in gehugen maken en gedeeltelijk invullen
+    * wortelknoop in geheugen maken en gedeeltelijk invullen
     * op schijf kopiëren
     * ledige wortel is blad dat geen sleutels bevat
 * voor elke nieuwe knoop

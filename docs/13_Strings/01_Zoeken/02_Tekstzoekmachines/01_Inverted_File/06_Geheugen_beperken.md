@@ -35,6 +35,6 @@
     * query-onafhankelijk
     * in praktijk: precisie niet belangrijk (benaderingen)
         * beperkt aantal waarden gebruiken
-        * waarden dienen als interval/regio waar \\(W_d\\) erin zou vorkomen
+        * waarden dienen als interval/regio waar \\(W_d\\) erin zou voorkomen
 * Woordenschat
     * B-tree

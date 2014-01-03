@@ -3,7 +3,7 @@
     * levende wezens kunnen evolueren
     * passen zich aan op hun omgeving
 * kunnen gekarakteriseerd worden als computermodellen van evolutionaire processen
-* bij elke iteratie een aantal bewerkingen toepassen aan de individuen van de huidige populatie
+* bij elke iteratie een aantal bewerkingen toepassen op de individuen van de huidige populatie
     * genereert de individuen voor de volgende generatie/iteratie
 * bewerkingen
     * *recombination* of *crossover*: twee of meer individuen te combineren om nieuwe individuen te produceren

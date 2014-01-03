@@ -1,7 +1,7 @@
 ## Maximale stroomprobleem
 
 * zoveel mogelijk materiaal van producent naar verbruiker laten stromen
-    * zonder cpaciteit van verbindingen te overschrijden
+    * zonder capaciteit van verbindingen te overschrijden
 * klassieke methode: Ford-Fulkerson
     * geen algoritme: laat meerdere implementaties toe (met verschillende performanties)
 * bij elke iteratie: nettostroom vanuit producent neemt toe

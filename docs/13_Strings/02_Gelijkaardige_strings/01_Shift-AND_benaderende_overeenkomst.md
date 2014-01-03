@@ -113,7 +113,7 @@
 * alles samen (voor \\(k > 0\\))
   \\[
         R_{j+1}^k = R_j^{k-1} \text{ OF } Schuif(R_{j+1}^{k-1}) \text{ OF } Schuif(R_{j}^{k-1}) \text{ OF } \left( Schuif(R_{j}^{k}) \text{ EN } S[ T[j+1] ] \right) \\\
-        R_{j+1}^k = R_j^{k-1} \text{ OF } Schuif(R_{j+1}^{k-1} OF R_{j}^{k-1}) \text{ OF } \left( Schuif(R_{j}^{k}) \text{ EN } S[ T[j+1] ] \right) \\\
+        R_{j+1}^k = R_j^{k-1} \text{ OF } Schuif(R_{j+1}^{k-1} \text{ OF } R_{j}^{k-1}) \text{ OF } \left( Schuif(R_{j}^{k}) \text{ EN } S[ T[j+1] ] \right) \\\
         R_0^k = \overset{\mbox{m}}{\overbrace{\underset{\mbox{k}}{\underbrace{11...1}}00...0}}
   \\]
 * elke \\(R^k (k > 0)\\) kan bepaald worden met twee schuifoperaties, één EN- en drie OF-operaties

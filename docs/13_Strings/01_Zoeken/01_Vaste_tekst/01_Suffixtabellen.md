@@ -81,7 +81,7 @@
         * \\(p_{l,c} = p_l \\):
             * eerste \\(p_l\\) karakters van \\(P\\) en \\(A[c]\\) komen reeds overeen
             * verder vergelijken vanaf positie \\(p_l+1 = p_{max}+1\\)
-                * om te beslissen of \\(P\\) links or rechts van \\(c\\) ligt
+                * om te beslissen of \\(P\\) links of rechts van \\(c\\) ligt
                 * enkel eerste test is redundant
                 * bij meer testen wordt \\(p_{max}\\) navenant verhoogd
                     * laatst geteste karakter van \\(P\\) heeft steeds positie \\(p_{max}+1\\)

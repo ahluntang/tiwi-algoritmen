@@ -22,7 +22,7 @@ endwhile
 * bij elke iteratie wordt oplossing \\(s' \in \mathcal{N}(s)\\) gezocht
     * nieuwe oplossing wordt geaccepteerd op basis van \\(f(s)\\), \\(f(s')\\) en \\(T\\)
         * als \\(f(s') < f(s)\\)
-        * als \\(f(s') \ge f(s)\\) met indien kansfunctie `p(T,s',s)` `true` is
+        * als \\(f(s') \ge f(s)\\) indien kansfunctie `p(T,s',s)` `true` is
     * temperatuur bijwerken
 * iteratie herhalen tot stopcriterium voldaan is
 
@@ -40,7 +40,7 @@ endwhile
 * algoritme moet convergeren naar globaal minimum naarmate k groter wordt
     * logaritmisch: \\( T_{k+1} = \frac{\tau}{\log{(k+k_0)}} \\)
         * te traag voor praktische doeleinden
-        * sneller koelschemas nodig
+        * sneller koelschema nodig
     * eenvoudiger koelschema: \\( T_{k+1} = \alpha T_k \\)
 * regels uit koelschema kunnen variëren gedurende het zoekproces
     * doel: balans tussen diversificatie en intensificatie verfijnen

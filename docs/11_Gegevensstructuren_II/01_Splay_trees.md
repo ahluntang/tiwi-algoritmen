@@ -295,7 +295,7 @@
 \\( a = 2 + r_c' + r_p' + r_g' - r_c - r_p - r_g \\)
 \\( a = 2 + r_p' + r_g' - r_c - r_p \\) want \\(r_c' = r_g \\)
 * \\( s_c' > s_g' + s_c \\) en logaritme is concaaf
-    * \\( r_c' > \lg{(s_g'+s_c)} \ge 1 + \frac{r_g'- r_c}{2} \\)
+    * \\( r_c' > \lg{(s_g'+s_c)} \ge 1 + \frac{r_g' + r_c}{2} \\)
         * zodat: \\( r_g' < 2r_c' - r_c - 2 \\)
     * \\( a < r_p' + 2r_c' -2r_c -r_p \\)
 * met \\(r_c' > r_p'\\) en \\( r_p > r_c\\)
