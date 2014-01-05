@@ -56,8 +56,8 @@
 #### Algoritme stopt altijd
 
 * geen enkele man wordt afgewezen door alle vrouwen
-    * enkel verloofde vrouw kan man afwijzen, eens verloord, blijft ze verloofd
-    * man kan niet afgewezen worden door laatste  vrouw op lijst
+    * enkel verloofde vrouw kan man afwijzen, eens verloofd, blijft ze verloofd
+    * man kan niet afgewezen worden door laatste vrouw op lijst
         * dan zouden alle vrouwen verloofd zijn
     * polygamie is niet toegestaan
 * in elke iteratie gebeurt er een aanzoek

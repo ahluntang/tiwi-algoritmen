@@ -56,3 +56,43 @@
     * foutfunctie
 * totale performantie \\( \Theta(n+m) \\)
 
+## Implementatie
+
+```
+void FailureFunction(char P[], int F[],int m) {
+    int i,j;
+    F[0] = j = 0;
+    i = 1;
+    while (i<m) { 
+        if (P[i]==P[j]) {
+            F[i] = j+1;
+            i++;
+            j++;
+        } else if (j>0) {
+            j = F[j-1];
+        } else {
+            F[i] = 0;
+            i++;
+        }
+    }
+}
+
+int KMP(char T[], char P[]) {
+    int aantal = 0;
+    int i,j,F[100]; 
+    int m = strlen(P);
+    int n = strlen(T);
+    FailureFunction(P,F,m);
+    i = 0;
+    j = 0;
+    for (int i = 0; i < n; i++) {
+        while (j > 0 && P[j] != T[i])
+            j = F[j-1];
+        if (T[i] == P[j])
+            j++;
+        if (j == m)
+            aantal++; // match gevonden op i-m+1
+    }
+    return aantal;
+}
+```
