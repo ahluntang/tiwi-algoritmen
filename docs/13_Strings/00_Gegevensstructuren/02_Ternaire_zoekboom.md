@@ -66,3 +66,35 @@
 * ternaire zoekbomen met verbeteringen
     * efficiëntste woordenboekstructuren voor strings
     * laten nog andere operaties toe
+
+## Implementatie
+
+```
+void TernaireBoom::voegtoe(const string& sl) {
+    // afsluitkarakter toevoegen
+    stringstream ss;
+    string naam;
+    ss << sl << afsluiter;
+    ss >> naam;
+    
+    Tknoop** h = &k;
+    int index = 0;
+    while(*h != 0 && index < naam.length()) {
+        if(naam[index] < (*h)->c) {
+            h = &(*h)->kind[0].k;
+        } else if(naam[index] > (*h)->c) {
+            h = &(*h)->kind[2].k;
+        } else {
+            h = &(*h)->kind[1].k;
+            index++;
+        }
+    }
+    
+    for(int i=index; i<naam.length(); i++) {
+        char karakter = naam[i];
+        *h = new Tknoop();
+        (*h)->c = karakter;
+        h = &((*h)->kind[1].k);
+    }
+}
+```

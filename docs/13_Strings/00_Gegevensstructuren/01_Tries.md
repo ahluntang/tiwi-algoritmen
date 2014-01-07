@@ -195,5 +195,67 @@ stel: sleutelelement kan \\(m\\) verschillende waarden aannemen
         * bijkomende operaties zijn mogelijk
 
 
+### Implementatie
 
+```
+
+Pknoop* Pboom::get(Pknoop* k, const StringMetBits& sl, int index) {
+    // Als de index in de huidige knoop kleiner of gelijk aan de meegegeven index is
+    // dan hebben we ofwel een terugverbinding naar een hoger gelegen knoop ofwel een
+    // verbinding naar onszelf.
+    // In beide situaties heeft verder zoeken geen zin meer.
+    // We bubblen terug naar de zoek(sl) methode en doen daar een sleutel vergelijking.
+    if (k->index <= index) {
+        return k;
+    }
+
+    // We kunnen nog verder gaan.
+    if (!sl.bit(k->index)) {
+        return get(k->links, sl, k->index);
+    }
+    else {
+        return get(k->rechts, sl, k->index);
+    }
+}
+
+void Pboom::insert(const StringMetBits& sl) {
+    // We zoeken naar de knoop met als sleutel, de zoeksleutel.
+    Pknoop* knoop = get(wortel->links, sl, -1);
+
+    // Situatie 1: sleutel bestaat.
+    if (knoop->sl.compare(sl) == 0) {
+        knoop->data++;
+        return;
+    }
+
+    // Situatie 2: sleutel bestaat niet.
+    // We zoeken de meest links verschillende bit.
+    // Dan dalen we de boom opnieuw af:
+    //  - als deze index groter (of gelijk) is voegen we hem tussen (tss 2 inwendige knopen)
+    //  - als er een terugverbinding is, voegen we hem tussen. (dus blad)
+    int bit = knoop->sl.verschilplaats(sl);
+    wortel->links = insert(wortel->links, wortel, sl, bit);
+}
+
+Pknoop* Pboom::insert(Pknoop* k, Pknoop* parent, const StringMetBits& sl, int index) {
+    // if (tss 2 inwendige || blad)
+    if ((k->index >= index) || (k->index <= parent->index)) {
+        bool bit_waarde = sl.bit(index);
+        Pknoop* nieuw = new Pknoop(sl, 1, index);
+        nieuw->links = (bit_waarde) ? k : nieuw;
+        nieuw->rechts = (bit_waarde) ? nieuw : k;
+        return nieuw;
+    }
+
+    // Links of rechts afdalen.
+    if (!sl.bit(k->index)) {
+        k->links = insert(k->links, k, sl, index);
+    }
+    else {
+        k->rechts = insert(k->rechts, k, sl, index);
+    }
+
+    return k;
+}
+```
 

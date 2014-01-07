@@ -87,7 +87,7 @@
 ## Keuze \\(p\\)
 
 * niet zo groot: alle getallen moeten in processorwoord passen
-* kans op vergissingen moet kleins zijn
+* kans op vergissingen moet klein zijn
 * vaste \\(p\\) of random \\(p\\)
 
 ### Vaste \\(p\\)

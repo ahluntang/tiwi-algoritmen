@@ -34,7 +34,7 @@
             * \\(p_l\\) is lengte van langst gemeenschappelijke prefix \\(P\\) en suffix \\(A[l]\\)
             * \\(p_r\\) is lengte van langst gemeenschappelijke prefix \\(P\\) en suffix \\(A[r]\\)
             * \\(p_{min}\\) is minimum van \\(p_l\\) en \\(p_r\\)
-        * \\(P\\) heeft prefix met lengte \\(p_{min}\\) gemeen met alle suffixen tuusen \\(l\\) en \\(r\\)
+        * \\(P\\) heeft prefix met lengte \\(p_{min}\\) gemeen met alle suffixen tussen \\(l\\) en \\(r\\)
             * volgende stringvergelijking tussen P en middelste suffix \\(A[c]\\) kan beginnen bij karakter op positie \\(p_{min}+1\\) (in plaats van herbeginnen vooraan)  
               ![](/assets/suffixtabel_pminplus1.png)
         * lengten bepalen vergt weinig extra werk en vermijdt talrijke nutteloze testen

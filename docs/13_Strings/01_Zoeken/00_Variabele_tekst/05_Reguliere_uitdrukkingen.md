@@ -29,7 +29,7 @@
 ### Herhaling: \\(r*\\)
 
 * **Kleene** sluiting
-* verzameling van alle stringsgevormd door concatenatie van nul of meer strings
+* verzameling van alle strings gevormd door concatenatie van nul of meer strings
     * elk behorend tot \\(r\\)
 * \\(r* = r|r|r|r... \\)
 
@@ -171,7 +171,7 @@
 
 * in (gerichte) graaf 
     * zoeken van alle knopen bereikbaar vanuit deelverzameling van knopen
-    * stapel gebruiken voor NA toestanden waarvan \\(\epsilon\\)-vergangen nog moeten onderzocht worden
+    * stapel gebruiken voor NA toestanden waarvan \\(\epsilon\\)-overgangen nog moeten onderzocht worden
 
 ```
 Set esluiting; // verzameling voor het resultaat, initieel ledig

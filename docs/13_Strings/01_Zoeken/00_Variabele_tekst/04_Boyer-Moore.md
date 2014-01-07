@@ -48,7 +48,7 @@
 ### Variant van Horspool
 * zelfde tabel als originele methode
 * meest rechtse positie \\(j\\) van karakter in `P`, links van positie \\(m\\)
-    * als karakter niet vookomt: `j = 0`
+    * als karakter niet voorkomt: `j = 0`
 * bij fout in tekst op tekstpositie \\(k\\): `P` opschuiven tegenover `T[ k + m - i ]`
     * nieuw patroonkarakter dat moet gelijk zijn aan tekstkarakter op `T[ k + m - i ]`
         * anders meteen weer fout
