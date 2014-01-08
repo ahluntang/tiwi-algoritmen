@@ -105,30 +105,33 @@ B & 0 & 1 & 2 & 2 & 2 & 4 & 4 \\\
 ## Implementatie
 
 ```
-std::string from; //first string
-std::string to; // compare with this string
-std::vector< std::vector<int> > distances(from.size() + 1, std::vector<int>( to.size() + 1 ) );
-for (unsigned int row = 0; row < distances.size();row++) {
-    distances[row][0] = row;
-    for (unsigned int col = 0; col < distances[row].size();col++) {
-        distances[0][col] = col;
+    std::string from = "ABCBDAB"; // first string
+    std::string to   = "BDCABA"; // compare with this string
+    std::vector< std::vector<int> > distances(from.size() + 1, std::vector<int>( to.size() + 1 ) );
+    for (unsigned int row = 0; row < distances.size();row++) {
+        distances[row][0] = row;
+        for (unsigned int col = 0; col < distances[row].size();col++) {
+            distances[0][col] = col;
+        }
     }
-}
-for (unsigned int row = 1; row < distances.size();row++) {
-    for (unsigned int col = 1; col < distances[row].size();col++) {
-        // find minimum distance of operations
-        // three operations
-        // operation 1: E(row  , col-1) + 1 // go down
-        // operation 2: E(row-1, col  ) + 1 // go right
-        // operation 3: E(row-1, col-1) + s // go diagonal
-        // with s = 0 ( if char[row] = char[col] ), if not equal: s = 1
-        int down,right,diagonal,s,minimum;
-        s = ( from[row] == to[col]) ? 0 : 1;
-        down     = distances[row  ][col-1] + 1;
-        right    = distances[row-1][col  ] + 1;
-        diagonal = distances[row-1][col-1] + s;
-        minimum = std::min(down, std::min(right, diagonal) );
-        distances[row][col] = minimum;
+    for (unsigned int row = 1; row < distances.size();row++) {
+        for (unsigned int col = 1; col < distances[row].size();col++) {
+            // find minimum distance of operations
+            // three operations
+            // operation 1: E(row  , col-1) + 1 // go down
+            // operation 2: E(row-1, col  ) + 1 // go right
+            // operation 3: E(row-1, col-1) + s // go diagonal
+            // with s = 0 ( if char[row] = char[col] ), if not equal: s = 1
+            int down,right,diagonal,s,minimum;
+            s = ( from[row] == to[col]) ? 0 : 1;
+            down     = distances[row  ][col-1] + 1;
+            right    = distances[row-1][col  ] + 1;
+            diagonal = distances[row-1][col-1] + s;
+            minimum = std::min(down, std::min(right, diagonal) );
+            distances[row][col] = minimum;
+        }
     }
-}
+    int lastrow = distances.size() - 1;
+    int lastcol = distances[lastrow].size() -1;
+    std::cout << distances[lastrow][lastcol];
 ```
