@@ -168,6 +168,24 @@
     * `m-s(1)` is juiste verschuiving
     * bij overlopen van suffixtabel
         * waarden worden niet meer gewijzigd
+* na initialisatie tabel `verschuivingen`
+    * overloopt slechts eenmaal suffixtabel
+    * werk per index \\(j\\): \\(O(1)\\)
+    * totaal \\(\Theta(m)\\)
+    * voorbereidend werk voor tweede heuristiek  \\(\Theta(m)\\)
+        * vereist  \\(\Theta(m)\\) plaats
+
+### Lineaire performantie in slechtste geval
+
+* bijkomende voorwaarde voor suffix
+* *strong good suffix heuristic*
+* karakter links van \\(s'\\) in \\(P\\)
+    * moet verschillend zijn van karakter \\(P[i]\\) dat links van \\(s\\) ligt in \\(P\\)
+    * anders: na verschuiving van \\(P\\) zal op die plaats zeker geen overeenkomst met \\(T\\) gevonden worden
+     (\\(i\\) was plaats van de fout)
+* verschuivingen kunnen groter worden
+* analoog met Knuth-Morris-Pratt
+
 
 ## Implementatie
 
