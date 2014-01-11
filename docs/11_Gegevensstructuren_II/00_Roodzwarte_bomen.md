@@ -240,7 +240,7 @@
     * voor zwarte broer \\(b\\) zorgen
         * ofwel met één of twee rotaties
         * ofwel met twee kleurwijzigingen (zonder op te schuiven)
-* verwijderen heeft hoogstens drie rotaties nodig, eventueel voorafgehaan door \\(O(\lg{n})\\) keer opschuiven
+* verwijderen heeft hoogstens drie rotaties nodig, eventueel voorafgegaan door \\(O(\lg{n})\\) keer opschuiven
     * roteren en opschuiven: \\(O(1)\\)
     * initieel afdalen: \\(O(\lg{n})\\)
 * verwijderen is steeds \\(O(\lg{n})\\)
