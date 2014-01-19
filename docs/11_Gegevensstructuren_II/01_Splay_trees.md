@@ -9,7 +9,7 @@
     * \\(n\\) keer toevoegen (\\(m \ge n\\))
         * performantie van reeks: \\(O(m\lg{n})\\)
         * ook in slechtste geval
-        * reeks heeft \\(m\\) operatie: per operatie \\(O(\lg{n})\\)
+        * reeks heeft \\(m\\) operaties: per operatie \\(O(\lg{n})\\)
         * bij individuele operatie
             * in slechtste geval slechter dan \\(O(\lg{n})\\)
             * beter dan verwachtingswaarde van \\(O(\lg{n})\\) (sluit niet uit dat elke operatie in reeks slecht kan zijn)

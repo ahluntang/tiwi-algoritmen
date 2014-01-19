@@ -21,7 +21,7 @@
         * elke knoopgraad moet even zijn
 * 3 volgt uit 2:
     * stel: \\(G\\) heeft \\(n\\) knopen
-        * minstens \\(n-1\\) verbindingen, want \\(G\\) is samehangend
+        * minstens \\(n-1\\) verbindingen, want \\(G\\) is samenhangend
     * geen enkele knoopgraad = 1: minstens \\(n\\) verbindingen
         * \\(G\\) bevat minstens 1 lus
     * lus verwijderen

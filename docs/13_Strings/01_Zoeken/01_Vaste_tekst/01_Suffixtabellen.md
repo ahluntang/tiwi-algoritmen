@@ -20,7 +20,7 @@
     * beide deeloperaties: \\(O(n)\\)
 * rechtstreekse constructies efficiënter en vereisen minder plaats
 
-### rechtstreekse constructie
+### zoeken in suffixtabel
 
 * patroon (prefix) \\(P\\) opzoeken in suffixtabel: met binair zoeken
     * \\(O(\lg{n})\\) stringvergelijkingen nodig

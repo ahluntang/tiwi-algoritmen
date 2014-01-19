@@ -140,7 +140,7 @@
     * meeste werk in binnenste herhaling
     * alle mogelijke wortels voor elke deelboom testen
     * deelboom met sleutels \\(s_i, .., s_j\\) heeft \\(j-i+1\\) mogelijke wortels
-        * elke test si \\(O(1)\\)
+        * elke test is \\(O(1)\\)
     * werk is evenredig met
         \\[
             \sum_{i=1}^{n}{ \sum_{j=1}^{n}{ j-i+1 } }

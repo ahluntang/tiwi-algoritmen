@@ -3,7 +3,7 @@
 
 * bestaat uit bos van binomiaalbomen, elk met heapvoorwaarde
 * gekenmerkt door hoogte
-    * slechts 1 binomiaalboom \\(B_n\\) met hoogte \\(h\\) mogelijk
+    * slechts 1 binomiaalboom \\(B_h\\) met hoogte \\(h\\) mogelijk
 * definitie is recursief
     * \\(B_0\\) bestaat uit 1 knoop
     * \\(B_h\\) uit twee \\(B_{h-1}\\) bomen
